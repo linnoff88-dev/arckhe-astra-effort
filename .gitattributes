@@ -1,0 +1,10 @@
+# Preservar bytes dos arquivos de origem para conferir seus hashes em qualquer SO.
+original-en/** -text
+source/** -text
+files/** -text
+evidence/results.csv -text
+experiment/YOUR-RUN-LOG.csv -text
+*.png binary
+*.pdf binary
+*.zip binary
+*.xlsx binary

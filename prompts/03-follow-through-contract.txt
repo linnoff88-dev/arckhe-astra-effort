@@ -1,0 +1,7 @@
+Conclua esta tarefa: [TAREFA].
+Concluído significa: [ENTREGAS OBSERVÁVEIS E TESTES DE ACEITAÇÃO].
+Você pode decidir [ESCOLHAS REVERSÍVEIS] sem me perguntar. Use suposições razoáveis quando elas não mudarem o objetivo; informe brevemente qualquer suposição relevante.
+
+Continue até implementar e verificar o que está neste escopo. Um plano, uma confirmação de entendimento ou uma oferta para continuar não são a entrega final. Se encontrar um bloqueio real, identifique-o, preserve o trabalho e conclua as partes independentes que ainda forem possíveis. Pergunte antes de [AÇÕES ESPECÍFICAS QUE EXIGEM MINHA DECISÃO].
+
+Ao final, mostre o que mudou, as verificações realmente executadas e qualquer requisito ainda não atendido. Não diga que um teste passou se você não o executou.

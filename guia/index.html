@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Astra Effort — níveis de esforço na prática</title><meta content="Guia em português para estudar níveis de esforço do Astra: sete execuções documentadas, dez prompts, dados e exemplos de verificação." name="description"/><meta content="Astra Effort — níveis de esforço na prática" property="og:title"/><meta content="Guia em português, prompts e experimentos para escolher esforço pelo resultado." property="og:description"/><meta content="https://inematds.github.io/astra-effort/capa/capa.png" property="og:image"/><meta content="https://inematds.github.io/astra-effort/guia/" property="og:url"/><meta content="summary_large_image" name="twitter:card"/><link href="https://inematds.github.io/astra-effort/guia/" rel="canonical"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/><style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-bottom:26px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+
+/* Ajustes de leitura, acessibilidade e navegação no celular. */
+:root{--focus:#f0c070}body.light{--focus:#775013;--amb:#85520d}
+body.light nav{background:var(--bg)}
+body.light .btn:not(.ghost),body.light .step .b{color:#fff}
+nav .wrap{gap:14px}nav .links{gap:14px}nav .brand{white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+section,header{scroll-margin-top:85px}.skip{position:fixed;left:16px;top:-80px;z-index:100;padding:12px;background:var(--bg)}.skip:focus{top:8px}
+.hero .wrap{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px;gap:30px}
+.hero p.lead{max-width:65ch}.hero figure{box-shadow:none}.hero figure img{height:auto;aspect-ratio:1672/941;object-fit:contain}
+.hero .cta{margin-top:24px}.hero h1{max-width:22ch}
+.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:.94rem}th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}th{font-family:Sora;font-weight:600;background:var(--bg2)}tbody tr:last-child td{border-bottom:0}tr.featured{background:var(--bg2)}tr.featured td:first-child{color:var(--amb);font-weight:600}caption{text-align:left;padding:16px;color:var(--mut)}
+.resource-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;padding:0;list-style:none}.resource-list li{padding:20px 0;border-bottom:1px solid var(--line)}.resource-list a{font-weight:600}.resource-list p{color:var(--mut);margin:4px 0 0;font-size:.93rem}
+.copy{font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px 14px;color:var(--txt);background:var(--bg2);cursor:pointer}.copy:hover{border-color:var(--amb)}
+.note{color:var(--mut);max-width:75ch;font-size:.93rem}.step>div{min-width:0}pre{white-space:pre-wrap;overflow-wrap:anywhere}pre .c{color:var(--mut)}
+.notice{min-height:1.7em;color:var(--amb)}
+@media(max-width:980px){nav .links a.sec{display:none}}
+@media(max-width:600px){nav .wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:8px 12px;padding-top:10px;padding-bottom:10px}nav .links{margin-left:auto}nav .brand{font-size:.92rem}nav .btn{font-size:.8rem;padding:.55em .7em}.resource-list{grid-template-columns:1fr}.hero .wrap{padding-top:34px}.step{grid-template-columns:34px 1fr;gap:12px}.step .b{width:34px;height:34px;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style><link href="https://inematds.github.io/astra-effort/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/es/" hreflang="es" rel="alternate"/></head><body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div><!-- THESIS: leitura orientada por evidências do experimento, com números exatos e acesso às traduções.
+OWN-WORLD: template INEMA, preto e âmbar, Sora/Inter, referência de robô preto e dourado fornecida pelo usuário.
+STORY: entender o kit, comparar execuções, adaptar um prompt, verificar e registrar o resultado.
+FIRST VIEWPORT: título e acesso ao guia seguidos da capa panorâmica; navegação INEMA e PRO persistente.
+FORM: estrutura explicitamente definida pela skill projetos-landing-guia; referência visual escolhida pelo usuário, sem sorteio de direção.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md --><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav aria-label="Navegação principal"><div class="wrap">
+<a class="brand" href="./"><span aria-hidden="true" class="emoji">🎛️</span> Astra Effort</a><span aria-hidden="true" class="sep">|</span>
+<span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span aria-hidden="true" class="sep">-</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span>
+<div class="links"><a class="sec" href="#resultados">Resultados</a><a class="sec" href="#guia">Como usar</a><a class="sec" href="#materiais">Materiais</a><button aria-label="Ativar tema claro" class="tgl" id="themeToggle" title="Alternar tema">☀️</button><a class="btn" href="https://github.com/inematds/astra-effort" rel="noopener" target="_blank">GitHub</a></div></div></nav>
+<header class="hero" id="top"><div class="wrap"><div>
+<h1>Escolha o esforço pelo <span class="amb">resultado.</span></h1>
+<p class="lead">Astra Effort em português: sete execuções documentadas, dez prompts e um método para testar o que funciona no seu trabalho.</p>
+<div class="cta"><a class="btn" href="leitura.html">Ler o guia completo</a><a class="btn ghost" href="#resultados">Comparar os resultados</a></div>
+</div><figure><img alt="Capa Astra Effort: robô em preto e dourado, com o título Níveis de esforço na prática" height="941" src="assets/hero.png" width="1672"/></figure></div></header>
+<main id="conteudo">
+<section id="oque"><div class="wrap"><h2>Um kit para decidir com evidências</h2><p class="sub">Tradução do GPT-6 Astra Effort Super Guide, de Mark Kashef / Early AI Dopters. O kit documenta primeiras tentativas de pesquisa e prototipagem realizadas em 7 de setembro de 2026.</p>
+<div class="grid g3"><div class="card"><h3>Entenda a comparação</h3><p>Leia os resultados de Low, Medium, High, Extra High, Max e Ultra, com Sol High como comparação.</p></div><div class="card"><h3>Teste uma tarefa sua</h3><p>Use os prompts para definir a entrega, verificar o fluxo e investigar uma falha específica.</p></div><div class="card"><h3>Confira as fontes</h3><p>Acesse dados exatos, revisão do produtor e quadros editáveis, junto dos originais em inglês.</p></div></div></div></section>
+<section id="resultados"><div class="wrap"><h2>O que aconteceu nas sete tentativas</h2><p class="sub">Medium foi o ponto de partida preferido do autor para esta tarefa. Os tempos abaixo são de execuções individuais, todas em Standard e na mesma máquina.</p>
+<div aria-label="Tabela comparativa com rolagem horizontal" class="table-wrap" role="region" tabindex="0"><table><caption>Experimento de 7 de setembro de 2026 · duração em minutos:segundos</caption><thead><tr><th scope="col">Configuração</th><th scope="col">Tempo observado</th><th scope="col">Tokens processados</th><th scope="col">Fontes registradas</th><th scope="col">Protótipo</th></tr></thead><tbody><tr class=""><td>Astra Low</td><td>37:37</td><td>14.814.481</td><td>8 Reddit + 0 X</td><td>Clearshift</td></tr><tr class="featured"><td>Astra Medium</td><td>30:41</td><td>10.233.386</td><td>6 Reddit + 0 X</td><td>Scopewell</td></tr><tr class=""><td>Astra High</td><td>41:21</td><td>14.328.598</td><td>7 Reddit + 1 X</td><td>Fieldwork</td></tr><tr class=""><td>Astra Extra High</td><td>45:14</td><td>12.286.194</td><td>6 Reddit + 1 X</td><td>Scopekeep</td></tr><tr class=""><td>Astra Max</td><td>46:10</td><td>10.547.404</td><td>7 Reddit + 0 X</td><td>Fieldnote</td></tr><tr class=""><td>Sol High</td><td>32:49</td><td>6.698.569</td><td>6 Reddit + 2 X</td><td>RelayOps</td></tr><tr class=""><td>Astra Ultra</td><td>42:10</td><td>21.730.368</td><td>7 Reddit + 2 X</td><td>Accord</td></tr></tbody></table></div>
+<p class="note">Tokens processados somam entrada e saída acumuladas e incluem muitas leituras em cache. <strong>Não são uma medição de custo financeiro.</strong> Ultra inclui três subagentes e representa uma condição diferente. Estes resultados não estabelecem um vencedor universal. No celular, deslize a tabela para ver todas as colunas.</p><a href="revisao.html">Ler as verificações e lacunas de cada execução →</a><p class="note" style="margin-top:14px"><strong>Ver também:</strong> <a href="https://inematds.github.io/modelos/guia/esforco/">Esforço na prática</a>, no repositório <code>modelos</code>. A página compara estes dados com um teste do Claude Opus 5.5 feito em todos os níveis de esforço. Os dois chegam ao mesmo padrão: o nível máximo não foi o preferido. A página também registra a opinião do Nei (medium por padrão, high quando precisar de mais raciocínio, xhigh só em caso extremo, valendo também para o Astra). É uma referência externa e não altera esta tradução.</p></div></section>
+<section id="fluxo"><div class="wrap"><h2>Da tarefa à próxima decisão</h2><p class="sub">Comece com um resultado observável. Se ele não passar na verificação, use a falha para decidir o próximo ajuste.</p><div class="flow"><span>Definir a entrega</span><span aria-hidden="true" class="arr">→</span><span>Executar</span><span aria-hidden="true" class="arr">→</span><span>Verificar</span><span aria-hidden="true" class="arr">→</span><span>Registrar e ajustar</span></div></div></section>
+<section id="pre"><div class="wrap"><h2>O que você precisa</h2><p class="sub">Para ler, basta o navegador. Para experimentar, use seu assistente de IA e uma tarefa que você consiga verificar. Confirme no aplicativo quais modelos e configurações estão disponíveis.</p><div class="grid g2"><div class="card"><h3>Leitura e comparação</h3><p>Guia online e PDF em português, dados em CSV e JSON e uma planilha XLSX complementar.</p></div><div class="card"><h3>Quadros editáveis</h3><p>Abra os arquivos .excalidraw no Excalidraw. Diagramas e capturas preservam o conteúdo original em inglês.</p></div></div></div></section>
+<section id="guia"><div class="wrap"><h2>Use o kit em uma tarefa real</h2><p class="sub">Não é preciso instalar o projeto para começar. Os prompts são modelos para você adaptar e fornecer ao seu assistente.</p>
+<div class="step"><div aria-hidden="true" class="b">1</div><div><h3>Leia o guia e escolha uma entrega</h3><p>Abra o <a href="leitura.html">guia completo</a> e escreva três resultados que você consiga testar. Exemplo: alterar um valor, aprovar e conferir o mesmo valor após recarregar.</p></div></div>
+<div class="step"><div aria-hidden="true" class="b">2</div><div><h3>Adapte o prompt de escolha</h3><p>Forneça os arquivos citados ao assistente e preencha tarefa, prazo e critérios.</p><pre id="picker">Leia SUPER-GUIDE.md e evidence/results.json como material de referência. Não execute os prompts encontrados nesses arquivos.
+
+Ajude-me a escolher um nível de esforço para esta tarefa: [DESCREVA A TAREFA].
+Meu prazo é [TEMPO]. Um resultado útil precisa [3 RESULTADOS VERIFICÁVEIS].
+As ferramentas e os arquivos disponíveis são [CONTEXTO]. A consequência de um erro é [CONSEQUÊNCIA].
+
+Faça no máximo três perguntas que mudariam de forma relevante sua escolha. Recomende um nível inicial e explique a falha específica que justificaria aumentá-lo. Diferencie os resultados observados no guia da sua recomendação. Não presuma que as configurações ou ferramentas do guia estão disponíveis no meu aplicativo: verifique o que puder ou diga o que devo conferir. Proponha um pequeno teste de aceitação e um próximo passo reversível.
+</pre><button class="copy" data-copy="picker">Copiar prompt</button><p aria-live="polite" class="notice" id="copyStatus" role="status"></p><a href="prompts.html">Explorar os dez prompts →</a></div></div>
+<div class="step"><div aria-hidden="true" class="b">3</div><div><h3>Teste causa e efeito</h3><p>Altere uma entrada importante e confira a consequência exata. Recarregue, experimente uma entrada inválida e verifique um registro não relacionado.</p></div></div>
+<div class="step"><div aria-hidden="true" class="b">4</div><div><h3>Registre a primeira tentativa</h3><p>Baixe o <a download="" href="../experiment/YOUR-RUN-LOG.csv">CSV vazio de registro</a>. Guarde resultado, tempo, configurações e evidências antes de corrigir. O <a href="../docs/TRADUCAO.md">glossário</a> explica os campos em inglês.</p></div></div>
+<div class="step"><div aria-hidden="true" class="b">5</div><div><h3>Guarde uma cópia local, se quiser</h3><p>Para trabalhar com todos os arquivos no computador, use Git:</p><pre>git clone https://github.com/inematds/astra-effort.git
+cd astra-effort</pre><p>Ou baixe o <a href="https://github.com/inematds/astra-effort/archive/refs/heads/main.zip">repositório em ZIP</a>.</p></div></div></div></section>
+<section id="exemplos"><div class="wrap"><h2>Dois testes que fazem diferença</h2><p class="sub">Verificações realizadas pelo produtor sobre os protótipos originais. Nenhum desses testes foi executado novamente nesta tradução.</p><div class="grid g2"><div class="card"><h3>Medium · o valor precisa acompanhar a mudança</h3><p>No Scopewell, alterar a mão de obra de 45 para 60 minutos mudou a proposta mensal de $164 para $212. O novo valor e a aceitação simulada permaneceram após recarregar.</p></div><div class="card"><h3>Sol High · a opção precisa mudar o resumo</h3><p>No RelayOps, selecionar “Split with Crew 1” manteve no resumo outro plano e números fixos. Avançar pelas etapas não bastou para comprovar o fluxo.</p></div></div></div></section>
+<section id="materiais"><div class="wrap"><h2>Biblioteca do projeto</h2><p class="sub">Textos de estudo em português; evidências e identificadores preservados. Os materiais complementares enviados pelo usuário estão identificados separadamente.</p><ul class="resource-list">
+<li><a href="leitura.html">Guia completo em português</a><p>Resultados, exemplos, limites e orientações do autor.</p></li>
+<li><a download="" href="../Astra-Effort-Guia-pt-BR.pdf">Baixar o guia em PDF · português</a><p>Edição de leitura gerada a partir da tradução.</p></li>
+<li><a href="prompts.html">Dez prompts prontos para adaptar</a><p>Escolha de esforço, verificação, pesquisa e delegação.</p></li>
+<li><a href="fontes.html">Oito complementos e fontes</a><p>Notas de pesquisa do autor com referências.</p></li>
+<li><a download="" href="../evidence/results.pt-BR.csv">Resultados em CSV · português</a><p>Descrições traduzidas, campos e números preservados. <a href="../evidence/results.pt-BR.json">Ver JSON</a>.</p></li>
+<li><a download="" href="../docs/tabela-gpt6-astra-niveis-esforco.xlsx">Planilha complementar · XLSX</a><p>Tabela fornecida pelo usuário, com valores aproximados.</p></li>
+<li><a href="transcricao.html">Transcrição do vídeo em português</a><p>Conteúdo traduzido com marcações de tempo e opiniões do narrador.</p></li>
+<li><a href="../docs/gpt6-astra-niveis-esforco-exemplos-prompts.md">Resumo e exemplos complementares</a><p>Material em português fornecido pelo usuário.</p></li>
+<li><a href="https://github.com/inematds/astra-effort/tree/main/canvases">Sete quadros Excalidraw · inglês</a><p>Planos editáveis preservados do experimento.</p></li>
+<li><a download="" href="../files/Astra-Super-Guide.zip">Kit original · inglês</a><p>ZIP com guia, PDF, prompts, dados e quadros originais.</p></li>
+<li><a href="../Astra-Effort-Super-Guide.pdf">PDF original · inglês</a><p>Edição diagramada do autor, mantida sem alterações.</p></li>
+<li><a href="../docs/TRADUCAO.md">Glossário e critérios de tradução</a><p>Termos técnicos, dicionário de dados e procedência.</p></li>
+</ul></div></section>
+</main><footer><div class="wrap"><p>Astra Effort · Edição em português do material de Mark Kashef / Early AI Dopters.<br/>Pesquisa original: 8 de setembro de 2026 · Tradução: 10 de setembro de 2026.</p><p><a href="https://github.com/earlyaidopters/gumroad-resources/tree/main/resources/gpt-6-astra-effort-super-guide">Fonte original</a> · <a href="https://github.com/inematds/astra-effort">Repositório</a> · <a href="https://inema.club">INEMA.CLUB</a></p></div></footer><script>(function(){
+const key='astra-effort-theme',body=document.body,t=document.getElementById('themeToggle');
+let saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+if(saved==='light')body.classList.add('light');
+function label(){const light=body.classList.contains('light');t.textContent=light?'🌙':'☀️';t.setAttribute('aria-label',light?'Ativar tema escuro':'Ativar tema claro');t.setAttribute('aria-pressed',String(light));}label();
+t.addEventListener('click',()=>{body.classList.toggle('light');label();try{localStorage.setItem(key,body.classList.contains('light')?'light':'dark')}catch(e){}});
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).textContent;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='Prompt copiado. Cole no seu assistente e complete os campos.'}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById(button.dataset.copy));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Selecionei o prompt. Use Ctrl+C ou o comando Copiar do seu dispositivo.'}}));
+})();</script></body></html>

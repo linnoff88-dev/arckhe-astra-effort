@@ -1,0 +1,5 @@
+Condições de execução: trabalhe somente na nova pasta desta tarefa. Não inspecione outras tarefas nem suas saídas. Mantenha o modelo e o esforço de raciocínio atribuídos. Use abas de navegador novas, criadas por você; nunca opere abas de outra tarefa. Não use controle compartilhado de aplicativos nativos enquanto outras tarefas puderem estar em execução; registre qualquer limitação de acesso decorrente disso. Sirva o site concluído localmente, sem implantação hospedada. Registre a hora inicial. Use até 45 minutos nesta primeira tentativa; depois preserve o que existir e relate com honestidade o trabalho concluído, os requisitos pendentes e os bloqueios. Não espere uma mensagem de acompanhamento do produtor durante esta tentativa. Estas são condições de execução, não parte do produto.
+
+Condição com agente único: realize a tarefa como um único agente; não delegue nem mude de modelo.
+
+Na condição Ultra, em vez disso: você pode delegar trabalho independente a subagentes. Registre os subagentes e modelos utilizados.

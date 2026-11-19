@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Transcripción del video — Astra Effort</title><meta content="Transcripción del video del kit Astra Effort en portugués." name="description"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/><style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-bottom:26px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+
+/* Ajustes de leitura, acessibilidade e navegação no celular. */
+:root{--focus:#f0c070}body.light{--focus:#775013;--amb:#85520d}
+body.light nav{background:var(--bg)}
+body.light .btn:not(.ghost),body.light .step .b{color:#fff}
+nav .wrap{gap:14px}nav .links{gap:14px}nav .brand{white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+section,header{scroll-margin-top:85px}.skip{position:fixed;left:16px;top:-80px;z-index:100;padding:12px;background:var(--bg)}.skip:focus{top:8px}
+.hero .wrap{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px;gap:30px}
+.hero p.lead{max-width:65ch}.hero figure{box-shadow:none}.hero figure img{height:auto;aspect-ratio:1672/941;object-fit:contain}
+.hero .cta{margin-top:24px}.hero h1{max-width:22ch}
+.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:.94rem}th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}th{font-family:Sora;font-weight:600;background:var(--bg2)}tbody tr:last-child td{border-bottom:0}tr.featured{background:var(--bg2)}tr.featured td:first-child{color:var(--amb);font-weight:600}caption{text-align:left;padding:16px;color:var(--mut)}
+.resource-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;padding:0;list-style:none}.resource-list li{padding:20px 0;border-bottom:1px solid var(--line)}.resource-list a{font-weight:600}.resource-list p{color:var(--mut);margin:4px 0 0;font-size:.93rem}
+.copy{font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px 14px;color:var(--txt);background:var(--bg2);cursor:pointer}.copy:hover{border-color:var(--amb)}
+.note{color:var(--mut);max-width:75ch;font-size:.93rem}.step>div{min-width:0}pre{white-space:pre-wrap;overflow-wrap:anywhere}pre .c{color:var(--mut)}
+.notice{min-height:1.7em;color:var(--amb)}
+@media(max-width:980px){nav .links a.sec{display:none}}
+@media(max-width:600px){nav .wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:8px 12px;padding-top:10px;padding-bottom:10px}nav .links{margin-left:auto}nav .brand{font-size:.92rem}nav .btn{font-size:.8rem;padding:.55em .7em}.resource-list{grid-template-columns:1fr}.hero .wrap{padding-top:34px}.step{grid-template-columns:34px 1fr;gap:12px}.step .b{width:34px;height:34px;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.reader{max-width:78ch;padding:40px 22px 70px;margin:auto;overflow-wrap:anywhere}.reader h1{font-size:clamp(2rem,4vw,3rem);margin:28px 0}.reader h2{font-size:1.7rem;margin:2.6em 0 .7em;scroll-margin-top:100px}.reader h3{margin:1.8em 0 .6em}.reader p,.reader li{line-height:1.85}.reader a{text-decoration:underline;text-underline-offset:3px}.reader table{display:block;overflow:auto;font-size:.88rem}.reader pre{white-space:pre-wrap;line-height:1.7}.toc{background:var(--bg2);padding:20px 24px;border:1px solid var(--line);border-radius:12px}.toc ul{padding-left:20px}.reader .back{font-family:Sora;font-size:.9rem}.reader details{margin:28px 0}.reader summary{cursor:pointer;font-weight:600}.reader blockquote{margin-left:0;padding:4px 20px;border-left:1px solid var(--amb)}
+@media print{nav,.skip,.back,.toc,footer,.reader>details{display:none}body,body.light{background:#fff!important;color:#111!important;font-size:10pt;color-scheme:light}.reader{max-width:none;padding:0}.reader h1{font-size:26pt}.reader h2{font-size:17pt;break-after:avoid}.reader h3{break-after:avoid}.reader pre{background:#f4f4f4!important;color:#111!important;border-color:#ddd;font-size:8pt;break-inside:auto}.reader a{color:#333}.reader table{display:table;font-size:8pt}.reader th,.reader td{white-space:normal;color:#111;border-color:#ddd;padding:7px;background:#fff}.reader tr{break-inside:avoid}a[href]:after{content:none}}
+</style><link href="https://inematds.github.io/astra-effort/guia/transcricao.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/en/transcricao.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/es/transcricao.html" hreflang="es" rel="alternate"/></head><body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../transcricao.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/transcricao.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./transcricao.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div><a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal"><div class="wrap">
+<a class="brand" href="../"><span aria-hidden="true" class="emoji">🎛️</span> Astra Effort</a><span aria-hidden="true" class="sep">|</span>
+<span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span aria-hidden="true" class="sep">-</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span>
+<div class="links"><a class="sec" href="../#resultados">Resultados</a><a class="sec" href="../#guia">Cómo usar</a><a class="sec" href="../#materiais">Materiales</a><button aria-label="Activar tema claro" class="tgl" id="themeToggle" title="Cambiar tema">☀️</button><a class="btn" href="https://github.com/inematds/astra-effort" rel="noopener" target="_blank">GitHub</a></div></div></nav><main class="reader" id="conteudo"><a class="back" href="../">← Biblioteca Astra Effort</a><details><summary>En esta página</summary><div class="toc">
+<ul>
+<li><a href="#testei-todos-os-niveis-de-esforco-do-gpt-6-astra-eis-o-que-eu-usaria-youtube">Probé todos los niveles de esfuerzo de GPT-6 Astra. Esto es lo que usaría — YouTube</a></li>
+</ul>
+</div>
+</details><h1 id="testei-todos-os-niveis-de-esforco-do-gpt-6-astra-eis-o-que-eu-usaria-youtube">Probé todos los niveles de esfuerzo de GPT-6 Astra. Esto es lo que usaría — YouTube</h1>
+<p>https://www.youtube.com/watch?v=OQipTxv9Qv0</p>
+<p>Transcripción traducida al portugués. Las opiniones y aproximaciones numéricas son del narrador. La transcripción automática original está en original-en/docs/transcricao-video.txt; nombres evidentes como “GBT6”, “Astro”, “Soul” y “Excel draw” se normalizaron a GPT-6, Astra, Sol y Excalidraw. Para consultar los números exactos y los límites metodológicos, revisa SUPER-GUIDE.md y evidence/results.json.</p>
+<p>(00:00) GPT-6 Astra está disponible desde hace algún tiempo, y uno de los debates más importantes en YouTube y en X es este: ¿qué nivel de esfuerzo ofrece la mejor relación entre valor y costo con este modelo? También vi a personas decir que es perezoso por naturaleza.</p>
+<p>(00:17) Hace lo que le pides, pero nada más, y a veces ni siquiera eso. Así que hice algunos experimentos para ver si cambiar el esfuerzo también cambiaba ese comportamiento. Probé todos los niveles de Astra en el mismo proyecto de investigación y construcción, e incluí Sol en la comparación. En este video, te mostraré qué entregó cada uno, cuánto tardó, cuántos tokens consumió y si el esfuerzo tuvo alguna influencia.</p>
+<p>(00:42) Al final, podrás evaluar qué nivel se adapta a tus proyectos cotidianos. Empecemos. Esta publicación en X fue la razón por la que quise hacer la prueba. Tibo lidera los productos principales de OpenAI y también es conocido por parecer reiniciar su cuota de uso cada hora. Hizo una afirmación atrevida.</p>
+<p>(01:00) GPT-6 Astra en Low tiene un mejor rendimiento que GPT-6 Sol en High. Sol es el modelo anterior y está siendo olvidado por esta novedad. Pero, para muchos objetivos y tareas, sigue siendo más que suficiente. Cuando investigas experiencias reales y comentarios sobre este modelo, especialmente en Low, escuchas que se detiene demasiado pronto y pide permiso cada cinco minutos.</p>
+<p>(01:26) Quería evaluar dos cosas: ¿un esfuerzo extra necesariamente mejora los resultados? ¿Y ofrece más autonomía, haciendo que el modelo deje de pedir permiso y de parecer perezoso? En la documentación oficial de OpenAI, encontramos lo siguiente.</p>
+<p>(01:42) El modelo fue diseñado para colaborar mejor y, por eso, tiende a hacer más preguntas al usuario. La documentación también dice que esto puede hacer que se detenga cuando el usuario esperaba que hiciera suposiciones razonables. Algo como Fable 5.1 es muy bueno cuando le das una visión general, un resumen del objetivo, y no solo extrapola, sino que añade pasos que considera adecuados.</p>
+<p>(02:06) Parece que Astra, al menos en algunos niveles de esfuerzo, quizá no haga eso tan bien. Para que el experimento fuera lo más transparente y equilibrado posible, controlé seis variables: el mismo contexto, el mismo acceso a herramientas, MCP y skills, el mismo alcance de construcción y las mismas condiciones. Y separé Ultra porque con frecuencia crea una serie de subagentes.</p>
+<p>(02:29) Te mostraré un pequeño truco para abrir varias conversaciones con distintos niveles de esfuerzo usando el mismo prompt. Y, por último, registramos cuántos tokens y cuánto tiempo consumió cada conversación. Este fue el prompt que enviamos a las siete conversaciones; te lo explicaré por partes.</p>
+<p>(02:47) La idea central era permitir que cada agente investigara todo lo posible en X y Reddit, dos excelentes lugares para escuchar los comentarios de los usuarios. El cliente objetivo era este: encontrar una oportunidad de SaaS que valga la pena para dueños de pequeñas empresas de servicios con 2 a 20 empleados.</p>
+<p>(03:07) No elegí la categoría, el problema ni el producto. Empieza por los problemas, considera tres oportunidades y elige una. Para las evidencias, pedimos investigar en estas plataformas y analizar tres alternativas existentes a la idea inicial. El objetivo era reunir frustraciones recurrentes, soluciones improvisadas, señales de gasto y evidencias en contra.</p>
+<p>(03:29) Esta es la frase más importante del prompt para evaluar la oportunidad: supón que los clientes y los competidores pueden usar Astra para reproducir rápidamente un software competente. Es decir, no construyas un SaaS que se pueda hacer con vibe coding en un fin de semana. Idealmente, el modelo de negocio debe tener alguna ventaja defendible.</p>
+<p>(03:47) Para la planificación, quería que creara sus propios archivos de Excalidraw usando IA para generar los JSON correspondientes. Con modelos más avanzados, ya no necesito una skill: puedo pedir un archivo de Excalidraw. Es un formato que permite hacer anotaciones y crear diagramas como si los hubiera dibujado a mano.</p>
+<p>(04:08) En vez de una skill, quería que cada nivel demostrara la creación del archivo completo para observar cómo organizaba el razonamiento. Para el producto principal, quería un sitio bien terminado, parecido a los sitios que preparo para explicar estos conceptos en YouTube.</p>
+<p>(04:26) Quería un sitio de ChatGPT que explicara el plan completo de construcción después de la investigación. Además del sitio y del archivo de Excalidraw, quería un prototipo funcional del SaaS. Dividir la tarea en estas partes daría espacio para que cada nivel mostrara diferencias reales, si las había.</p>
+<p>(04:48) Las preguntas centrales eran: ¿podemos seguir la justificación de por qué es una buena idea? ¿Por qué alguien pagaría? ¿Se conectan las piezas: el perfil elegido, el problema señalado y sus evidencias, el producto? ¿Funciona el flujo? ¿Tiene sentido que exista como SaaS? Y, en cuanto a la conclusión, ¿terminó y verificó su trabajo? ¿Reflexionó sobre lo que pasó? Estas son todas las conversaciones que ejecutamos.</p>
+<p>(05:17) Mentiría si dijera que las abrí todas manualmente. Basta con pedirle a Codex una serie de conversaciones y solicitarle que las nombre según el nivel de esfuerzo, cambie el esfuerzo y las vincule a una carpeta específica. Puedes pedir algo así.</p>
+<p>(05:38) Quiero que uses el mismo prompt; puedes crearlo. Debe ser una tarea muy sencilla. Crea tres conversaciones separadas, con nombres fáciles de leer en la barra lateral, cada una con un nivel de Astra: Low, Medium y High. Ejecuta este prompt en las tres al mismo tiempo, ahora.</p>
+<p>(05:58) Y sigue el progreso de cada una. Es una función reciente que está disponible tanto en Claude como en Codex. Al abrir los elementos recientes, vemos que las nuevas conversaciones de prueba empiezan a aparecer por separado. Ahí están.</p>
+<p>(06:17) Ahora tenemos Astra Medium, Low y High, todos en ejecución. Al entrar, vemos la misma tarea. Así puedes empezar a probar a escala. El resultado de cada conversación fue un tablero como este, un sitio, un análisis completo y las estadísticas de tokens, tiempo y resultado principal.</p>
+<p>(06:39) Astra en Low tardó 37 minutos, consumió casi 15 millones de tokens, revisó ocho conversaciones de Reddit y ninguna de X, y creó 161 elementos en el tablero. Esto no mide necesariamente la calidad; muestra cuánto trabajo produjo. El producto registra las tareas de limpieza pendientes hasta que se corrigen y se vuelven a verificar, para dueños de empresas de limpieza comercial que atienden oficinas con regularidad.</p>
+<p>(07:03) La ventaja propuesta son los patrones específicos de cada cliente y el historial de correcciones que funcionaron. Interesante. El sitio quedó así. No estamos evaluando la belleza, sino el concepto central. Es el borrador de este SaaS. No impresiona mucho, pero quizá sea un negocio viable.</p>
+<p>(07:23) La gran carencia es que no hay evidencias de X, y no fue más allá de lo que se le pidió. Astra Medium tardó apenas 30 minutos, consumió 10 millones de tokens y revisó seis conversaciones en Reddit. El producto calcula los precios de servicios de limpieza adicionales y registra si el cliente los acepta, para empresas con contratos por escrito.</p>
+<p>(07:42) La ventaja propuesta son registros precisos del alcance y estimaciones mejoradas con los servicios reales. No sé cuánto sea una ventaja defendible. Lo interesante es que otra vez estamos en el sector de la limpieza, aunque no lo especifiqué. Quizá, dadas el perfil y el alcance proporcionados, y todas las condiciones, este parezca el mejor sector.</p>
+<p>(08:02) El sitio es parecido. Al explorar el plan y abrir el tablero, la división parece más clara: cliente, alternativas, oportunidad y recorrido del dueño. Hay un buen análisis de las consecuencias. Tendría que leerlo todo para evaluar el modelo de negocio en detalle, pero la calidad y variedad de los análisis parecen mejores que en Low, con menos tiempo y tokens.</p>
+<p>(08:31) Astra High tardó cerca de 40 minutos y consumió 14 millones de tokens. Buscó en Reddit y, por fin, encontró una publicación o un conjunto de publicaciones en X, y creó el tablero más detallado. La idea fue redistribuir las visitas cuando un equipo de limpieza no puede trabajar.</p>
+<p>(08:50) Quizá sea la descripción más sencilla hasta ahora: para dueños de empresas de limpieza residencial que coordinan equipos y horarios. La ventaja propuesta son las restricciones específicas de la empresa y los resultados que mejoran la programación. Hasta ahora, el sitio es el más claro en cuanto a la visión y el problema. El problema aparece aquí.</p>
+<p>(09:09) A las 7:42, la camioneta de Cedar no arranca. Hay dos visitas recurrentes que necesitan cobertura; tenemos que llenar horarios que se cancelarían. La idea busca reducir los ingresos perdidos. Pero ¿valió la pena dedicarle 40 minutos y 14 millones de tokens, o se podría llegar al mismo punto usando los 30 minutos de Medium y un prompt más preciso, o con un seguimiento? Extra High tardó 45 minutos, pero consumió un poco menos que High: 12 millones.</p>
+<p>(09:40) Lo interesante, y la razón por la que digo que esto no es AGI y considero exageradas muchas de estas afirmaciones, es que el nivel de esfuerzo debería corresponder de alguna manera con la eficiencia, pero no es así. High estuvo cerca de los 14 millones de tokens.</p>
+<p>(09:59) Low estuvo cerca de los 15 millones y Medium, de los 10 millones. Hay variación e imprevisibilidad. Si lo repitiera, diría que probablemente los tiempos serían parecidos, pero el consumo de tokens es cada vez más imprevisible.</p>
+<p>(10:16) Esta vez el negocio no es de limpieza. Lleva los trabajos adicionales de remodelación desde la aprobación hasta la facturación, para pequeños empresarios que pierden el control de lo que deben cobrar. La ventaja propuesta son verificaciones del alcance personalizadas según el historial de aprobación, facturación y pago. Una descripción larga. El sitio parece del nivel de High, pero empeora cuando lo examinas por dentro.</p>
+<p>(10:39) Tiene un diseño parecido y cuatro pestañas similares. El tablero vinculado se abre en una nueva pestaña, un efecto agradable. Hay filtros y botones para navegar. Pero, en alcance y apariencia, el tablero parece un poco peor que el de High. Esta era la versión High.</p>
+<p>(11:01) También tiene botones, en otra posición y un poco más juntos, y más evidencias para cada afirmación. Al hacer clic en las evidencias de los clientes, vas directamente a la conversación asociada. Hay una mejor división y más fuentes vinculadas a las conversaciones exactas. Al compararlas lado a lado, la versión Extra High es más sencilla y menos detallada.</p>
+<p>(11:29) Tiene menos referencias y una navegación un poco mejor. Fuera de eso, no veo un beneficio adicional por los cinco o diez minutos extra y los posibles tokens más allá de Medium y High. Max me confundió: tardó 46 minutos, pero consumió apenas 10 millones de tokens.</p>
+<p>(11:50) Fue eficiente en tokens, pero un poco ineficiente en tiempo para llegar a ese consumo. La idea mantiene el alcance, el precio y la aprobación de los servicios adicionales en un registro. Parece orientada a bases de datos u organización de datos, para dueños de empresas de remodelación residencial con equipos de 2 a 10 personas.</p>
+<p>(12:09) La ventaja propuesta es una rutina adoptada en la obra, configuración asistida y recomendaciones de profesionales contables. Interesante: piensa en un negocio impulsado por recomendaciones. Quiero destacar que, incluso en Max, no hay referencias a X, aunque sí aparecieron en High.</p>
+<p>(12:27) Otra evidencia de que gastar más tokens —o, en este caso, más tiempo para procesarlos— no necesariamente mejora el resultado. El sitio está más limpio y mejor terminado. Parece un producto real en comparación con High y Extra High. Transmite la visión y el problema que intentamos resolver.</p>
+<p>(12:49) Pero ¿dedicarías diez minutos adicionales en vez de añadir uno o dos prompts a un nivel inferior? Llegamos a Astra Ultra: 42 minutos, menos que Max, pero nada menos que 22 millones de tokens para este resultado. Esto es lo que obtienes con 22 millones de tokens.</p>
+<p>(13:10) Registra y combina los trabajos adicionales de remodelación antes de que empiece el trabajo. Básicamente automatiza las solicitudes de cambios en los servicios para pequeños empresarios de remodelación residencial que gestionan extras con frecuencia. La ventaja propuesta es una configuración específica de cada especialidad y una rutina comprobada, mejorada con resultados reales. El sitio no es una obra maestra de Da Vinci.</p>
+<p>(13:29) Se parece mucho a los anteriores, con pequeños cambios de espaciado y acabado que no aportan mucho a la experiencia. Al explorar la oportunidad, hay un botón con relieve y un tablero casi idéntico al que ya vimos.</p>
+<p>(13:47) Hay dos fuentes en una posición extraña: un conjunto adicional de fuentes por bloque. ¿Vale la pena el tiempo y los tokens adicionales? Veinte millones de tokens y subagentes para armar esto. Como comparación de control, también probamos Sol High porque, según la publicación de Tibo, Astra Low debería ofrecer una experiencia equivalente. Sol tardó solo 32 minutos.</p>
+<p>(14:12) Apenas 6 millones de tokens. Si te olvidaste de Sol, hay motivos para recordarlo. Astra no debería usarse para todo. No hace falta llevar una bomba nuclear a cada pelea a puñetazos. Sorprendentemente, buscó en seis conversaciones de Reddit y dos de X. La cantidad no representa necesariamente la calidad, pero al menos consultó esas fuentes.</p>
+<p>(14:36) El plan de negocio organiza la recuperación cuando los retrasos afectan una ruta de servicios, muy parecido al anterior. El público objetivo son dueños que también coordinan las operaciones de empresas de servicios recurrentes con 2 a 20 empleados. La ventaja son los resultados de recuperación, reglas mantenidas y soporte responsable. Espero que el sitio no sea tan bonito, pero que sea funcional.</p>
+<p>(14:56) Bien, esto es increíblemente feo; es tan malo que dan ganas de cerrar los ojos o entrecerrarlos. Creo que la primera imagen intenta mostrar un diagrama del modelo de negocio. Puedo decir sin problema que Astra es mucho mejor para crear sitios y generar rápidamente este tipo de sitio de ChatGPT.</p>
+<p>(15:17) Pero la pregunta real es: ¿se podría usar una skill que creara un sitio bonito, con el espaciado adecuado, y seguir usando Sol High o Medium? Por el experimento y por mi uso diario, me encanta Astra Medium en Fast. Es mi configuración favorita entre las versiones de los modelos de Codex. Es rápida.</p>
+<p>(15:37) No consume tokens a un ritmo alarmante y es bastante eficiente. En este experimento encontré lo mismo: el sitio, la estructura, el plan de negocio, el modelo de negocio y el tablero parecían muy similares entre Medium y High.</p>
+<p>(15:53) Si quieres un poco más de calidad, puedes usar High y gastar algunos tokens adicionales. Pero, para la mayoría de las tareas diarias, si quieres Astra —aunque no deberías usarlo para todo—, Medium es más que suficiente. Espero que esto te ayude a entender qué nivel de esfuerzo puede servirte.</p>
+<p>(16:12) Según esta prueba y otras que hice, veo pocos casos en los que Max, Extra High o Ultra valgan el tiempo, el esfuerzo o los tokens adicionales. Hice muchas otras pruebas y documenté hallazgos, información adicional y consejos sobre cuándo usar distintos niveles para ciertos tipos de tareas.</p>
+<p>(16:34) Voy a poner esto a tu disposición en el segundo enlace de la descripción. Puedes descargarlo gratis, dárselo a Codex o Claude y pedirle una explicación. Y, como siempre, si quieres estar al día en IA, especialmente en su aplicación práctica en el trabajo, en los negocios, para aprender o ganar dinero, revisa el primer enlace de abajo.</p>
+<p>(16:57) Profundizo bastante en temas como este en la comunidad Early AI Dopters. Si te gustó y te pareció útil, agradecería que le dieras Me gusta al video —ayuda a que llegue a más personas— y que dejaras un comentario, si quieres. Nos vemos en el próximo.</p></main><footer><a href="../">Volver a la biblioteca</a> · <a href="https://inema.club">INEMA.CLUB</a></footer><script>(function(){
+const key='astra-effort-theme',body=document.body,t=document.getElementById('themeToggle');
+let saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+if(saved==='light')body.classList.add('light');
+function label(){const light=body.classList.contains('light');t.textContent=light?'🌙':'☀️';t.setAttribute('aria-label',light?'Ativar tema escuro':'Ativar tema claro');t.setAttribute('aria-pressed',String(light));}label();
+t.addEventListener('click',()=>{body.classList.toggle('light');label();try{localStorage.setItem(key,body.classList.contains('light')?'light':'dark')}catch(e){}});
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).textContent;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='Prompt copiado. Cole no seu assistente e complete os campos.'}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById(button.dataset.copy));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Selecionei o prompt. Use Ctrl+C ou o comando Copiar do seu dispositivo.'}}));
+})();</script></body></html>

@@ -1,0 +1,323 @@
+{
+  "repository": "https://github.com/earlyaidopters/gumroad-resources",
+  "resource_path": "resources/gpt-6-astra-effort-super-guide",
+  "commit": "ecfbc2cc3d212672404d346043e47e492fb30198",
+  "imported_on": "2026-09-10",
+  "files": [
+    {
+      "path": "Astra-Effort-Super-Guide.pdf",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/Astra-Effort-Super-Guide.pdf",
+      "git_blob_sha": "8a39370214ebe840f1ce2ac4c5355f558098b008",
+      "sha256": "85ec37f50e79f53315626616425e98b3d360e338026a32cc1aef810c8478fa21",
+      "bytes": 2182542
+    },
+    {
+      "path": "MANIFEST.json",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/MANIFEST.json",
+      "git_blob_sha": "0cf5ca99fd6a2de934cd7a2c25d06a54c91fb8f4",
+      "sha256": "d961a96ab9c1d2a6fba0f604a39bacc1a2297bfa7655be2db0f9dc7c6a6bda3e",
+      "bytes": 6054
+    },
+    {
+      "path": "PROMPTS.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/PROMPTS.md",
+      "git_blob_sha": "c94c7fde1768bc08624721d7e919ea4053f7ef02",
+      "sha256": "a7e2cc85667261ea18a3659fc033d4bbb87fce098b48dc7730bc318040412256",
+      "bytes": 7460
+    },
+    {
+      "path": "SOURCE-NOTES.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/SOURCE-NOTES.md",
+      "git_blob_sha": "45ba6ec3066a93b557dfe20bf18884533d83f013",
+      "sha256": "12d448755b6731929c5d727d73916b2c0fc24a871d56de5ed4296b7d8b8888a4",
+      "bytes": 10547
+    },
+    {
+      "path": "START-HERE.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/START-HERE.md",
+      "git_blob_sha": "8f87ad205706bbf5a666c67eac746d73e1640c9c",
+      "sha256": "1cd5701766db871c5ee51968591f03b87a3edce5a8cb31b233de4b4181e5ec7b",
+      "bytes": 1901
+    },
+    {
+      "path": "SUPER-GUIDE.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/SUPER-GUIDE.md",
+      "git_blob_sha": "ddc1fce8c02d4365e762665ed1253716ed8c61fa",
+      "sha256": "3a2240ae97e6ce487a325e314ba2c8d5d4e32f686585aad1daefdfcbda44e0e2",
+      "bytes": 30028
+    },
+    {
+      "path": "canvases/high-fieldwork.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/high-fieldwork.excalidraw",
+      "git_blob_sha": "a153f499afd4da70cde9509e7dcf861964a79b4a",
+      "sha256": "47e31680800718d2a424009961beb32ceea07e7ee10777b3b53d94ed600f7fa0",
+      "bytes": 703296
+    },
+    {
+      "path": "canvases/low-clearshift.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/low-clearshift.excalidraw",
+      "git_blob_sha": "8e734114273d7798dab695656e98012e15437a02",
+      "sha256": "51462c77ae6d6f4d180d0ee5ceac55ecbb24f288725297b023ba1bb2ef88b5f0",
+      "bytes": 525092
+    },
+    {
+      "path": "canvases/max-fieldnote.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/max-fieldnote.excalidraw",
+      "git_blob_sha": "bc900076fb2b4c97540bb991531fdde8ddc25101",
+      "sha256": "8c41e68b5ca6f4c96db48f7e427dbe5b6ba095192c1939b3550fa0f547c732cf",
+      "bytes": 537960
+    },
+    {
+      "path": "canvases/medium-scopewell.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/medium-scopewell.excalidraw",
+      "git_blob_sha": "79253eb99d2685f1ebea06bb494d43c9daf4ec89",
+      "sha256": "eab87bf0648d80a1bc043eb5c94133a66924eb7db6bda275a169f47cc929d43f",
+      "bytes": 124458
+    },
+    {
+      "path": "canvases/sol-relayops.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/sol-relayops.excalidraw",
+      "git_blob_sha": "fb1af49c6c5158451ec230747f9f0987714b079b",
+      "sha256": "5110f3f87c6eb01d6af3f858dc5d3b79916c098c323692466f38d743ab1914fc",
+      "bytes": 178719
+    },
+    {
+      "path": "canvases/ultra-accord.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/ultra-accord.excalidraw",
+      "git_blob_sha": "1959481c88a074b5b2c5f9d087fc345ad7d0c082",
+      "sha256": "77dac5fea6843c62a0af84fc8443673d13c92c022e3fe1b4602b4d1e951920b7",
+      "bytes": 540405
+    },
+    {
+      "path": "canvases/xhigh-scopekeep.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/canvases/xhigh-scopekeep.excalidraw",
+      "git_blob_sha": "c455fe39efcd83c0cadcd7e61db0be820645c2ad",
+      "sha256": "5dce1c14ff922fc30640abae2da11d19bcca68a9c473f549ea2754793cb94779",
+      "bytes": 111525
+    },
+    {
+      "path": "evidence/BONUS-ARITHMETIC-DEMO.json",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/BONUS-ARITHMETIC-DEMO.json",
+      "git_blob_sha": "d0a0e8e39471b50bef873dccda53e0ca3800233a",
+      "sha256": "dab5c231b3d66232a910279fd27258de6ab6673bb3dce37106b3d1a31e4ed131",
+      "bytes": 875
+    },
+    {
+      "path": "evidence/BONUS-ARITHMETIC-DEMO.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/BONUS-ARITHMETIC-DEMO.md",
+      "git_blob_sha": "213a498511046b913d90672e34a7f09722b8abd0",
+      "sha256": "3a9dc525efa2f007514f5317b36de3528748060dc670dfba4eb3e9b216cc1787",
+      "bytes": 1055
+    },
+    {
+      "path": "evidence/PRODUCER-CHECKS.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/PRODUCER-CHECKS.md",
+      "git_blob_sha": "e9db1501d3311a614f74a1d63f04cf2cb233c4fa",
+      "sha256": "db4518a5fa3bf9a18bd5d44be0ae5eb1fd7f5d636aa5aaad51a3e057d4eed91b",
+      "bytes": 8003
+    },
+    {
+      "path": "evidence/high-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/high-scorecard.png",
+      "git_blob_sha": "98d5aa41db6cee135d7b51a62fef41068b86e6eb",
+      "sha256": "a7832dca7100074bda516982b87d21aded3b45df24bbe8cea7122cb216d67a33",
+      "bytes": 276087
+    },
+    {
+      "path": "evidence/low-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/low-scorecard.png",
+      "git_blob_sha": "7fd8a618e39a1c8f853d8a193f755316b6cbb5e6",
+      "sha256": "9c3c45eae842e697e3db3a3c6928d5ca201d77ad32b0ddeee069e4110c7df0e9",
+      "bytes": 265545
+    },
+    {
+      "path": "evidence/max-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/max-scorecard.png",
+      "git_blob_sha": "d6df1a864e39e6d9ef358886c4d060a95ce20aef",
+      "sha256": "f94f29ce91ee9cc75c37682479f1b51c4f9a356208dedbaefb90a315c0c60e0a",
+      "bytes": 309517
+    },
+    {
+      "path": "evidence/medium-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/medium-scorecard.png",
+      "git_blob_sha": "64024d57c901c1983c78e278bfab4a7df50f62ab",
+      "sha256": "81f7c38903272ebd7dbd84c7694ea273da989e859971cbbc223232ed12e58e81",
+      "bytes": 287956
+    },
+    {
+      "path": "evidence/results.csv",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/results.csv",
+      "git_blob_sha": "23bffb35a209711bc1b55a930349b0027b865123",
+      "sha256": "5eeba146915ddca0c2aeee3fde83cee83d5ffa464b7c9b436c07deaee6f88890",
+      "bytes": 4347
+    },
+    {
+      "path": "evidence/results.json",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/results.json",
+      "git_blob_sha": "51ab104319eb5785c3669be9525a7d3397614ef3",
+      "sha256": "aa86c638967259ee2515056f80659c4a1bed3a7e52777d64b88841ed8f396fcc",
+      "bytes": 7114
+    },
+    {
+      "path": "evidence/sol-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/sol-scorecard.png",
+      "git_blob_sha": "949b90285abb25113a51c0e769fd799627023cea",
+      "sha256": "15124827b6e7c644c236d841c1fd36ac4c4d9677e8890a37db77057f026d1203",
+      "bytes": 257587
+    },
+    {
+      "path": "evidence/ultra-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/ultra-scorecard.png",
+      "git_blob_sha": "a77a6bfbbe6a2123f794a5a0beb412703f931b0f",
+      "sha256": "c018a1a59d6d50c88f4218e0b99d44b1a81dee085972b47ce703a19e7cc1b893",
+      "bytes": 275676
+    },
+    {
+      "path": "evidence/xhigh-scorecard.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/evidence/xhigh-scorecard.png",
+      "git_blob_sha": "9e3f00a2ef49344e8e5e7cf7840c584a9c85bc78",
+      "sha256": "68a4fc35342c26da5dc56b163199b9309c66bbe6f6098f2afa172ea29b47c185",
+      "bytes": 287230
+    },
+    {
+      "path": "experiment/ASSIGNMENT.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/experiment/ASSIGNMENT.txt",
+      "git_blob_sha": "6472f0d7c8068b6cf0358e3637729778a6c9029d",
+      "sha256": "45d564de3d8ab0e132c8079750d55ead222cfbf8436785bf5adf81a187b94148",
+      "bytes": 2444
+    },
+    {
+      "path": "experiment/Assignment.png",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/experiment/Assignment.png",
+      "git_blob_sha": "2b4f0f9df963824345d650483ed95c40effe5410",
+      "sha256": "ad244d7e311d000d1547704e811ec86e397357cdf4545ffea8f5aff2be2cc7e1",
+      "bytes": 295999
+    },
+    {
+      "path": "experiment/Astra-Context-Board.excalidraw",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/experiment/Astra-Context-Board.excalidraw",
+      "git_blob_sha": "f9e989734867fec39c2c1537219eec9b7ec8a55b",
+      "sha256": "148a5db5cd05cffb0294a5b926d00e9e3d087cfe95a96d2d816c625797b4a8d1",
+      "bytes": 48642
+    },
+    {
+      "path": "experiment/EXECUTION-CONDITIONS.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/experiment/EXECUTION-CONDITIONS.txt",
+      "git_blob_sha": "8a05f3212a83433efe11c3e22ed9516165d65588",
+      "sha256": "7b63c1e5d0f1c987caafe8ae7b2fa799028072767011d3a3a1d517dbc33d224e",
+      "bytes": 909
+    },
+    {
+      "path": "experiment/YOUR-RUN-LOG.csv",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/experiment/YOUR-RUN-LOG.csv",
+      "git_blob_sha": "46ff74dbb9dea98a776b049327fc66f9fe6761e1",
+      "sha256": "c075fac66e5696273e0ee4ec5b1fe8caf920be60a67fd3710e2ddd668966b647",
+      "bytes": 220
+    },
+    {
+      "path": "files/Astra-Effort-Super-Guide.pdf",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/files/Astra-Effort-Super-Guide.pdf",
+      "git_blob_sha": "8a39370214ebe840f1ce2ac4c5355f558098b008",
+      "sha256": "85ec37f50e79f53315626616425e98b3d360e338026a32cc1aef810c8478fa21",
+      "bytes": 2182542
+    },
+    {
+      "path": "files/Astra-Super-Guide.zip",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/files/Astra-Super-Guide.zip",
+      "git_blob_sha": "6ae4dacc58e6053bfe3938f5a4ac2f33256960d1",
+      "sha256": "bf842baa8ddda198082cee05ce24fe863f4bc2903ef5eee7ed5b25a811423f9a",
+      "bytes": 4895609
+    },
+    {
+      "path": "prompts/01-personal-effort-picker.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/01-personal-effort-picker.txt",
+      "git_blob_sha": "5c2aa4661a8b4347533ca79cc1c24438e1595d66",
+      "sha256": "bdd3b6d77484b73377a50a526eaa066933ed7bcb301be91758176a4e2eb021a2",
+      "bytes": 752
+    },
+    {
+      "path": "prompts/02-three-thread-comparison.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/02-three-thread-comparison.txt",
+      "git_blob_sha": "6b6b5dc5518bd027b49e59225cdd583c04b1ef17",
+      "sha256": "b1a32b1d47d35a723c45969715c0744e5d07c104f08dbaa96491743e6c9ef076",
+      "bytes": 999
+    },
+    {
+      "path": "prompts/03-follow-through-contract.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/03-follow-through-contract.txt",
+      "git_blob_sha": "6b9ef9feaeb93123fd02210bea5b84244e35eeea",
+      "sha256": "5739a5a509ca8954c2d60585f24deb85dac50210e019f10ec465a706a1d415b8",
+      "bytes": 706
+    },
+    {
+      "path": "prompts/04-causal-ui-check.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/04-causal-ui-check.txt",
+      "git_blob_sha": "eb37521e5383dc82c5fa87bf563ba0fc0c3ab3fc",
+      "sha256": "8d2e734d7c29a3539a06148263e670f90e0ef19c03fc9a5321d12dbfbc04ea58",
+      "bytes": 706
+    },
+    {
+      "path": "prompts/05-research-counterexample.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/05-research-counterexample.txt",
+      "git_blob_sha": "3e69c02d112988158410c91d82b450b2aa02311f",
+      "sha256": "c17f42048a9ebdae983285681f62524888be9df70c0961b0fe6581146bd4c77b",
+      "bytes": 686
+    },
+    {
+      "path": "prompts/06-moat-stress-test.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/06-moat-stress-test.txt",
+      "git_blob_sha": "87763a71367180ae22bb27ae10461f3f1d99dc13",
+      "sha256": "17c0721c575cb59819ca1844140ef0d87ef4b93726bac456d75672d55bc8e816",
+      "bytes": 613
+    },
+    {
+      "path": "prompts/07-bound-delegation.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/07-bound-delegation.txt",
+      "git_blob_sha": "d9e0fbbc99256a76684faf5db93810df85fdcd3b",
+      "sha256": "f49116e4073d1f6708a91604d7f87fe1dcb5d11f0ac574296f8e58b5de623a56",
+      "bytes": 641
+    },
+    {
+      "path": "prompts/08-escalate-one-failure.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/08-escalate-one-failure.txt",
+      "git_blob_sha": "737fcd87eaba85a6ac4c4287345f36162b509afc",
+      "sha256": "fccdd4eef42b5d3efd6e0022ce1f969d6645a8c37ebc4de6dcc50d71c773dfa4",
+      "bytes": 537
+    },
+    {
+      "path": "prompts/09-review-usage-correctly.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/09-review-usage-correctly.txt",
+      "git_blob_sha": "ae92cab5ec7e8a863a322d0962a1d74c6d675557",
+      "sha256": "41786a128a175aec7670240f82aaa3f9bf3fc6e599c1ef4744ab4cab23997fae",
+      "bytes": 629
+    },
+    {
+      "path": "prompts/10-evidence-first-grok-sidequest.txt",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/unpacked/Astra-Super-Guide/Astra-Super-Guide/prompts/10-evidence-first-grok-sidequest.txt",
+      "git_blob_sha": "e37acdfd00499729dcdf136c77323ea418285914",
+      "sha256": "eceb58d94516ffa7ed9e5c9a5420348450288ee09451158e91d2444453ee0e8e",
+      "bytes": 632
+    },
+    {
+      "path": "source/README.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/README.md",
+      "git_blob_sha": "1e475fc679acc0b819a8c96fa20e5ae2a1f5f8f9",
+      "sha256": "5de36c93e5ec66863d30c46480e2071d46c23f826e34fb9b3c9c2d312258be3f",
+      "bytes": 1992
+    },
+    {
+      "path": "source/content.md",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/content.md",
+      "git_blob_sha": "354cceae3d4a08983657eee685b6d6c39f0deb9c",
+      "sha256": "fa6ee09468e847644c936f46748bca967bea1b88d824d64b4df1087f2ed6b4f4",
+      "bytes": 642
+    },
+    {
+      "path": "source/meta.json",
+      "source_path": "resources/gpt-6-astra-effort-super-guide/meta.json",
+      "git_blob_sha": "429d6f5e279d8d3ca6a5addcd12d311ba0c5dfa5",
+      "sha256": "e353b86f74382d6df98d32ccfb4e53d4ebfd5f99850072f84ff49fb5f3393b20",
+      "bytes": 2145
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Verificaciones del productor — Astra Effort</title><meta content="Verificaciones del productor del kit Astra Effort en portugués." name="description"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/><style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-bottom:26px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+
+/* Ajustes de leitura, acessibilidade e navegação no celular. */
+:root{--focus:#f0c070}body.light{--focus:#775013;--amb:#85520d}
+body.light nav{background:var(--bg)}
+body.light .btn:not(.ghost),body.light .step .b{color:#fff}
+nav .wrap{gap:14px}nav .links{gap:14px}nav .brand{white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+section,header{scroll-margin-top:85px}.skip{position:fixed;left:16px;top:-80px;z-index:100;padding:12px;background:var(--bg)}.skip:focus{top:8px}
+.hero .wrap{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px;gap:30px}
+.hero p.lead{max-width:65ch}.hero figure{box-shadow:none}.hero figure img{height:auto;aspect-ratio:1672/941;object-fit:contain}
+.hero .cta{margin-top:24px}.hero h1{max-width:22ch}
+.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:.94rem}th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}th{font-family:Sora;font-weight:600;background:var(--bg2)}tbody tr:last-child td{border-bottom:0}tr.featured{background:var(--bg2)}tr.featured td:first-child{color:var(--amb);font-weight:600}caption{text-align:left;padding:16px;color:var(--mut)}
+.resource-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;padding:0;list-style:none}.resource-list li{padding:20px 0;border-bottom:1px solid var(--line)}.resource-list a{font-weight:600}.resource-list p{color:var(--mut);margin:4px 0 0;font-size:.93rem}
+.copy{font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px 14px;color:var(--txt);background:var(--bg2);cursor:pointer}.copy:hover{border-color:var(--amb)}
+.note{color:var(--mut);max-width:75ch;font-size:.93rem}.step>div{min-width:0}pre{white-space:pre-wrap;overflow-wrap:anywhere}pre .c{color:var(--mut)}
+.notice{min-height:1.7em;color:var(--amb)}
+@media(max-width:980px){nav .links a.sec{display:none}}
+@media(max-width:600px){nav .wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:8px 12px;padding-top:10px;padding-bottom:10px}nav .links{margin-left:auto}nav .brand{font-size:.92rem}nav .btn{font-size:.8rem;padding:.55em .7em}.resource-list{grid-template-columns:1fr}.hero .wrap{padding-top:34px}.step{grid-template-columns:34px 1fr;gap:12px}.step .b{width:34px;height:34px;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.reader{max-width:78ch;padding:40px 22px 70px;margin:auto;overflow-wrap:anywhere}.reader h1{font-size:clamp(2rem,4vw,3rem);margin:28px 0}.reader h2{font-size:1.7rem;margin:2.6em 0 .7em;scroll-margin-top:100px}.reader h3{margin:1.8em 0 .6em}.reader p,.reader li{line-height:1.85}.reader a{text-decoration:underline;text-underline-offset:3px}.reader table{display:block;overflow:auto;font-size:.88rem}.reader pre{white-space:pre-wrap;line-height:1.7}.toc{background:var(--bg2);padding:20px 24px;border:1px solid var(--line);border-radius:12px}.toc ul{padding-left:20px}.reader .back{font-family:Sora;font-size:.9rem}.reader details{margin:28px 0}.reader summary{cursor:pointer;font-weight:600}.reader blockquote{margin-left:0;padding:4px 20px;border-left:1px solid var(--amb)}
+@media print{nav,.skip,.back,.toc,footer,.reader>details{display:none}body,body.light{background:#fff!important;color:#111!important;font-size:10pt;color-scheme:light}.reader{max-width:none;padding:0}.reader h1{font-size:26pt}.reader h2{font-size:17pt;break-after:avoid}.reader h3{break-after:avoid}.reader pre{background:#f4f4f4!important;color:#111!important;border-color:#ddd;font-size:8pt;break-inside:auto}.reader a{color:#333}.reader table{display:table;font-size:8pt}.reader th,.reader td{white-space:normal;color:#111;border-color:#ddd;padding:7px;background:#fff}.reader tr{break-inside:avoid}a[href]:after{content:none}}
+</style><link href="https://inematds.github.io/astra-effort/guia/revisao.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/en/revisao.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/es/revisao.html" hreflang="es" rel="alternate"/></head><body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../revisao.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/revisao.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./revisao.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div><a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal"><div class="wrap">
+<a class="brand" href="../"><span aria-hidden="true" class="emoji">🎛️</span> Astra Effort</a><span aria-hidden="true" class="sep">|</span>
+<span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span aria-hidden="true" class="sep">-</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span>
+<div class="links"><a class="sec" href="../#resultados">Resultados</a><a class="sec" href="../#guia">Cómo usar</a><a class="sec" href="../#materiais">Materiales</a><button aria-label="Activar tema claro" class="tgl" id="themeToggle" title="Cambiar tema">☀️</button><a class="btn" href="https://github.com/inematds/astra-effort" rel="noopener" target="_blank">GitHub</a></div></div></nav><main class="reader" id="conteudo"><a class="back" href="../">← Biblioteca Astra Effort</a><details><summary>En esta página</summary><div class="toc">
+<ul>
+<li><a href="#revisao-do-produtor-primeiras-tentativas">Revisión del productor — primeros intentos</a><ul>
+<li><a href="#medicao">Medición</a></li>
+<li><a href="#low-astra-clearshift">LOW · Astra / Clearshift</a></li>
+<li><a href="#med-astra-scopewell">MED · Astra / Scopewell</a></li>
+<li><a href="#high-astra-fieldwork">HIGH · Astra / Fieldwork</a></li>
+<li><a href="#xhigh-astra-scopekeep">XHIGH · Astra / Scopekeep</a></li>
+<li><a href="#max-astra-fieldnote">MAX · Astra / Fieldnote</a></li>
+<li><a href="#high-sol-relayops">HIGH · Sol / RelayOps</a></li>
+<li><a href="#ultra-astra-accord">ULTRA · Astra / Accord</a></li>
+<li><a href="#como-interpretar-a-recomendacao">Cómo interpretar la recomendación</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="revisao-do-produtor-primeiras-tentativas">Revisión del productor — primeros intentos</h1>
+<p>La revisión terminó el 7 de septiembre de 2026, hora de Toronto (8 de septiembre en UTC). Los siete primeros intentos se congelaron antes de las pruebas del productor. No se enviaron correcciones ni orientaciones a los participantes. Los archivos fuente originales no se editaron. Los servidores se reiniciaron para la revisión; varias inicializaciones simultáneas chocaron en los puertos de inspección y luego funcionaron en secuencia. El tiempo de reinicio no se incluye en la duración de los participantes.</p>
+<p>Esta es la traducción de la revisión histórica, no una nueva ejecución de las pruebas. La versión en inglés está en <a href="../original-en/evidence/PRODUCER-CHECKS.md">../original-en/evidence/PRODUCER-CHECKS.md</a>.</p>
+<h2 id="medicao">Medición</h2>
+<p><strong>Tiempo:</strong> el primero <code>task_complete.duration_ms</code> de cada tarea, redondeado al segundo más cercano. Incluye la espera de herramientas, la investigación y la construcción, no solo la generación del modelo. Las siete ejecuciones se realizaron simultáneamente en la misma máquina; compara las ejecuciones observadas, no una velocidad universal.</p>
+<p><strong>Tokens:</strong> <code>total_token_usage</code> acumulado final en la primera conclusión, conciliado de forma independiente con la suma de <code>last_token_usage</code> de las distintas actualizaciones acumuladas. Las siete concuerdan. <code>total = input + output</code>; <code>reasoning_output</code> es un subconjunto de <code>output</code>, e <code>cached_input</code> es un subconjunto de <code>input</code>. No sumes ninguno dos veces. Ultra incluye el principal y tres totales de tareas hijas, cada uno limitado al momento en que finaliza el principal. Los contadores de las tareas hijas comienzan de forma independiente cerca de 30 mil, sin heredar el acumulado del principal. La suma es 21.730.368. Son tokens procesados, en su mayoría entrada en caché o reutilizada, no contexto nuevo, créditos, dinero ni cargos.</p>
+<p><strong>Fuente primaria:</strong> <a href="../evidence/results.json">results.json</a>; se conservaron los hashes de las sesiones de origen. Las cantidades exactas y los enlaces sin procesar y normalizados están en ese archivo. XHIGH contiene ocho URL de publicaciones o conversaciones, pero solo siete conversaciones: el segundo estado de X es una respuesta del autor en la misma conversación. Las demás coinciden con el recuento de conversaciones identificado en el registro. Se volvió a abrir una fuente original de Reddit de Low y Medium; la fuente de Medium realmente describe habitaciones, escaleras y conductos adicionales fuera del alcance acordado. Las cantidades miden la extensión del registro de investigación, no una demanda de compra validada.</p>
+<p><strong>Cuadros:</strong> elementos nativos activos y no excluidos de Excalidraw. Las imágenes incorporadas se contaron en los archivos; los dibujos y las formas no cuentan como imágenes incorporadas. Los siete JSON de los tableros son válidos; se leyeron sus textos para comprobar las seis zonas exigidas y las conexiones entre evidencias, decisiones de producto, recorrido, pantallas, arquitectura y MVP. Sol separa la dirección visual como una zona adicional y no incorpora imágenes rasterizadas. Los conteos son descriptivos, no calificaciones de calidad.</p>
+<h2 id="low-astra-clearshift">LOW · Astra / Clearshift</h2>
+<p>En el navegador, el productor abrió CS-1042, editó la instrucción de corrección, guardó la asignación y cargó una nueva verificación de ejemplo. El cierre quedó deshabilitado hasta comprobar el patrón señalado. Tras completarlo y recargar, el panel mostró Open 2 y Closed 1. Aprobado en este flujo de corrección, nueva verificación y guardado.</p>
+<p>Ocho conversaciones en Reddit; ninguna en X. El tablero tiene 161 elementos y tres capturas reales de la aplicación. El flujo delimitado del dueño es coherente, con alternativas explícitas y una ventaja de servicio/datos propuesta. Más tiempo y tokens procesados registrados que Medium, a pesar del menor esfuerzo.</p>
+<h2 id="med-astra-scopewell">MED · Astra / Scopewell</h2>
+<p>En el navegador, en una verificación anterior que se conservó, el productor cambió la mano de obra de 45 a 60 minutos; la propuesta mensual pasó de $164 a $212. Preparó la propuesta, registró una aceptación ficticia y recargó: se conservó un cambio registrado y $212 en adicionales. Aprobado en cambio de precio, aprobación y persistencia.</p>
+<p>Seis conversaciones en Reddit; ninguna en X. El cuadro tiene 133 elementos y un boceto de interfaz incorporado. Evidencias contrarias detalladas, un competidor de pago establecido, utilidad desde el primer día y un plan de refutación. Es el cuadro con menos elementos, no el de mayor profundidad visual. Menor tiempo de finalización registrado y menos tokens procesados que Low y High. El autor lo recomienda como punto de partida para esta tarea de investigación y construcción porque ofreció suficiente funcionalidad verificada en menos tiempo.</p>
+<h2 id="high-astra-fieldwork">HIGH · Astra / Fieldwork</h2>
+<p>En el navegador, el productor marcó Cedar como no disponible. Redujo la hora máxima de finalización de Emma a 10:00, lo que produjo “No feasible cover”. Restauró las 12:00 y eligió Elm 09:00–11:00 y Birch 14:15–16:15. Revisó los dos borradores modificados y los guardó. Tras recargar, Cedar quedó vacío, Emma en Elm y Priya en Birch; las otras cuatro visitas no cambiaron. Aprobado en validación de restricciones, redistribución y persistencia.</p>
+<p>Siete fuentes de Reddit y una de X. El cuadro tiene 186 elementos y tres capturas de la aplicación. Un problema de programación más profundo que un formulario simple; los horarios condicionales reales y un estado sin solución viable aportan profundidad relevante. Margen fijo para desplazamientos, sin optimización de rutas en tiempo real.</p>
+<h2 id="xhigh-astra-scopekeep">XHIGH · Astra / Scopekeep</h2>
+<p>En el navegador, el productor cambió la tarifa de mano de obra de $95 a $110 por tres horas; el total pasó a $530. Usó una respuesta ficticia, registró la aprobación y preparó la facturación. Tras recargar, había una línea de $530 lista para facturar, en la revisión 1. Aprobado en recálculo, aprobación, facturación y persistencia.</p>
+<p>Seis conversaciones en Reddit y una en X, después de quitar la respuesta duplicada. Cuadro con 155 elementos y un visual incorporado. Contraejemplo contundente: un dueño de una empresa de techado dice que Grok y el software abierto Slowbooks ya generan solicitudes de cambio de servicio; esto cuestiona directamente el negocio propuesto. El intento del productor de acceder a X falló, así que la fuente sigue identificada como leída por el participante, sin una nueva verificación independiente en esta revisión. Es una distinción editorial sobre la profundidad del negocio, no una clasificación factual universal.</p>
+<h2 id="max-astra-fieldnote">MAX · Astra / Fieldnote</h2>
+<p>En el navegador, el productor cambió la mano de obra a $275,25 y los materiales a $84,75. La vista previa mostró exactamente $360. La aprobación simulada se conservó tras recargar; los adicionales aprobados de Morgan pasaron a $840 y el total del servicio a $25.640. Aprobado en precio exacto, aprobación y persistencia.</p>
+<p>Siete fuentes de Reddit, ninguna de X. Cuadro con 155 elementos nativos y tres capturas de la aplicación. El modelo creado incluye validación de transiciones de estado, centavos exactos y eliminación de la aprobación anterior en las revisiones rechazadas. El participante detectó que Escape cerraba el cuadro, lo corrigió y volvió a probarlo. El evento de descarga no fue verificado por el participante; existe una alternativa de exportación seleccionable. Mayor duración registrada, 46:10, por encima del límite autogestionado de 45 minutos, incluido el empaquetado.</p>
+<h2 id="high-sol-relayops">HIGH · Sol / RelayOps</h2>
+<p>En el navegador, el productor seleccionó “Split with Crew 1” (11 minutos adicionales de desplazamiento) y luego “Prepare updates”. El resumen todavía decía “Move Fernbank” y “Brief Crew 2”, correspondientes a la opción de compresión. Ingresó un mensaje personalizado para el cliente y simuló las actualizaciones; el resultado mostró valores fijos de 0 minutos de desplazamiento y 3/3 compromisos. Al recargar, se conservó el estado resuelto.</p>
+<p>Resultado parcial: la progresión entre etapas y la persistencia funcionaron; el plan seleccionado no determina el resumen ni la salida posterior. Se confirmaron los JSX de cambio y resultado con valores fijos en <code>app/page.tsx</code>, líneas 115 y 118. La instrucción histórica era no corregir antes de filmar.</p>
+<p>Seis enlaces de Reddit y dos de X. Cuadro con 215 elementos, diagramas vectoriales de pantallas y ninguna imagen incorporada. El breve registro de investigación, con 369 palabras, cuenta con respaldo en el contenido de la aplicación y el cuadro; no uses solo el tamaño del archivo para clasificar la profundidad. Menor total de tokens procesados, segundo menor tiempo. La conexión más débil entre la decisión y la salida entre las rutas verificadas.</p>
+<h2 id="ultra-astra-accord">ULTRA · Astra / Accord</h2>
+<p>En el navegador, el productor creó un nuevo cambio personalizado para el acabado de una despensa: 2 horas a $85 más $30 dieron como resultado $200. Creó una solicitud pendiente; la aprobación quedó deshabilitada hasta ingresar una nota. Ingresó una aprobación ficticia y la registró; tras recargar, el título, el alcance, los $200 y la nota de aprobación se conservaron sin cambios. Aprobado en nuevo registro, cálculo, aprobación y persistencia.</p>
+<p>Siete conversaciones en Reddit y dos en X. Cuadro con 240 elementos, dos imágenes incorporadas y seis zonas principales. Tres subagentes Ultra investigaron Reddit, X y las alternativas; luego, especialistas en investigación y alternativas auditaron la implementación y los casos numéricos extremos. El análisis de los competidores incluyó solicitudes de cambio limitadas a facturas en Joist y el comportamiento de nueva aprobación en Jobber, más allá de las afirmaciones de marketing. La mejor aplicación en este caso para delegar frentes separados de investigación y verificación; procesó más trabajo que Medium, sin un equipo de modelos más baratos. El total incluye 7,12 millones de tokens de los agentes secundarios.</p>
+<h2 id="como-interpretar-a-recomendacao">Cómo interpretar la recomendación</h2>
+<p>Elige una configuración inicial para una tarea acotada de investigación y prototipado. Medium: menor tiempo observado con una ruta funcional verificada por el productor y un plan conectado adecuado. High: siguiente prueba útil cuando hay restricciones que interactúan. Ultra: experimento independiente de delegación, con investigación especializada más profunda. Sol: menor uso de procesamiento, pero un fallo concreto en la salida condicional.</p>
+<p>No hay una clasificación universal de modelos ni conclusiones sobre precios. Ningún participante necesitó un recordatorio del productor para devolver los artefactos; esto no demuestra que todas las tareas estén libres de interrupciones tempranas.</p></main><footer><a href="../">Volver a la biblioteca</a> · <a href="https://inema.club">INEMA.CLUB</a></footer><script>(function(){
+const key='astra-effort-theme',body=document.body,t=document.getElementById('themeToggle');
+let saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+if(saved==='light')body.classList.add('light');
+function label(){const light=body.classList.contains('light');t.textContent=light?'🌙':'☀️';t.setAttribute('aria-label',light?'Ativar tema escuro':'Ativar tema claro');t.setAttribute('aria-pressed',String(light));}label();
+t.addEventListener('click',()=>{body.classList.toggle('light');label();try{localStorage.setItem(key,body.classList.contains('light')?'light':'dark')}catch(e){}});
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).textContent;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='Prompt copiado. Cole no seu assistente e complete os campos.'}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById(button.dataset.copy));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Selecionei o prompt. Use Ctrl+C ou o comando Copiar do seu dispositivo.'}}));
+})();</script></body></html>

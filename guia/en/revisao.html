@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Creator’s checks — Astra Effort</title><meta content="Checks by the Astra Effort kit creator in Portuguese." name="description"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/><style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-bottom:26px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+
+/* Ajustes de leitura, acessibilidade e navegação no celular. */
+:root{--focus:#f0c070}body.light{--focus:#775013;--amb:#85520d}
+body.light nav{background:var(--bg)}
+body.light .btn:not(.ghost),body.light .step .b{color:#fff}
+nav .wrap{gap:14px}nav .links{gap:14px}nav .brand{white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+section,header{scroll-margin-top:85px}.skip{position:fixed;left:16px;top:-80px;z-index:100;padding:12px;background:var(--bg)}.skip:focus{top:8px}
+.hero .wrap{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px;gap:30px}
+.hero p.lead{max-width:65ch}.hero figure{box-shadow:none}.hero figure img{height:auto;aspect-ratio:1672/941;object-fit:contain}
+.hero .cta{margin-top:24px}.hero h1{max-width:22ch}
+.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:.94rem}th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}th{font-family:Sora;font-weight:600;background:var(--bg2)}tbody tr:last-child td{border-bottom:0}tr.featured{background:var(--bg2)}tr.featured td:first-child{color:var(--amb);font-weight:600}caption{text-align:left;padding:16px;color:var(--mut)}
+.resource-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;padding:0;list-style:none}.resource-list li{padding:20px 0;border-bottom:1px solid var(--line)}.resource-list a{font-weight:600}.resource-list p{color:var(--mut);margin:4px 0 0;font-size:.93rem}
+.copy{font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px 14px;color:var(--txt);background:var(--bg2);cursor:pointer}.copy:hover{border-color:var(--amb)}
+.note{color:var(--mut);max-width:75ch;font-size:.93rem}.step>div{min-width:0}pre{white-space:pre-wrap;overflow-wrap:anywhere}pre .c{color:var(--mut)}
+.notice{min-height:1.7em;color:var(--amb)}
+@media(max-width:980px){nav .links a.sec{display:none}}
+@media(max-width:600px){nav .wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:8px 12px;padding-top:10px;padding-bottom:10px}nav .links{margin-left:auto}nav .brand{font-size:.92rem}nav .btn{font-size:.8rem;padding:.55em .7em}.resource-list{grid-template-columns:1fr}.hero .wrap{padding-top:34px}.step{grid-template-columns:34px 1fr;gap:12px}.step .b{width:34px;height:34px;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.reader{max-width:78ch;padding:40px 22px 70px;margin:auto;overflow-wrap:anywhere}.reader h1{font-size:clamp(2rem,4vw,3rem);margin:28px 0}.reader h2{font-size:1.7rem;margin:2.6em 0 .7em;scroll-margin-top:100px}.reader h3{margin:1.8em 0 .6em}.reader p,.reader li{line-height:1.85}.reader a{text-decoration:underline;text-underline-offset:3px}.reader table{display:block;overflow:auto;font-size:.88rem}.reader pre{white-space:pre-wrap;line-height:1.7}.toc{background:var(--bg2);padding:20px 24px;border:1px solid var(--line);border-radius:12px}.toc ul{padding-left:20px}.reader .back{font-family:Sora;font-size:.9rem}.reader details{margin:28px 0}.reader summary{cursor:pointer;font-weight:600}.reader blockquote{margin-left:0;padding:4px 20px;border-left:1px solid var(--amb)}
+@media print{nav,.skip,.back,.toc,footer,.reader>details{display:none}body,body.light{background:#fff!important;color:#111!important;font-size:10pt;color-scheme:light}.reader{max-width:none;padding:0}.reader h1{font-size:26pt}.reader h2{font-size:17pt;break-after:avoid}.reader h3{break-after:avoid}.reader pre{background:#f4f4f4!important;color:#111!important;border-color:#ddd;font-size:8pt;break-inside:auto}.reader a{color:#333}.reader table{display:table;font-size:8pt}.reader th,.reader td{white-space:normal;color:#111;border-color:#ddd;padding:7px;background:#fff}.reader tr{break-inside:avoid}a[href]:after{content:none}}
+</style><link href="https://inematds.github.io/astra-effort/guia/revisao.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/en/revisao.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/es/revisao.html" hreflang="es" rel="alternate"/></head><body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../revisao.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./revisao.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/revisao.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div><a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation"><div class="wrap">
+<a class="brand" href="../"><span aria-hidden="true" class="emoji">🎛️</span> Astra Effort</a><span aria-hidden="true" class="sep">|</span>
+<span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span aria-hidden="true" class="sep">-</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span>
+<div class="links"><a class="sec" href="../#resultados">Results</a><a class="sec" href="../#guia">How to use</a><a class="sec" href="../#materiais">Materials</a><button aria-label="Enable light theme" class="tgl" id="themeToggle" title="Switch theme">☀️</button><a class="btn" href="https://github.com/inematds/astra-effort" rel="noopener" target="_blank">GitHub</a></div></div></nav><main class="reader" id="conteudo"><a class="back" href="../">← Astra Effort Library</a><details><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#revisao-do-produtor-primeiras-tentativas">Producer review — first attempts</a><ul>
+<li><a href="#medicao">Measurement</a></li>
+<li><a href="#low-astra-clearshift">LOW · Astra / Clearshift</a></li>
+<li><a href="#med-astra-scopewell">MED · Astra / Scopewell</a></li>
+<li><a href="#high-astra-fieldwork">HIGH · Astra / Fieldwork</a></li>
+<li><a href="#xhigh-astra-scopekeep">XHIGH · Astra / Scopekeep</a></li>
+<li><a href="#max-astra-fieldnote">MAX · Astra / Fieldnote</a></li>
+<li><a href="#high-sol-relayops">HIGH · Sol / RelayOps</a></li>
+<li><a href="#ultra-astra-accord">ULTRA · Astra / Accord</a></li>
+<li><a href="#como-interpretar-a-recomendacao">How to interpret the recommendation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="revisao-do-produtor-primeiras-tentativas">Producer review — first attempts</h1>
+<p>Review completed on September 7, 2026, Toronto time (September 8 in UTC). The first seven attempts were frozen before the producer's tests. No corrections or guidance were sent to participants. The original source files were not edited. Servers were restarted for the review; several simultaneous startups collided on inspection ports and then worked in sequence. Restart time is not included in participants' durations.</p>
+<p>This is a translation of the historical review, not a new test run. The English version is at <a href="../original-en/evidence/PRODUCER-CHECKS.md">../original-en/evidence/PRODUCER-CHECKS.md</a>.</p>
+<h2 id="medicao">Measurement</h2>
+<p><strong>Time:</strong> the first <code>task_complete.duration_ms</code> for each task, rounded to the nearest second. Includes time waiting for tools, research, and building, not just model generation. All seven runs took place simultaneously on the same machine; compare the observed runs, not universal speed.</p>
+<p><strong>Tokens:</strong> <code>total_token_usage</code> final accumulated total at the first completion, independently reconciled with the sum of <code>last_token_usage</code> of the distinct accumulated updates. The seven reconcile. <code>total = input + output</code>; <code>reasoning_output</code> is a subset of <code>output</code>, e <code>cached_input</code> is a subset of <code>input</code>. Do not count any of them twice. Ultra includes the main task and three child-task totals, each capped at the main task’s completion time. The child counters start independently at around 30,000, without inheriting the main task’s accumulated total. The sum is 21,730,368. These are processed tokens, mostly cached or reused input—not new context, credits, money, or charges.</p>
+<p><strong>Primary source:</strong> <a href="../evidence/results.json">results.json</a>; the source session hashes were preserved. Exact counts and raw/normalized links are in that file. XHIGH contains eight post or conversation URLs, but only seven conversations: the second X status is an author reply in the same conversation. The others match the conversation counts identified in the record. One original Reddit source for Low and Medium was reopened; the Medium source does describe additional rooms, stairs, and ducts outside the contract. The counts measure the extent of the research record, not validated purchase demand.</p>
+<p><strong>Boards:</strong> active, non-excluded native Excalidraw elements. Embedded images were counted in the files; drawings and shapes do not count as embedded images. All seven board JSONs are valid; their text was read to check the six required zones and connections among evidence, product decisions, journey, screens, architecture, and MVP. Sol treats visual direction as an additional zone and does not embed raster images. The counts are descriptive, not quality scores.</p>
+<h2 id="low-astra-clearshift">LOW · Astra / Clearshift</h2>
+<p>In the browser, the producer opened CS-1042, edited the correction instruction, saved the assignment, and loaded a new sample check. Closure remained disabled until the flagged pattern was reviewed. After completing the check and reloading, the dashboard showed Open 2 and Closed 1. Passed for this correction, new check, and save workflow.</p>
+<p>Eight Reddit conversations; none on X. The board has 161 elements and three real app screenshots. The owner’s bounded workflow is coherent, with explicit alternatives and a proposed service/data advantage. More time and recorded processed tokens than Medium, despite lower effort.</p>
+<h2 id="med-astra-scopewell">MED · Astra / Scopewell</h2>
+<p>In the browser, in a preserved earlier verification, the producer changed labor from 45 to 60 minutes; the monthly proposal went from $164 to $212. They prepared the proposal, recorded a fictional acceptance, and reloaded: one recorded change and $212 in add-ons persisted. Passed for price changes, approval, and persistence.</p>
+<p>Six Reddit conversations; none on X. The board has 133 elements and an embedded interface sketch. Detailed counterevidence, an established paid competitor, day-one utility, and a plan to disprove the idea. It has the fewest elements, not the greatest visual depth. Lowest recorded completion time and fewer tokens processed than Low and High. The author recommends it as a starting point for this research and build task because it delivered enough verified functionality sooner.</p>
+<h2 id="high-astra-fieldwork">HIGH · Astra / Fieldwork</h2>
+<p>In the browser, the producer marked Cedar unavailable. They reduced Emma’s latest finish time to 10:00, resulting in “No feasible cover”. They restored 12:00 and chose Elm 09:00–11:00 and Birch 14:15–16:15. They reviewed the two changed drafts and saved. After reloading, Cedar was empty, Emma was at Elm, and Priya was at Birch; four other visits were unchanged. Passed for constraint validation, reassignment, and persistence.</p>
+<p>Seven Reddit sources and one on X. The board has 186 elements and three app screenshots. A scheduling problem deeper than a simple form; real conditional times and an infeasible state provide meaningful depth. Fixed travel buffer, with no real-time route optimization.</p>
+<h2 id="xhigh-astra-scopekeep">XHIGH · Astra / Scopekeep</h2>
+<p>In the browser, the producer changed the labor rate from $95 to $110 for three hours; the total became $530. They used a fictional response, recorded approval, and prepared billing. After reloading, a $530 line was ready to bill, at revision 1. Passed for recalculation, approval, billing, and persistence.</p>
+<p>Six Reddit conversations and one on X, after removing the duplicate reply. Board with 155 elements and one embedded visual. Strong counterexample: a roofing business owner says Grok and the open-source software Slowbooks already produce service change requests; this directly challenges the proposed business. The producer's attempt to access X failed, so the source remains identified as read by the participant, with no independent re-verification in this review. This is an editorial distinction about business depth, not a universal factual ranking.</p>
+<h2 id="max-astra-fieldnote">MAX · Astra / Fieldnote</h2>
+<p>In the browser, the producer changed labor to $275,25 and materials to $84,75. The preview showed exactly $360. The simulated approval persisted after reloading; Morgan’s approved add-ons became $840 and the service total became $25.640. Passed for precise pricing, approval, and persistence.</p>
+<p>Seven Reddit sources, none on X. Board with 155 native elements and three app screenshots. The model created includes state transition validation, exact cents, and removal of the previous approval on rejected revisions. The participant noticed that Escape closed the board, fixed it, and tested again. The download event wasn't verified by the participant; a selectable export option is available. Longest recorded duration, 46:10, exceeding the self-managed 45-minute limit, including packaging.</p>
+<h2 id="high-sol-relayops">HIGH · Sol / RelayOps</h2>
+<p>In the browser, the producer selected “Split with Crew 1” (11 additional minutes of travel) and then “Prepare updates”. The summary still said “Move Fernbank” and “Brief Crew 2”, matching the compression option. They entered a custom message to the customer and simulated the updates; the result showed fixed values of 0 minutes of travel and 3/3 appointments. Reloading preserved the resolved state.</p>
+<p>Partial result: progression between steps and persistence worked; the selected plan doesn't determine the summary or later output. Confirmed change and result JSXs with fixed values in <code>app/page.tsx</code>, lines 115 and 118. The historical instruction was not to correct it before filming.</p>
+<p>Six Reddit links and two on X. Board with 215 elements, vector screen diagrams, and no embedded images. The short research log, at 369 words, is supported by the app and board content; don't judge depth by file size alone. Lowest total tokens processed, second-lowest time. Weakest connection between decision and output among the verified paths.</p>
+<h2 id="ultra-astra-accord">ULTRA · Astra / Accord</h2>
+<p>In the browser, the producer created a new custom pantry finishing change: 2 hours at $85 plus $30 came to $200. They created a pending request; approval remained disabled until a note was added. They entered a fictional approval and recorded it; after reloading, the title, scope, $200, and approval note remained exact. Passed for creating a new record, calculation, approval, and persistence.</p>
+<p>Seven Reddit conversations and two on X. Board with 240 elements, two embedded images, and six main zones. Three Ultra subagents researched Reddit, X, and alternatives; research and alternatives specialists later audited the implementation and extreme numeric cases. Competitor analysis included invoice-only change requests in Joist and reapproval behavior in Jobber, going beyond marketing claims. Best fit here for delegating separate research and verification workstreams; more work processed than Medium, without a cheaper model team. The aggregate includes 7.12 million child tokens.</p>
+<h2 id="como-interpretar-a-recomendacao">How to interpret the recommendation</h2>
+<p>Choose a starting configuration for a bounded research and prototyping task. Medium: shortest observed time with a functional path verified by the producer and a suitable connected plan. High: the next useful test when constraints interact. Ultra: a separate delegation experiment with deeper specialized research. Sol: lowest processed usage, but one concrete failure in the conditional output.</p>
+<p>There is no universal model ranking or conclusion about pricing. No participant needed a reminder from the producer to return artifacts; this does not prove that all tasks are free from early interruptions.</p></main><footer><a href="../">Back to library</a> · <a href="https://inema.club">INEMA.CLUB</a></footer><script>(function(){
+const key='astra-effort-theme',body=document.body,t=document.getElementById('themeToggle');
+let saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+if(saved==='light')body.classList.add('light');
+function label(){const light=body.classList.contains('light');t.textContent=light?'🌙':'☀️';t.setAttribute('aria-label',light?'Ativar tema escuro':'Ativar tema claro');t.setAttribute('aria-pressed',String(light));}label();
+t.addEventListener('click',()=>{body.classList.toggle('light');label();try{localStorage.setItem(key,body.classList.contains('light')?'light':'dark')}catch(e){}});
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).textContent;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='Prompt copiado. Cole no seu assistente e complete os campos.'}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById(button.dataset.copy));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Selecionei o prompt. Use Ctrl+C ou o comando Copiar do seu dispositivo.'}}));
+})();</script></body></html>

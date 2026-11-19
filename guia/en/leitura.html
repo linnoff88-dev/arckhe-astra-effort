@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Complete guide — Astra Effort</title><meta content="Complete guide to the Astra Effort kit in Portuguese." name="description"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/><style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-bottom:26px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+
+/* Ajustes de leitura, acessibilidade e navegação no celular. */
+:root{--focus:#f0c070}body.light{--focus:#775013;--amb:#85520d}
+body.light nav{background:var(--bg)}
+body.light .btn:not(.ghost),body.light .step .b{color:#fff}
+nav .wrap{gap:14px}nav .links{gap:14px}nav .brand{white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+section,header{scroll-margin-top:85px}.skip{position:fixed;left:16px;top:-80px;z-index:100;padding:12px;background:var(--bg)}.skip:focus{top:8px}
+.hero .wrap{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px;gap:30px}
+.hero p.lead{max-width:65ch}.hero figure{box-shadow:none}.hero figure img{height:auto;aspect-ratio:1672/941;object-fit:contain}
+.hero .cta{margin-top:24px}.hero h1{max-width:22ch}
+.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:.94rem}th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}th{font-family:Sora;font-weight:600;background:var(--bg2)}tbody tr:last-child td{border-bottom:0}tr.featured{background:var(--bg2)}tr.featured td:first-child{color:var(--amb);font-weight:600}caption{text-align:left;padding:16px;color:var(--mut)}
+.resource-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;padding:0;list-style:none}.resource-list li{padding:20px 0;border-bottom:1px solid var(--line)}.resource-list a{font-weight:600}.resource-list p{color:var(--mut);margin:4px 0 0;font-size:.93rem}
+.copy{font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px 14px;color:var(--txt);background:var(--bg2);cursor:pointer}.copy:hover{border-color:var(--amb)}
+.note{color:var(--mut);max-width:75ch;font-size:.93rem}.step>div{min-width:0}pre{white-space:pre-wrap;overflow-wrap:anywhere}pre .c{color:var(--mut)}
+.notice{min-height:1.7em;color:var(--amb)}
+@media(max-width:980px){nav .links a.sec{display:none}}
+@media(max-width:600px){nav .wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:8px 12px;padding-top:10px;padding-bottom:10px}nav .links{margin-left:auto}nav .brand{font-size:.92rem}nav .btn{font-size:.8rem;padding:.55em .7em}.resource-list{grid-template-columns:1fr}.hero .wrap{padding-top:34px}.step{grid-template-columns:34px 1fr;gap:12px}.step .b{width:34px;height:34px;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.reader{max-width:78ch;padding:40px 22px 70px;margin:auto;overflow-wrap:anywhere}.reader h1{font-size:clamp(2rem,4vw,3rem);margin:28px 0}.reader h2{font-size:1.7rem;margin:2.6em 0 .7em;scroll-margin-top:100px}.reader h3{margin:1.8em 0 .6em}.reader p,.reader li{line-height:1.85}.reader a{text-decoration:underline;text-underline-offset:3px}.reader table{display:block;overflow:auto;font-size:.88rem}.reader pre{white-space:pre-wrap;line-height:1.7}.toc{background:var(--bg2);padding:20px 24px;border:1px solid var(--line);border-radius:12px}.toc ul{padding-left:20px}.reader .back{font-family:Sora;font-size:.9rem}.reader details{margin:28px 0}.reader summary{cursor:pointer;font-weight:600}.reader blockquote{margin-left:0;padding:4px 20px;border-left:1px solid var(--amb)}
+@media print{nav,.skip,.back,.toc,footer,.reader>details{display:none}body,body.light{background:#fff!important;color:#111!important;font-size:10pt;color-scheme:light}.reader{max-width:none;padding:0}.reader h1{font-size:26pt}.reader h2{font-size:17pt;break-after:avoid}.reader h3{break-after:avoid}.reader pre{background:#f4f4f4!important;color:#111!important;border-color:#ddd;font-size:8pt;break-inside:auto}.reader a{color:#333}.reader table{display:table;font-size:8pt}.reader th,.reader td{white-space:normal;color:#111;border-color:#ddd;padding:7px;background:#fff}.reader tr{break-inside:avoid}a[href]:after{content:none}}
+</style><link href="https://inematds.github.io/astra-effort/guia/leitura.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/en/leitura.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/astra-effort/guia/es/leitura.html" hreflang="es" rel="alternate"/></head><body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../leitura.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./leitura.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/leitura.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div><a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation"><div class="wrap">
+<a class="brand" href="../"><span aria-hidden="true" class="emoji">🎛️</span> Astra Effort</a><span aria-hidden="true" class="sep">|</span>
+<span class="clubpro"><a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><span aria-hidden="true" class="sep">-</span><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a></span>
+<div class="links"><a class="sec" href="../#resultados">Results</a><a class="sec" href="../#guia">How to use</a><a class="sec" href="../#materiais">Materials</a><button aria-label="Enable light theme" class="tgl" id="themeToggle" title="Switch theme">☀️</button><a class="btn" href="https://github.com/inematds/astra-effort" rel="noopener" target="_blank">GitHub</a></div></div></nav><main class="reader" id="conteudo"><a class="back" href="../">← Astra Effort Library</a><details><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#astra-effort-guia-completo">Astra Effort — complete guide</a><ul>
+<li><a href="#comece-com-medium-exija-um-motivo-para-aumentar">Start with Medium. Require a reason to increase it.</a></li>
+<li><a href="#escolha-a-proxima-configuracao-por-um-motivo">Choose the next configuration for a reason.</a></li>
+<li><a href="#quadro-comparativo-das-sete-execucoes">Comparison board of the seven runs.</a></li>
+<li><a href="#astra-low-clearshift">Astra Low — Clearshift</a></li>
+<li><a href="#astra-medium-scopewell">Astra Medium — Scopewell</a></li>
+<li><a href="#astra-high-fieldwork">Astra High — Fieldwork</a></li>
+<li><a href="#astra-extra-high-scopekeep">Astra Extra High — Scopekeep</a></li>
+<li><a href="#astra-max-fieldnote">Astra Max — Fieldnote</a></li>
+<li><a href="#sol-high-relayops">Sol High — RelayOps</a></li>
+<li><a href="#astra-ultra-accord">Astra Ultra — Accord</a></li>
+<li><a href="#um-resultado-bonito-pode-esconder-uma-escolha-quebrada">A polished result can hide a broken choice.</a></li>
+<li><a href="#separe-esforco-de-continuidade-ate-a-conclusao">Separate continuation effort from effort to reach completion.</a></li>
+<li><a href="#faca-sua-comparacao-com-isolamento-adequado">Run your comparison with proper isolation.</a></li>
+<li><a href="#milhoes-de-tokens-nao-sao-uma-conta-a-pagar">Millions of tokens do not equal a bill to pay.</a></li>
+<li><a href="#faca-a-pesquisa-argumentar-contra-a-ideia">Have the research argue against the idea.</a></li>
+<li><a href="#uma-vantagem-competitiva-precisa-sobreviver-a-copia">A competitive advantage has to survive being copied.</a></li>
+<li><a href="#272-mil-e-um-limite-por-requisicao">272k is a per-request limit.</a></li>
+<li><a href="#fast-custa-mais-esforco-e-outro-controle">Fast costs more. Effort is a separate control.</a></li>
+<li><a href="#aumente-o-esforco-na-fase-dificil">Increase effort during the difficult phase.</a></li>
+<li><a href="#pergunte-o-que-interrompeu-o-trabalho-delimite-a-delegacao">Ask what interrupted the work. Keep the delegation bounded.</a></li>
+<li><a href="#uma-tarefa-simples-tres-respostas-identicas">One simple task. Three identical answers.</a></li>
+<li><a href="#a-tarefa-exata-do-video">The exact video task.</a></li>
+<li><a href="#guarde-a-evidencia-depois-melhore">Keep the evidence. Improve later.</a></li>
+<li><a href="#fontes-e-medicao">Sources and measurement.</a></li>
+<li><a href="#enunciado-completo">Full prompt</a></li>
+<li><a href="#proximos-arquivos">Next files</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="astra-effort-guia-completo">Astra Effort — complete guide</h1>
+<p>Mark Kashef | Research reference date: September 8, 2026.</p>
+<p>This Portuguese edition translates the original material. The product and pricing facts below reflect the author’s dated research; they have not been revalidated in this translation. The original is at <a href="../original-en/SUPER-GUIDE.md">original-en/SUPER-GUIDE.md</a>.</p>
+<p>This material documents seven research and build runs, a separate arithmetic demonstration with three configurations, in-depth producer checks, sourced guidance, and reusable tests.</p>
+<h2 id="comece-com-medium-exija-um-motivo-para-aumentar">Start with Medium. Require a reason to increase it.</h2>
+<p>Mark Kashef | Seven first attempts, practical checks, and ready-to-use prompts.</p>
+<p>Medium is my starting choice for this research and build task. It delivered a verified workflow and a useful plan in 30:41. High is the next setting I would test on work with interacting constraints.</p>
+<p>This guide presents the evidence behind that choice and a path to finding the right configuration for your work. It includes the original task, seven editable frames, ten reusable prompts, and a tracking sheet.</p>
+<p>Research completed on September 8, 2026. The experiments took place on September 7.</p>
+<h2 id="escolha-a-proxima-configuracao-por-um-motivo">Choose the next configuration for a reason.</h2>
+<ol>
+<li>Define what completion means before choosing the effort level. Name the required artifact and three checks that would make it useful. “Build an app” provides much less information than “change a price, approve it, reload, and preserve the value.”</li>
+<li>Start with Medium on a bounded project that combines research and building, like this one. Start lower on an easy, well-specified task if you can verify the result quickly. These are practical starting hypotheses, not performance guarantees.</li>
+<li>Increase effort to address a specific failure. Try High when interacting constraints, a difficult bug, or weak reasoning persist after a targeted clarification. The absence of a screenshot alone doesn’t justify increasing every setting.</li>
+<li>Compare the entire workload. Include follow-ups, verification, waiting, and child-agent work. Stop when the result passes the checks; don’t chase a bigger score or a more elaborate explanation.</li>
+<li>Keep speed as a separate decision. The experiment used Standard. Mark's personal preference for Medium + Fast is a separate judgment, not a result tested in this set.</li>
+</ol>
+<h2 id="quadro-comparativo-das-sete-execucoes">Comparison board of the seven runs.</h2>
+<p>The table records these preserved first attempts, not a universal speed ranking. All seven ran simultaneously on one machine. Ultra could delegate; the other conditions could not.</p>
+<p>Tokens processed = cumulative input + output. Cached input is already included in input. Most of the input in these runs came from cache. Don’t turn these totals into a price comparison.</p>
+<p>None of the seven needed a reminder from the producer to return the artifacts. This result applies to these instructions and tasks. It does not establish whether greater effort resolves early interruptions.</p>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th style="text-align: right;">Time</th>
+<th style="text-align: right;">Tokens processed</th>
+<th style="text-align: right;">Cached input share</th>
+<th>Sources</th>
+<th style="text-align: right;">Frame elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Astra Low</td>
+<td style="text-align: right;">37:37</td>
+<td style="text-align: right;">14.814.481</td>
+<td style="text-align: right;">98,3%</td>
+<td>8 Reddit + 0 X</td>
+<td style="text-align: right;">161</td>
+</tr>
+<tr>
+<td>Astra Medium</td>
+<td style="text-align: right;">30:41</td>
+<td style="text-align: right;">10.233.386</td>
+<td style="text-align: right;">98,0%</td>
+<td>6 Reddit + 0 X</td>
+<td style="text-align: right;">133</td>
+</tr>
+<tr>
+<td>Astra High</td>
+<td style="text-align: right;">41:21</td>
+<td style="text-align: right;">14.328.598</td>
+<td style="text-align: right;">98,1%</td>
+<td>7 Reddit + 1 X</td>
+<td style="text-align: right;">186</td>
+</tr>
+<tr>
+<td>Astra Extra High</td>
+<td style="text-align: right;">45:14</td>
+<td style="text-align: right;">12.286.194</td>
+<td style="text-align: right;">97,8%</td>
+<td>6 Reddit + 1 X</td>
+<td style="text-align: right;">155</td>
+</tr>
+<tr>
+<td>Astra Max</td>
+<td style="text-align: right;">46:10</td>
+<td style="text-align: right;">10.547.404</td>
+<td style="text-align: right;">97,5%</td>
+<td>7 Reddit + 0 X</td>
+<td style="text-align: right;">155</td>
+</tr>
+<tr>
+<td>Sol High</td>
+<td style="text-align: right;">32:49</td>
+<td style="text-align: right;">6.698.569</td>
+<td style="text-align: right;">97,5%</td>
+<td>6 Reddit + 2 X</td>
+<td style="text-align: right;">215</td>
+</tr>
+<tr>
+<td>Astra Ultra</td>
+<td style="text-align: right;">42:10</td>
+<td style="text-align: right;">21.730.368</td>
+<td style="text-align: right;">97,3%</td>
+<td>7 Reddit + 2 X</td>
+<td style="text-align: right;">240</td>
+</tr>
+</tbody>
+</table>
+<h2 id="astra-low-clearshift">Astra Low — Clearshift</h2>
+<p>Includes cleanup tasks that were not completed before the correction and recheck.</p>
+<p><strong>For:</strong> owners of commercial cleaning businesses that regularly serve offices.</p>
+<p><strong>Proposed competitive advantage:</strong> client-specific patterns and a history of fixes that worked.</p>
+<p><strong>Observed verification:</strong> the fix needed to be verified again before closing the service. The closed state remained after reloading.</p>
+<p><strong>Gap:</strong> no evidence from X. More elapsed time and processed tokens than Medium.</p>
+<p><strong>What I would take away:</strong> remember that Low can also produce a complete workflow. Less effort does not guarantee less total work.</p>
+<h2 id="astra-medium-scopewell">Astra Medium — Scopewell</h2>
+<p>Calculates prices for extra cleaning services and records customer acceptance.</p>
+<p><strong>For:</strong> owners of commercial cleaning businesses with written service contracts.</p>
+<p><strong>Proposed competitive advantage:</strong> accurate scope records and estimates improved by real services.</p>
+<p><strong>Observed verification:</strong> changing labor from 45 to 60 minutes changed the monthly proposal from $164 to $212. A simulated acceptance and the new amount remained after reloading.</p>
+<p><strong>Gap:</strong> no evidence from X. The frame with fewer elements.</p>
+<p><strong>What I would take away:</strong> my initial choice for this task. It delivered a verified workflow and a useful plan in the shortest observed time.</p>
+<h2 id="astra-high-fieldwork">Astra High — Fieldwork</h2>
+<p>Redistributes visits when a cleaning team can't work.</p>
+<p><strong>For:</strong> owners of residential cleaning businesses who coordinate teams and schedules.</p>
+<p><strong>Proposed competitive advantage:</strong> company-specific constraints and results that improve scheduling.</p>
+<p><strong>Observed verification:</strong> an impossible two-hour service within a one-hour window was rejected. The valid reassignment was saved correctly and left four other visits intact.</p>
+<p><strong>Gap:</strong> the relocation used a fixed margin, with no real-time route optimization.</p>
+<p><strong>What I would take away:</strong> a useful next configuration to test when constraints interact. The value came from the behaviors the product was able to handle.</p>
+<h2 id="astra-extra-high-scopekeep">Astra Extra High — Scopekeep</h2>
+<p>Adds extra renovation services from approval through billing.</p>
+<p><strong>For:</strong> owners of small remodeling businesses who lose track of billable extras.</p>
+<p><strong>Proposed competitive advantage:</strong> scope checks tailored to the history of what was approved, invoiced, and paid.</p>
+<p><strong>Observed verification:</strong> a new labor rate was propagated to a total of $530, the approval, and an invoice-ready line item. Revision 1 remained after reloading.</p>
+<p><strong>Gap:</strong> more time than High. The participant read your X counterexample; the producer could not independently reopen it.</p>
+<p><strong>What I would take away:</strong> read the counterevidence before buying into the business idea. An existing solution using Grok and open-source accounting called the proposed product into question.</p>
+<h2 id="astra-max-fieldnote">Astra Max — Fieldnote</h2>
+<p>Keeps the scope, price, and approval for an extra service in the same record.</p>
+<p><strong>For:</strong> owners of home remodeling businesses with teams of 2–10 people.</p>
+<p><strong>Proposed competitive advantage:</strong> a routine adopted on construction sites, assisted setup, and recommendations from accounting professionals.</p>
+<p><strong>Observed verification:</strong> $275.25 in labor plus $84.75 in materials came to exactly $360. The simulated approval persisted.</p>
+<p><strong>Gap:</strong> the longest run. A native export download was not independently verified.</p>
+<p><strong>What I would take away:</strong> useful depth showed up in the exact cents, approval state, and review rules. These are better checks than counting visual polish details.</p>
+<h2 id="sol-high-relayops">Sol High — RelayOps</h2>
+<p>Plans recovery when delays affect a service route.</p>
+<p><strong>For:</strong> owners who also coordinate operations for recurring service businesses with 2–20 employees.</p>
+<p><strong>Proposed competitive advantage:</strong> recovery results, maintained rules, and responsible support.</p>
+<p><strong>Observed verification:</strong> progression between steps and the resolved state persisted.</p>
+<p><strong>Gap:</strong> selecting “Split with Crew 1” did not change the next summary: it still showed another plan and fixed result numbers.</p>
+<p><strong>What I would take away:</strong> keep Sol in the comparison and test whether the choices actually change the results. Lower processed usage does not make up for a broken decision path.</p>
+<h2 id="astra-ultra-accord">Astra Ultra — Accord</h2>
+<p>Records and combines renovation add-ons before work begins.</p>
+<p><strong>For:</strong> owners of small home remodeling businesses who handle frequent extras.</p>
+<p><strong>Proposed competitive advantage:</strong> specialty-specific configuration and a proven routine, improved through real results.</p>
+<p><strong>Observed verification:</strong> a new custom $200 change required an approval note. The title, scope, total, and approval persisted.</p>
+<p><strong>Gap:</strong> three child agents added 7.12 million processed tokens. This is a separate condition, with delegation enabled.</p>
+<p><strong>What I would take away:</strong> use delegation when independent research or verification workstreams have real value. Here, it produced deeper research into competitors’ workflows, not a drastically different product.</p>
+<h2 id="um-resultado-bonito-pode-esconder-uma-escolha-quebrada">A polished result can hide a broken choice.</h2>
+<p>Sol’s prototype advanced through the steps and retained a resolved state. In a quick demo, that could look like approval.</p>
+<p>The producer chose “Split with Crew 1”, but the following summary continued to describe a different plan. The result also stayed fixed. The selected input did not determine the subsequent output.</p>
+<p>Test cause and effect: choose another option, change a number, use a new record, and check the exact consequence. Reload afterward. Also verify that unrelated records remained unchanged.</p>
+<p>This isolated check is more useful than counting components, screens, or shapes in the frame. Apply it to any model’s work.</p>
+<pre><code class="language-text">Revise o protótipo concluído sem editar seu código-fonte primeiro. Use dados de exemplo novos ou restaurados e registre o estado inicial.
+
+1. Altere uma entrada relevante ou selecione outra opção.
+2. Preveja qual total, registro ou resumo posterior deve mudar.
+3. Conclua o fluxo principal.
+4. Compare a saída final com a escolha realmente feita.
+5. Recarregue a página e verifique a persistência.
+6. Verifique uma entrada inválida e um registro não relacionado.
+
+Capture evidências de cada resultado. Separe comportamento testado, inspeção de código e comportamento não verificado. Preserve o artefato da primeira tentativa antes de propor correções. Um botão funcionando ou uma captura de tela bonita não bastam para provar que a decisão foi propagada pelo fluxo.
+</code></pre>
+<h2 id="separe-esforco-de-continuidade-ate-a-conclusao">Separate continuation effort from effort to reach completion.</h2>
+<p>Effort changes how much reasoning the model can devote to a task. An incomplete scope, unclear authorization, or an actual tool blocker can still interrupt the work. Raising the setting does not resolve every kind of pause.</p>
+<p>Set an observable finish line and specify which reversible decisions the agent can make. If you want research, implementation, and verification, say so. Specify which actions still require your decision.</p>
+<p>In this set, all seven runs returned artifacts without a reminder from the producer. We cannot classify “laziness” in a set where the measured number of reminders did not vary.</p>
+<p>Test autonomy separately: preserve the first attempt, count missing requirements, and distinguish genuine blockers from avoidable early stops. Apply the same neutral follow-up policy to each run.</p>
+<pre><code class="language-text">Conclua esta tarefa: [TAREFA].
+Concluído significa: [ENTREGAS OBSERVÁVEIS E TESTES DE ACEITAÇÃO].
+Você pode decidir [ESCOLHAS REVERSÍVEIS] sem me perguntar. Use suposições razoáveis quando elas não mudarem o objetivo; informe brevemente qualquer suposição relevante.
+
+Continue até implementar e verificar o que está neste escopo. Um plano, uma confirmação de entendimento ou uma oferta para continuar não são a entrega final. Se encontrar um bloqueio real, identifique-o, preserve o trabalho e conclua as partes independentes que ainda forem possíveis. Pergunte antes de [AÇÕES ESPECÍFICAS QUE EXIGEM MINHA DECISÃO].
+
+Ao final, mostre o que mudou, as verificações realmente executadas e qualquer requisito ainda não atendido. Não diga que um teste passou se você não o executou.
+</code></pre>
+<h2 id="faca-sua-comparacao-com-isolamento-adequado">Run your comparison with proper isolation.</h2>
+<p>Use the same fixed task text, starting files, available tools, connected accounts, speed, and completion criteria. Keep each run in a new folder. Don’t let one model’s output enter another model’s context.</p>
+<p>Check the actual model and effort level. A task called “High” is only a label. If your app can’t create or configure tasks, open and configure them manually.</p>
+<p>For a fairer timing test, run one session at a time or isolate the execution resources. Shared control of the computer can interfere with simultaneous tests. Repeat in a different order before making a strong claim.</p>
+<p>Archive the first attempts before making corrections. If possible, evaluate the result without seeing the effort label. Preserve failures as evidence; don’t silently favor your preferred setup.</p>
+<pre><code class="language-text">Crie três tarefas separadas para comparação: "LOW | Meu teste", "MED | Meu teste" e "HIGH | Meu teste". Use GPT-6 Astra com esforço de raciocínio low, medium e high, respectivamente, se houver suporte neste ambiente. Mantenha a mesma configuração de velocidade. Verifique e informe o modelo e o esforço efetivos; os rótulos, sozinhos, não bastam.
+
+Dê às três a mesma tarefa abaixo, em pastas novas e isoladas. Não inclua outras execuções nem suas saídas. Mantenha desativada a delegação opcional. Dê a cada uma até [LIMITE DE TEMPO] para a primeira tentativa. Preserve a saída antes de qualquer acompanhamento. Registre trabalho concluído, requisitos faltantes, bloqueios, tempo decorrido e uso atribuível à tarefa, quando disponível.
+
+Execute em paralelo somente se ferramentas e espaços de trabalho estiverem isolados; execute em sequência qualquer fluxo que compartilhe o controle do computador. Acompanhe o progresso sem orientar os participantes. Se este ambiente não puder criar tarefas ou configurar o esforço, diga exatamente qual etapa devo realizar manualmente. Nunca substitua configurações silenciosamente.
+
+TAREFA:
+[COLE UMA ÚNICA VERSÃO FIXA DA TAREFA]
+</code></pre>
+<h2 id="milhoes-de-tokens-nao-sao-uma-conta-a-pagar">Millions of tokens do not equal a bill to pay.</h2>
+<p>The model may see the same cached context across many calls. The cumulative processed count adds up those reads. A total of 20 million does not mean a single context window of 20 million tokens or 20 million newly generated tokens.</p>
+<p>In this set, total = input + output. Cached input is a subset of input; reasoning output is a subset of output. Adding these subsets again would double-count them.</p>
+<p>Ultra’s 21.730.368 tokens include the main agent and three child agents. The children contributed 7.121.868. Comparing only the main agent would hide part of the work.</p>
+<p>A real API calculation requires model-specific rates for uncached input, cached input, and output, as well as speed and context window. A Codex subscription follows its own credit rules. A change in the entire account’s allowance does not isolate a task when others are running.</p>
+<p>The full record is in <code>evidence/results.csv</code> e <code>evidence/results.json</code>. Leave unavailable cost fields blank instead of guessing.</p>
+<h2 id="faca-a-pesquisa-argumentar-contra-a-ideia">Have the research argue against the idea.</h2>
+<p>“What are the best insights?” often produces a polished summary. A more specific question might uncover a useful contradiction: who already solves this with an existing tool, refuses to pay, or says the problem is something else?</p>
+<p>In the Extra High research, an existing workflow used by a business owner with Grok and open-source accounting raised questions about the need for a new product. It was useful because it changed the business case. The producer could not independently reopen the post on X, so the source remains identified as having been read by the participant.</p>
+<p>Use Grok or another search method to find direct posts, then examine the original evidence and missing context. Ask which task failed, which configuration was used, and whether anyone tested the suggested fix.</p>
+<p>An account can reveal a failure mode worth testing. It does not establish how often the failure occurs or which effort level caused it.</p>
+<pre><code class="language-text">Ajude a investigar esta afirmação específica: [AFIRMAÇÃO]. Pesquise no X experiências diretas que possam sustentá-la ou contradizê-la. Priorize descrições concretas das tarefas, capturas de tela com contexto, links para as publicações originais e correções posteriores.
+
+Para cada descoberta, informe URL da publicação original, data, tarefa, configuração quando mencionada, resultado observado e contexto ausente. Separe a opinião do autor da publicação do comportamento verificado do produto. Não transforme curtidas, republicações ou linguagem confiante em prova.
+
+Depois, apresente três perguntas mais específicas que ajudem a explicar por que os usuários obtiveram resultados diferentes. Se não conseguir acessar a evidência original, diga isso.
+</code></pre>
+<h2 id="uma-vantagem-competitiva-precisa-sobreviver-a-copia">A competitive advantage has to survive being copied.</h2>
+<p>The prompt explicitly asked what a customer or competitor could copy in a weekend, what would still be missing, and why anyone would pay. That’s a harder question than asking for a feature list.</p>
+<p>All seven products were in field services. The shared customer was a small service business with 2–20 employees, which already narrowed the search. Convergence does not prove these sectors are the best market for everyone.</p>
+<p>Stored records, a better interface, and AI-generated models are easy to present as defensible advantages. The useful question is whether a real operational habit, a history of results used with permission, distribution, or a reliable setup service creates enough value to retain customers.</p>
+<p>All competitive advantages of these outputs are proposed. No prototype demonstrated paid adoption or a lasting advantage. Define a small falsification test before building the larger system.</p>
+<pre><code class="language-text">Suponha que um concorrente competente e meu cliente consigam reproduzir a interface e a lógica básica do software em um fim de semana. Coloque este produto à prova: [PRODUTO].
+
+Separe o que é facilmente copiável de qualquer vantagem que precise ser conquistada. Explique o valor para o cliente no primeiro dia, antes de existir uma vantagem defensável (moat). Identifique como conquistar a primeira vantagem a partir do zero, por que um concorrente estabelecido ainda poderia nos superar e o que o cliente poderia usar no lugar.
+
+Planeje um pequeno experimento com o primeiro cliente, com um limiar explícito de aprovação ou reprovação. Identifique a capacidade de defesa proposta como hipótese. Não chame um banco de dados genérico, uma interface sobre IA ou uma lista de funcionalidades de vantagem competitiva comprovada.
+</code></pre>
+<h2 id="272-mil-e-um-limite-por-requisicao">272k is a per-request limit.</h2>
+<p>According to the pricing notes consulted by the author, for Astra API prompts with more than 272,000 input tokens, the entire request uses 2× input and cache rates and 1.5× output rates. The rule doesn't apply only to the excess tokens, and not every rate doubles.</p>
+<p>A task can process millions of tokens across repeated calls without any single call exceeding that limit. Check the largest individual input count, not the total shown at the end of the project.</p>
+<p>This API limit does not establish an equivalent discount on the Codex subscription. Before changing a TOML setting, check the installed client, authentication method, supported configuration, and current value. Compaction can also reduce the details retained.</p>
+<p>Original source: Astra model pricing notes, OpenAI, accessed September 8, 2026.</p>
+<pre><code class="language-text">Audite as configurações de contexto e cobrança deste fluxo sem alterá-las. Identifique se ele usa login do ChatGPT ou cobrança de API. Para chamadas de API, informe a maior contagem individual de tokens de entrada e se alguma requisição excedeu 272.000 tokens de entrada. Separe isso dos tokens acumulados da tarefa. Se uma alteração de configuração ajudar, mostre primeiro a opção suportada, o valor atual e o diff proposto.
+</code></pre>
+<h2 id="fast-custa-mais-esforco-e-outro-controle">Fast costs more. Effort is a separate control.</h2>
+<p>According to the documentation consulted by the author, with a ChatGPT login, Astra Fast uses credits at a rate of 2.5× Standard where available. This is a credit multiplier. It doesn’t promise that a task will finish 2.5 times faster.</p>
+<p>The API has a separate pricing structure: Astra Fast uses 2× the applicable per-token API rates. Do not apply the subscription multiplier to API charges.</p>
+<p>Keep effort fixed when testing speed. Try a representative task in Standard and Fast, measure the experience, and use real attributable billing data, if available. The seven runs used Standard and did not measure this tradeoff.</p>
+<p>In Codex CLI, <code>/fast status</code> configuration lookup; <code>/fast off</code> e <code>/fast on</code> change them. Confirm the corresponding option in your app.</p>
+<p>Original sources: Codex speed documentation and Astra model API notes, accessed September 8, 2026.</p>
+<pre><code class="language-text">Inspecione meu modelo, esforço de raciocínio, modo de velocidade e forma de autenticação. Explique a relação de uso aplicável com base na documentação oficial atual. Mantenha o esforço de raciocínio inalterado e mostre como mudar somente a velocidade para comparar a mesma tarefa em Standard e Fast.
+</code></pre>
+<h2 id="aumente-o-esforco-na-fase-dificil">Increase effort during the difficult phase.</h2>
+<p>The original guide describes support for one input item <code>configuration_update</code> in the Astra API to change the reasoning effort while preserving the original request configuration and cached prefix. This lets you draft in low and then increase the effort for a difficult review in the same conversation.</p>
+<p>Place the item before the next user message and keep the <code>reasoning.effort</code> of the request at its original value. The update persists until replaced. After compacting, add a new update with the desired value.</p>
+<p>It’s a development feature for Astra in default single-agent mode, not a magic phrase that changes the configuration of a Codex conversation. The <code>reasoning.effort</code> of the response still reports the request configuration; this field alone does not prove the actual effort.</p>
+<p>Shared history is useful in production. It is not an independent, controlled comparison of effort levels.</p>
+<p>Original source: OpenAI, changing reasoning during a conversation, accessed September 8, 2026.</p>
+<pre><code class="language-json">{
+  "type": "configuration_update",
+  "reasoning": { "effort": "high" }
+}
+</code></pre>
+<p>Then ask for a specific, rigorous review, for example:</p>
+<pre><code class="language-text">Revise esta migração em busca de perda de dados, falhas de concorrência e lacunas de reversão. Para cada risco relevante, aponte a parte correspondente do plano. Proponha uma verificação ou alteração concreta dentro do escopo combinado.
+</code></pre>
+<h2 id="pergunte-o-que-interrompeu-o-trabalho-delimite-a-delegacao">Ask what interrupted the work. Keep the delegation bounded.</h2>
+<p>The OpenAI guide cited by the author describes Astra’s sensitivity to skills and instructions in <code>AGENTS.md</code>. When an unnecessary pause occurs, ask which exact instruction or missing fact caused it. That gives you something concrete to fix.</p>
+<p>If the task would benefit from delegation, give each agent a different, bounded question. Customer evidence, existing alternatives, and the strongest objections are useful separate workstreams. The lead agent owns the decision and verifies the integrated result.</p>
+<p>Ultra’s three specialists added 7.12 million processed tokens in this run. Record their models and usage. More agents are not automatically cheaper, and duplicate research can consume the expected benefit.</p>
+<p>Sources: OpenAI guidance cited in the original on following instructions and delegating to subagents; Ultra review preserved by the producer.</p>
+<pre><code class="language-text">Se estiver bloqueado, identifique o fato exato ausente ou a instrução exata e o arquivo que causam a parada. Conclua primeiro o trabalho independente já autorizado.
+
+Se o trabalho em paralelo ajudar, use até três agentes com perguntas distintas e entregas apoiadas em fontes diretas. Evite pesquisas duplicadas. Mantenha a síntese e a verificação final com o agente principal. Se não houver trabalho independente útil, continue sem delegar.
+</code></pre>
+<h2 id="uma-tarefa-simples-tres-respostas-identicas">One simple task. Three identical answers.</h2>
+<p>We also preserved the three small tasks used to demonstrate opening comparison conversations during recording. Low, Medium, and High received the same arithmetic question without tools. All three returned the correct answer of $8 in the requested two-line format.</p>
+<p>The recorded Low turn took 4.641 ms; Medium, 5.461 ms; High, 5.130 ms. They ran simultaneously, with start times less than a second apart. The small differences are sensitive to scheduling and do not establish a reliable speed ranking.</p>
+<p>For this easy problem, greater effort brought no visible benefit in the response or formatting. That’s a useful reason to test lower effort when the task is simple and the answer is easy to check.</p>
+<p>These short demonstrations are separate from the seven research and build runs. Token usage was unavailable in the retrieved summaries. The full prompt, response, and data are in <code>evidence/BONUS-ARITHMETIC-DEMO.md</code> e <code>.json</code>.</p>
+<pre><code class="language-text">Conclua esta tarefa simples sem ferramentas: um caderno custa $4 e uma caneta custa $2. Maya compra 3 cadernos e 5 canetas e paga com $30. Quanto deve receber de troco? Responda com exatamente duas linhas: o cálculo e depois a resposta.
+
+As três respostas, traduzidas:
+$30 − (3 × $4 + 5 × $2) = $8
+Maya deve receber $8 de troco.
+</code></pre>
+<h2 id="a-tarefa-exata-do-video">The exact video task.</h2>
+<p>The full prompt was translated in <a href="../experiment/ASSIGNMENT.txt">experiment/ASSIGNMENT.txt</a> and reproduced in the “Full prompt” section below. The unchanged English version actually shown to the models in the video is at <a href="../original-en/experiment/ASSIGNMENT.txt">original-en/experiment/ASSIGNMENT.txt</a>. The execution conditions and the annotated context table are separate files in <code>experiment/</code>.</p>
+<h2 id="guarde-a-evidencia-depois-melhore">Keep the evidence. Improve later.</h2>
+<p>Choose a real task you already need to finish. Write three pass-or-fail checks. Run Medium once, save the result, and test it. If it fails any check, try a targeted follow-up before concluding that it needed more effort.</p>
+<p>To compare, use the blank CSV in <code>experiment/YOUR-RUN-LOG.csv</code>. Record effective settings, speed, delegation, first-attempt results, and follow-ups separately. Keep screenshots or output files with each record.</p>
+<p>Open the original boards in Excalidraw to examine their structure and sources. Use the seven comparison images as a quick visual reference. All essential materials in this kit work offline.</p>
+<p>Video companion material: https://astra-field-guide.markkashef.chatgpt.site/</p>
+<p>You’re choosing a setup that earns its place in your workflow. Start with the useful result. Let the failure show you what to change.</p>
+<h2 id="fontes-e-medicao">Sources and measurement.</h2>
+<p>The author consulted official product facts on September 8, 2026. <code>SOURCE-NOTES.md</code> contains more complete research, use cases, and links. Behavior, availability, and prices may change.</p>
+<p>Experiment data: the first seven attempts from September 7, preserved. The cumulative input and output for each run were reconciled independently. Duration came from the first completion event. The shared machine and different product choices limit causal conclusions about time and effort.</p>
+<p>Producer checks: the actual interaction paths described in <code>evidence/PRODUCER-CHECKS.md</code>. These are deeper inspections of the seven original outputs, not new independent model runs.</p>
+<p>Configuration suggestions and reusable prompts are practical recommendations. The experiment did not establish paid adoption, lasting competitive advantages, or universal superiority.</p>
+<ul>
+<li><a href="https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra">Guidance for Astra: instructions and delegation</a></li>
+<li><a href="https://developers.openai.com/api/docs/models/gpt-6-astra">Astra model and API pricing notes</a></li>
+<li><a href="https://learn.chatgpt.com/docs/agent-configuration/speed">Speed and credit usage in Codex</a></li>
+<li><a href="https://developers.openai.com/api/docs/guides/reasoning#change-reasoning-mid-conversation">Responses API: change reasoning during the conversation</a></li>
+<li><a href="https://developers.openai.com/api/docs/guides/prompt-caching">Prompt cache: measurement and conditions</a></li>
+<li><a href="https://developers.openai.com/api/docs/guides/tools-computer-use#5-continue-and-verify-the-result">Computer use: continue and verify the result</a></li>
+<li><a href="https://x.com/thsottiaux/status/2096688770523467947">Tibo's comparative publication</a></li>
+<li><a href="https://astra-field-guide.markkashef.chatgpt.site/">Interactive video companion</a></li>
+</ul>
+<h2 id="enunciado-completo">Full prompt</h2>
+<pre><code class="language-text">Encontre uma oportunidade de SaaS que valha a pena para donos de pequenas empresas de serviços com 2–20 funcionários. Ainda não escolhi a categoria de negócio, o problema ou o produto. Comece pelos problemas deles, considere três oportunidades e escolha uma.
+
+Pesquise conversas reais no Reddit e no X e examine três alternativas existentes. Busque sustentar a lista de oportunidades com seis conversas distintas e relevantes nessas plataformas. Procure frustrações recorrentes, soluções improvisadas atuais, sinais de gasto e evidências contrárias. Escolha seus métodos de pesquisa com os recursos disponíveis. Inclua links para as fontes originais. Explique limitações de acesso e lacunas de evidência; não invente fontes para atingir uma contagem. Popularidade, sozinha, não prova que alguém pagará.
+
+Suponha que clientes e concorrentes possam usar Astra para reproduzir rapidamente um software competente. Explique o que poderia ser copiado em um fim de semana, qual parte valiosa ainda faltaria e por que o cliente pagaria em vez de construir ou trocar de solução. Proponha um caminho plausível para conquistar essa vantagem a partir do zero, incluindo uma estratégia para o primeiro cliente e um experimento que possa refutá-la. O produto deve entregar valor antes de essa vantagem existir. Trate a capacidade de defesa como hipótese, não como uma vantagem competitiva já estabelecida.
+
+Crie um quadro editável no Excalidraw com zonas distintas e conectadas para evidências dos clientes, alternativas e oportunidade, jornada principal do usuário, telas do produto e direção visual, arquitetura e fluxo de dados, e escopo do MVP com sequência de construção. Use uma combinação útil de imagens, diagramas e anotações concisas, com links para as fontes.
+
+Construa um site bem acabado que reúna um plano de produto explorável e um protótipo funcional em uma única experiência. Atenda a um perfil principal de usuário e um problema central. Implemente um fluxo completo com 3–5 etapas relevantes e no máximo três telas principais do produto. Use dados de exemplo realistas e preserve alterações após recarregar a página. Mantenha pesquisa e planejamento em painéis de apoio. Exclua autenticação de produção, pagamentos, mensagens ao vivo e integrações externas; identifique claramente os comportamentos simulados.
+
+Entregue o protótipo funcional, o quadro editável do Excalidraw, o site de planejamento e as fontes de pesquisa. Verifique o fluxo principal e explique o que ainda não foi comprovado. Tome as decisões de produto e implementação dentro deste escopo. Não contate pessoas, publique mensagens, compre serviços ou faça implantação pública. Não alegue pesquisa ou verificação que não realizou.
+</code></pre>
+<h2 id="proximos-arquivos">Next files</h2>
+<p>See <a href="prompts.html">PROMPTS.md</a> for ten ready-to-use models; <a href="fontes.html">SOURCE-NOTES.md</a> for eight researched add-ons; and <a href="../evidence/results.csv">evidence/results.csv</a> for the exact data.</p></main><footer><a href="../">Back to library</a> · <a href="https://inema.club">INEMA.CLUB</a></footer><script>(function(){
+const key='astra-effort-theme',body=document.body,t=document.getElementById('themeToggle');
+let saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+if(saved==='light')body.classList.add('light');
+function label(){const light=body.classList.contains('light');t.textContent=light?'🌙':'☀️';t.setAttribute('aria-label',light?'Ativar tema escuro':'Ativar tema claro');t.setAttribute('aria-pressed',String(light));}label();
+t.addEventListener('click',()=>{body.classList.toggle('light');label();try{localStorage.setItem(key,body.classList.contains('light')?'light':'dark')}catch(e){}});
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).textContent;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='Prompt copiado. Cole no seu assistente e complete os campos.'}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById(button.dataset.copy));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Selecionei o prompt. Use Ctrl+C ou o comando Copiar do seu dispositivo.'}}));
+})();</script></body></html>

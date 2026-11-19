@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-10T17:37:58.874621+00:00",
+  "title": "Design System: Astra Effort",
+  "extensions": {
+    "shadows": [],
+    "motion": [
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Desativa rolagem suave quando solicitada."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-links",
+        "value": "980px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão primário",
+      "kind": "button",
+      "html": "<button class=\"ds-primary\">Ler o guia</button>",
+      "css": ".ds-primary{background:var(--amb,#E2A23B);color:#1a1206;border:0;border-radius:10px;padding:.6em 1.05em;font:600 16px Sora,sans-serif;cursor:pointer}.ds-primary:hover{filter:brightness(1.05)}:focus-visible{outline:3px solid var(--focus,#f0c070);outline-offset:4px}"
+    },
+    {
+      "name": "Botão secundário",
+      "kind": "button",
+      "html": "<button class=\"ds-ghost\">Comparar resultados</button>",
+      "css": ".ds-ghost{background:transparent;color:var(--txt,#e9e9ee);border:1px solid var(--line,#272730);border-radius:10px;padding:.6em 1.05em;font:600 16px Sora,sans-serif;cursor:pointer}.ds-ghost:hover{border-color:var(--amb,#E2A23B)}:focus-visible{outline:3px solid var(--focus,#f0c070);outline-offset:4px}"
+    },
+    {
+      "name": "Card de conteúdo",
+      "kind": "card",
+      "html": "<div class=\"ds-card\"><h3>Confira as fontes</h3><p>Dados e verificações do experimento.</p></div>",
+      "css": ".ds-card{background:var(--card,#16161e);color:var(--txt,#e9e9ee);border:1px solid var(--line,#272730);border-radius:14px;padding:20px}.ds-card h3{font:600 1.05rem Sora,sans-serif}.ds-card p{font:16px/1.65 Inter,sans-serif;color:var(--mut,#9a9aa6)}:focus-visible{outline:3px solid var(--focus,#f0c070);outline-offset:4px}"
+    },
+    {
+      "name": "Copiar prompt",
+      "kind": "button",
+      "html": "<button class=\"ds-copy\">Copiar prompt</button>",
+      "css": ".ds-copy{background:var(--bg2,#14141b);color:var(--txt,#e9e9ee);border:1px solid var(--line,#272730);border-radius:8px;padding:9px 14px;font:16px Inter,sans-serif;cursor:pointer}.ds-copy:hover{border-color:var(--amb,#E2A23B)}:focus-visible{outline:3px solid var(--focus,#f0c070);outline-offset:4px}"
+    },
+    {
+      "name": "Links INEMA",
+      "kind": "nav",
+      "html": "<nav class=\"ds-nav\"><a href=\"https://inema.club\">INEMA.CLUB</a><span> · </span><a class=\"ds-pro\" href=\"https://inema.pro\">PRO</a></nav>",
+      "css": ".ds-nav{padding:14px;background:var(--bg,#0c0c10);font:600 .88rem Sora,sans-serif}.ds-nav a{color:var(--sky,#38bdf8);text-decoration:none}.ds-nav .ds-pro{color:var(--pro,#cbd5e1)}.ds-nav a:hover{filter:brightness(1.15)}:focus-visible{outline:3px solid var(--focus,#f0c070);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "overview": "Template INEMA com referência de robô preto e dourado fornecida pelo usuário.",
+    "dos": [
+      "Preserve a proporção da capa e o contraste nos dois temas."
+    ],
+    "donts": [
+      "Não apresente tokens processados como custo."
+    ]
+  }
+}

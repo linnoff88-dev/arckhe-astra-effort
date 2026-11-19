@@ -1,0 +1,5 @@
+O resultado atual não atende a este teste de aceitação: [FALHA ESPECÍFICA]. Esta é a menor reprodução: [PASSOS / ENTRADA / ESPERADO / OBSERVADO].
+
+Investigue a falha, faça uma correção direcionada e execute novamente o teste que falhou e os testes de regressão relevantes. Preserve as partes que funcionam. Não amplie o projeto nem refaça o design sem evidência de necessidade. Explique a causa e mostre o resultado aprovado.
+
+Se estivermos comparando níveis de esforço, registre isso como uma etapa separada de acompanhamento, fora da primeira tentativa original.

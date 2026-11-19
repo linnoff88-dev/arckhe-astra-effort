@@ -1,0 +1,572 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 249,
+    "sha256": "71ba3b5362124fa2055aaca04f34f2662a40c3329b5624408b50064e3afc9a9d"
+  },
+  {
+    "path": ".github/workflows/pages.yml",
+    "bytes": 574,
+    "sha256": "8a71dc7887eae45499503263358a6c5e4dc36a92b08a74146cf6acbca50d3aeb"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 88,
+    "sha256": "d3e137ca591c705abb5a2c117cb4efad23d1e7631b4341c9ff1394c290a96460"
+  },
+  {
+    "path": ".nojekyll",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "Astra-Effort-Guia-pt-BR.pdf",
+    "bytes": 251512,
+    "sha256": "03cd96117c6bc2845fefc96c3752c94141b1f8188d761ac5fd5ffe0086ce7584"
+  },
+  {
+    "path": "Astra-Effort-Super-Guide.pdf",
+    "bytes": 2182542,
+    "sha256": "85ec37f50e79f53315626616425e98b3d360e338026a32cc1aef810c8478fa21"
+  },
+  {
+    "path": "DESIGN.md",
+    "bytes": 4564,
+    "sha256": "abb651b41265eb7a6db8b1fa898064d889cb5670086396bdcb02b7eb080e10cf"
+  },
+  {
+    "path": "PRODUCT.md",
+    "bytes": 1254,
+    "sha256": "5216e22da63c0e1ef53b582ed8b62ff80a637e3aa2667467eda3b2e7fb86725d"
+  },
+  {
+    "path": "PROMPTS.md",
+    "bytes": 9872,
+    "sha256": "3b8a81e50169e0453f58fb035838bfc985e22dee913f8ba490e500adf0cae934"
+  },
+  {
+    "path": "README.md",
+    "bytes": 5265,
+    "sha256": "f121cb94736a62fe2b2c47705da84741f86e7f978b6cf9701010ce0bc272497b"
+  },
+  {
+    "path": "SOURCE-NOTES.md",
+    "bytes": 12194,
+    "sha256": "6b8060419bc32e05f52d07431a7353cc52f4d74fe974670181751edd53e3dec9"
+  },
+  {
+    "path": "START-HERE.md",
+    "bytes": 2505,
+    "sha256": "ee3467c95f7050e8bddf0ab691fd3dce7dac2196164ed91bb058caa8644ea587"
+  },
+  {
+    "path": "SUPER-GUIDE.md",
+    "bytes": 33219,
+    "sha256": "db4f1d6611e229ecb0f9e163a5f4c14b6feb126e1cc02d36691046e29fe773c1"
+  },
+  {
+    "path": "canvases/high-fieldwork.excalidraw",
+    "bytes": 703296,
+    "sha256": "47e31680800718d2a424009961beb32ceea07e7ee10777b3b53d94ed600f7fa0"
+  },
+  {
+    "path": "canvases/low-clearshift.excalidraw",
+    "bytes": 525092,
+    "sha256": "51462c77ae6d6f4d180d0ee5ceac55ecbb24f288725297b023ba1bb2ef88b5f0"
+  },
+  {
+    "path": "canvases/max-fieldnote.excalidraw",
+    "bytes": 537960,
+    "sha256": "8c41e68b5ca6f4c96db48f7e427dbe5b6ba095192c1939b3550fa0f547c732cf"
+  },
+  {
+    "path": "canvases/medium-scopewell.excalidraw",
+    "bytes": 124458,
+    "sha256": "eab87bf0648d80a1bc043eb5c94133a66924eb7db6bda275a169f47cc929d43f"
+  },
+  {
+    "path": "canvases/sol-relayops.excalidraw",
+    "bytes": 178719,
+    "sha256": "5110f3f87c6eb01d6af3f858dc5d3b79916c098c323692466f38d743ab1914fc"
+  },
+  {
+    "path": "canvases/ultra-accord.excalidraw",
+    "bytes": 540405,
+    "sha256": "77dac5fea6843c62a0af84fc8443673d13c92c022e3fe1b4602b4d1e951920b7"
+  },
+  {
+    "path": "canvases/xhigh-scopekeep.excalidraw",
+    "bytes": 111525,
+    "sha256": "5dce1c14ff922fc30640abae2da11d19bcca68a9c473f549ea2754793cb94779"
+  },
+  {
+    "path": "capa/capa.png",
+    "bytes": 1753033,
+    "sha256": "6e6f820c76d0ba87205301d2bf20416cd15492175b81bb7829566727e34cbedf"
+  },
+  {
+    "path": "docs/README.md",
+    "bytes": 936,
+    "sha256": "7809eef7f4426625864dddc37a53f421a450538affe7419d2b31706f6937eaaf"
+  },
+  {
+    "path": "docs/TRADUCAO.md",
+    "bytes": 5405,
+    "sha256": "6b3dc5d018c688cab12d2f358be693e700888dac1ad9c9354d4ec574846e4860"
+  },
+  {
+    "path": "docs/Texto colado(20260910-165842).txt",
+    "bytes": 16032,
+    "sha256": "2e543266031df259f2b1d8b87c19aa47a90dc3a98657032a251c3f6fce6f2338"
+  },
+  {
+    "path": "docs/gpt6-astra-niveis-esforco-exemplos-prompts.md",
+    "bytes": 10583,
+    "sha256": "108426304892df455e80b9d2b7ab779793117e029aabca956f2c9972f1354982"
+  },
+  {
+    "path": "docs/referencia-visual.png",
+    "bytes": 1842966,
+    "sha256": "a13515dca03896ad9bfe156e2fe2df9ee0b5c7743fc2f0d8c459134d00fc91d3"
+  },
+  {
+    "path": "docs/tabela-gpt6-astra-niveis-esforco.xlsx",
+    "bytes": 6087,
+    "sha256": "49192e0042987aa4c0c8133ebb6fdbe5af07b45bfdecd7ec46f29b4e06bd6a98"
+  },
+  {
+    "path": "evidence/BONUS-ARITHMETIC-DEMO.json",
+    "bytes": 875,
+    "sha256": "dab5c231b3d66232a910279fd27258de6ab6673bb3dce37106b3d1a31e4ed131"
+  },
+  {
+    "path": "evidence/BONUS-ARITHMETIC-DEMO.md",
+    "bytes": 1376,
+    "sha256": "68e4af8fd9d7f76da20897b70fe7d0181c0759ce60cda45e1f4a497798f0c841"
+  },
+  {
+    "path": "evidence/PRODUCER-CHECKS.md",
+    "bytes": 10218,
+    "sha256": "26d74f23029428bfcf8fd159140f409143189bb084311a80c6b72bf44014569e"
+  },
+  {
+    "path": "evidence/high-scorecard.png",
+    "bytes": 276087,
+    "sha256": "a7832dca7100074bda516982b87d21aded3b45df24bbe8cea7122cb216d67a33"
+  },
+  {
+    "path": "evidence/low-scorecard.png",
+    "bytes": 265545,
+    "sha256": "9c3c45eae842e697e3db3a3c6928d5ca201d77ad32b0ddeee069e4110c7df0e9"
+  },
+  {
+    "path": "evidence/max-scorecard.png",
+    "bytes": 309517,
+    "sha256": "f94f29ce91ee9cc75c37682479f1b51c4f9a356208dedbaefb90a315c0c60e0a"
+  },
+  {
+    "path": "evidence/medium-scorecard.png",
+    "bytes": 287956,
+    "sha256": "81f7c38903272ebd7dbd84c7694ea273da989e859971cbbc223232ed12e58e81"
+  },
+  {
+    "path": "evidence/results.csv",
+    "bytes": 4347,
+    "sha256": "5eeba146915ddca0c2aeee3fde83cee83d5ffa464b7c9b436c07deaee6f88890"
+  },
+  {
+    "path": "evidence/results.json",
+    "bytes": 7114,
+    "sha256": "aa86c638967259ee2515056f80659c4a1bed3a7e52777d64b88841ed8f396fcc"
+  },
+  {
+    "path": "evidence/results.pt-BR.csv",
+    "bytes": 5267,
+    "sha256": "6a63c63f7ec7d8767c83ad6b724696d05943e82e33f2f48eb384abc624cf3df0"
+  },
+  {
+    "path": "evidence/results.pt-BR.json",
+    "bytes": 8061,
+    "sha256": "024366c7b1a4e9e44361c832c0ca285110fe0fe93958c8a841d79b318c2866da"
+  },
+  {
+    "path": "evidence/sol-scorecard.png",
+    "bytes": 257587,
+    "sha256": "15124827b6e7c644c236d841c1fd36ac4c4d9677e8890a37db77057f026d1203"
+  },
+  {
+    "path": "evidence/ultra-scorecard.png",
+    "bytes": 275676,
+    "sha256": "c018a1a59d6d50c88f4218e0b99d44b1a81dee085972b47ce703a19e7cc1b893"
+  },
+  {
+    "path": "evidence/xhigh-scorecard.png",
+    "bytes": 287230,
+    "sha256": "68a4fc35342c26da5dc56b163199b9309c66bbe6f6098f2afa172ea29b47c185"
+  },
+  {
+    "path": "experiment/ASSIGNMENT.txt",
+    "bytes": 2785,
+    "sha256": "80198d1721d231f7e7abdc8dc039dc468a773a13617ca47a18b417be8b12a7ab"
+  },
+  {
+    "path": "experiment/Assignment.png",
+    "bytes": 295999,
+    "sha256": "ad244d7e311d000d1547704e811ec86e397357cdf4545ffea8f5aff2be2cc7e1"
+  },
+  {
+    "path": "experiment/Astra-Context-Board.excalidraw",
+    "bytes": 48642,
+    "sha256": "148a5db5cd05cffb0294a5b926d00e9e3d087cfe95a96d2d816c625797b4a8d1"
+  },
+  {
+    "path": "experiment/EXECUTION-CONDITIONS.txt",
+    "bytes": 1062,
+    "sha256": "778f1eb9eb4350d84d6e111c2e3cc1af6fcabcf69c7dc4c295e58e3aa6f5cb54"
+  },
+  {
+    "path": "experiment/YOUR-RUN-LOG.csv",
+    "bytes": 220,
+    "sha256": "c075fac66e5696273e0ee4ec5b1fe8caf920be60a67fd3710e2ddd668966b647"
+  },
+  {
+    "path": "files/Astra-Effort-Super-Guide.pdf",
+    "bytes": 2182542,
+    "sha256": "85ec37f50e79f53315626616425e98b3d360e338026a32cc1aef810c8478fa21"
+  },
+  {
+    "path": "files/Astra-Super-Guide.zip",
+    "bytes": 4895609,
+    "sha256": "bf842baa8ddda198082cee05ce24fe863f4bc2903ef5eee7ed5b25a811423f9a"
+  },
+  {
+    "path": "guia/assets/hero.png",
+    "bytes": 1753033,
+    "sha256": "6e6f820c76d0ba87205301d2bf20416cd15492175b81bb7829566727e34cbedf"
+  },
+  {
+    "path": "guia/fontes.html",
+    "bytes": 27955,
+    "sha256": "da7f8954dd287d4f3a3814016dd78b3c6d3e07ea12af2da1a99bb8969729ab2b"
+  },
+  {
+    "path": "guia/index.html",
+    "bytes": 23230,
+    "sha256": "4b6dc2f2ec2f7b9266042973298ff5a0694f94111bdbcb06766919f72060b441"
+  },
+  {
+    "path": "guia/leitura.html",
+    "bytes": 53133,
+    "sha256": "2eb177ced84f5a0cf5b19f0787190a92f3fe48a010b9b52826b4a0054a90bd5d"
+  },
+  {
+    "path": "guia/prompts.html",
+    "bytes": 24779,
+    "sha256": "685b468257799e66eb4094378b422d6dcda2d8696da1792f5f35e84498afdf1e"
+  },
+  {
+    "path": "guia/revisao.html",
+    "bytes": 24442,
+    "sha256": "f9d2717dc35b45600350ed2a36dde6ee34e118751248462a31c1c3d365b19ed0"
+  },
+  {
+    "path": "guia/transcricao.html",
+    "bytes": 29495,
+    "sha256": "b66690055ee4ccbc269db386d9c798707cfa2ca5948f20c123ada371226f01b5"
+  },
+  {
+    "path": "index.html",
+    "bytes": 368,
+    "sha256": "732fe343311539be544ae3e695615d2afdcbc6a135dcd2b7a4b947f98f9ba770"
+  },
+  {
+    "path": "original-en/Astra-Effort-Super-Guide.pdf",
+    "bytes": 2182542,
+    "sha256": "85ec37f50e79f53315626616425e98b3d360e338026a32cc1aef810c8478fa21"
+  },
+  {
+    "path": "original-en/MANIFEST.json",
+    "bytes": 6054,
+    "sha256": "d961a96ab9c1d2a6fba0f604a39bacc1a2297bfa7655be2db0f9dc7c6a6bda3e"
+  },
+  {
+    "path": "original-en/PROMPTS.md",
+    "bytes": 7460,
+    "sha256": "a7e2cc85667261ea18a3659fc033d4bbb87fce098b48dc7730bc318040412256"
+  },
+  {
+    "path": "original-en/SOURCE-NOTES.md",
+    "bytes": 10547,
+    "sha256": "12d448755b6731929c5d727d73916b2c0fc24a871d56de5ed4296b7d8b8888a4"
+  },
+  {
+    "path": "original-en/START-HERE.md",
+    "bytes": 1901,
+    "sha256": "1cd5701766db871c5ee51968591f03b87a3edce5a8cb31b233de4b4181e5ec7b"
+  },
+  {
+    "path": "original-en/SUPER-GUIDE.md",
+    "bytes": 30028,
+    "sha256": "3a2240ae97e6ce487a325e314ba2c8d5d4e32f686585aad1daefdfcbda44e0e2"
+  },
+  {
+    "path": "original-en/canvases/high-fieldwork.excalidraw",
+    "bytes": 703296,
+    "sha256": "47e31680800718d2a424009961beb32ceea07e7ee10777b3b53d94ed600f7fa0"
+  },
+  {
+    "path": "original-en/canvases/low-clearshift.excalidraw",
+    "bytes": 525092,
+    "sha256": "51462c77ae6d6f4d180d0ee5ceac55ecbb24f288725297b023ba1bb2ef88b5f0"
+  },
+  {
+    "path": "original-en/canvases/max-fieldnote.excalidraw",
+    "bytes": 537960,
+    "sha256": "8c41e68b5ca6f4c96db48f7e427dbe5b6ba095192c1939b3550fa0f547c732cf"
+  },
+  {
+    "path": "original-en/canvases/medium-scopewell.excalidraw",
+    "bytes": 124458,
+    "sha256": "eab87bf0648d80a1bc043eb5c94133a66924eb7db6bda275a169f47cc929d43f"
+  },
+  {
+    "path": "original-en/canvases/sol-relayops.excalidraw",
+    "bytes": 178719,
+    "sha256": "5110f3f87c6eb01d6af3f858dc5d3b79916c098c323692466f38d743ab1914fc"
+  },
+  {
+    "path": "original-en/canvases/ultra-accord.excalidraw",
+    "bytes": 540405,
+    "sha256": "77dac5fea6843c62a0af84fc8443673d13c92c022e3fe1b4602b4d1e951920b7"
+  },
+  {
+    "path": "original-en/canvases/xhigh-scopekeep.excalidraw",
+    "bytes": 111525,
+    "sha256": "5dce1c14ff922fc30640abae2da11d19bcca68a9c473f549ea2754793cb94779"
+  },
+  {
+    "path": "original-en/docs/transcricao-video.txt",
+    "bytes": 19278,
+    "sha256": "d9d4f3583bd712e1b034493d6d293b5148934834e6eadf7003708fb09190e7a1"
+  },
+  {
+    "path": "original-en/evidence/BONUS-ARITHMETIC-DEMO.json",
+    "bytes": 875,
+    "sha256": "dab5c231b3d66232a910279fd27258de6ab6673bb3dce37106b3d1a31e4ed131"
+  },
+  {
+    "path": "original-en/evidence/BONUS-ARITHMETIC-DEMO.md",
+    "bytes": 1055,
+    "sha256": "3a9dc525efa2f007514f5317b36de3528748060dc670dfba4eb3e9b216cc1787"
+  },
+  {
+    "path": "original-en/evidence/PRODUCER-CHECKS.md",
+    "bytes": 8003,
+    "sha256": "db4518a5fa3bf9a18bd5d44be0ae5eb1fd7f5d636aa5aaad51a3e057d4eed91b"
+  },
+  {
+    "path": "original-en/evidence/high-scorecard.png",
+    "bytes": 276087,
+    "sha256": "a7832dca7100074bda516982b87d21aded3b45df24bbe8cea7122cb216d67a33"
+  },
+  {
+    "path": "original-en/evidence/low-scorecard.png",
+    "bytes": 265545,
+    "sha256": "9c3c45eae842e697e3db3a3c6928d5ca201d77ad32b0ddeee069e4110c7df0e9"
+  },
+  {
+    "path": "original-en/evidence/max-scorecard.png",
+    "bytes": 309517,
+    "sha256": "f94f29ce91ee9cc75c37682479f1b51c4f9a356208dedbaefb90a315c0c60e0a"
+  },
+  {
+    "path": "original-en/evidence/medium-scorecard.png",
+    "bytes": 287956,
+    "sha256": "81f7c38903272ebd7dbd84c7694ea273da989e859971cbbc223232ed12e58e81"
+  },
+  {
+    "path": "original-en/evidence/results.csv",
+    "bytes": 4347,
+    "sha256": "5eeba146915ddca0c2aeee3fde83cee83d5ffa464b7c9b436c07deaee6f88890"
+  },
+  {
+    "path": "original-en/evidence/results.json",
+    "bytes": 7114,
+    "sha256": "aa86c638967259ee2515056f80659c4a1bed3a7e52777d64b88841ed8f396fcc"
+  },
+  {
+    "path": "original-en/evidence/sol-scorecard.png",
+    "bytes": 257587,
+    "sha256": "15124827b6e7c644c236d841c1fd36ac4c4d9677e8890a37db77057f026d1203"
+  },
+  {
+    "path": "original-en/evidence/ultra-scorecard.png",
+    "bytes": 275676,
+    "sha256": "c018a1a59d6d50c88f4218e0b99d44b1a81dee085972b47ce703a19e7cc1b893"
+  },
+  {
+    "path": "original-en/evidence/xhigh-scorecard.png",
+    "bytes": 287230,
+    "sha256": "68a4fc35342c26da5dc56b163199b9309c66bbe6f6098f2afa172ea29b47c185"
+  },
+  {
+    "path": "original-en/experiment/ASSIGNMENT.txt",
+    "bytes": 2444,
+    "sha256": "45d564de3d8ab0e132c8079750d55ead222cfbf8436785bf5adf81a187b94148"
+  },
+  {
+    "path": "original-en/experiment/Assignment.png",
+    "bytes": 295999,
+    "sha256": "ad244d7e311d000d1547704e811ec86e397357cdf4545ffea8f5aff2be2cc7e1"
+  },
+  {
+    "path": "original-en/experiment/Astra-Context-Board.excalidraw",
+    "bytes": 48642,
+    "sha256": "148a5db5cd05cffb0294a5b926d00e9e3d087cfe95a96d2d816c625797b4a8d1"
+  },
+  {
+    "path": "original-en/experiment/EXECUTION-CONDITIONS.txt",
+    "bytes": 909,
+    "sha256": "7b63c1e5d0f1c987caafe8ae7b2fa799028072767011d3a3a1d517dbc33d224e"
+  },
+  {
+    "path": "original-en/experiment/YOUR-RUN-LOG.csv",
+    "bytes": 220,
+    "sha256": "c075fac66e5696273e0ee4ec5b1fe8caf920be60a67fd3710e2ddd668966b647"
+  },
+  {
+    "path": "original-en/prompts/01-personal-effort-picker.txt",
+    "bytes": 752,
+    "sha256": "bdd3b6d77484b73377a50a526eaa066933ed7bcb301be91758176a4e2eb021a2"
+  },
+  {
+    "path": "original-en/prompts/02-three-thread-comparison.txt",
+    "bytes": 999,
+    "sha256": "b1a32b1d47d35a723c45969715c0744e5d07c104f08dbaa96491743e6c9ef076"
+  },
+  {
+    "path": "original-en/prompts/03-follow-through-contract.txt",
+    "bytes": 706,
+    "sha256": "5739a5a509ca8954c2d60585f24deb85dac50210e019f10ec465a706a1d415b8"
+  },
+  {
+    "path": "original-en/prompts/04-causal-ui-check.txt",
+    "bytes": 706,
+    "sha256": "8d2e734d7c29a3539a06148263e670f90e0ef19c03fc9a5321d12dbfbc04ea58"
+  },
+  {
+    "path": "original-en/prompts/05-research-counterexample.txt",
+    "bytes": 686,
+    "sha256": "c17f42048a9ebdae983285681f62524888be9df70c0961b0fe6581146bd4c77b"
+  },
+  {
+    "path": "original-en/prompts/06-moat-stress-test.txt",
+    "bytes": 613,
+    "sha256": "17c0721c575cb59819ca1844140ef0d87ef4b93726bac456d75672d55bc8e816"
+  },
+  {
+    "path": "original-en/prompts/07-bound-delegation.txt",
+    "bytes": 641,
+    "sha256": "f49116e4073d1f6708a91604d7f87fe1dcb5d11f0ac574296f8e58b5de623a56"
+  },
+  {
+    "path": "original-en/prompts/08-escalate-one-failure.txt",
+    "bytes": 537,
+    "sha256": "fccdd4eef42b5d3efd6e0022ce1f969d6645a8c37ebc4de6dcc50d71c773dfa4"
+  },
+  {
+    "path": "original-en/prompts/09-review-usage-correctly.txt",
+    "bytes": 629,
+    "sha256": "41786a128a175aec7670240f82aaa3f9bf3fc6e599c1ef4744ab4cab23997fae"
+  },
+  {
+    "path": "original-en/prompts/10-evidence-first-grok-sidequest.txt",
+    "bytes": 632,
+    "sha256": "eceb58d94516ffa7ed9e5c9a5420348450288ee09451158e91d2444453ee0e8e"
+  },
+  {
+    "path": "prompts/01-personal-effort-picker.txt",
+    "bytes": 852,
+    "sha256": "97cf5ef43338eb4bc015c880648ac54c8026825e2811c129ad9e39bf2585736a"
+  },
+  {
+    "path": "prompts/02-three-thread-comparison.txt",
+    "bytes": 1201,
+    "sha256": "a37cc69cd2a8cddb6a8c571e73280775e99f3e43b549e067836e460a4d881c74"
+  },
+  {
+    "path": "prompts/03-follow-through-contract.txt",
+    "bytes": 808,
+    "sha256": "e2d730f26c937707753b88621e206c9d55f5d4b5e6e66c91d489d72c758be366"
+  },
+  {
+    "path": "prompts/04-causal-ui-check.txt",
+    "bytes": 786,
+    "sha256": "a217cf79a13e1053158c462447f93919b9774f755d44af952a48608343696793"
+  },
+  {
+    "path": "prompts/05-research-counterexample.txt",
+    "bytes": 769,
+    "sha256": "edb84b748801cd38d990cc5fcdc74855d54a746622788684502a938cad94a134"
+  },
+  {
+    "path": "prompts/06-moat-stress-test.txt",
+    "bytes": 839,
+    "sha256": "b2e63089232af2c43799ad83cba99e2355849d6b555320d32ca72bb79ca81202"
+  },
+  {
+    "path": "prompts/07-bound-delegation.txt",
+    "bytes": 761,
+    "sha256": "ab2b0792e49c277c9ea69e2dec11c48e486c43c1e83848d02ca853f1df80bf43"
+  },
+  {
+    "path": "prompts/08-escalate-one-failure.txt",
+    "bytes": 581,
+    "sha256": "2ce2769632f08e493c2aff8974408b8637fb6c9294c9dc5640bdc1f327cdbafa"
+  },
+  {
+    "path": "prompts/09-review-usage-correctly.txt",
+    "bytes": 790,
+    "sha256": "d9fc711cffb8b0a619353767ffb90c7bf9f16468a193b17b2430c42031fc8ec7"
+  },
+  {
+    "path": "prompts/10-evidence-first-grok-sidequest.txt",
+    "bytes": 780,
+    "sha256": "87b382c5d7e653c3bd7e48d28358e901be411c895eabbfd769ac4624fa0d8e31"
+  },
+  {
+    "path": "scripts/build_docs.py",
+    "bytes": 4410,
+    "sha256": "7b4b086dac7f77ed5032505ab537c59604e744d6c4eda1ba976c7f8e72151665"
+  },
+  {
+    "path": "scripts/requirements.txt",
+    "bytes": 17,
+    "sha256": "c30202fbc2f2eb1da451b8bae46b6867c07915844cec203a243991d14b8d4efc"
+  },
+  {
+    "path": "scripts/verify.py",
+    "bytes": 5285,
+    "sha256": "eee348030189682366745ca78f9cb4fe55a44d0dcc2a79acdeedd1d201bdda2a"
+  },
+  {
+    "path": "source/README.md",
+    "bytes": 1992,
+    "sha256": "5de36c93e5ec66863d30c46480e2071d46c23f826e34fb9b3c9c2d312258be3f"
+  },
+  {
+    "path": "source/content.md",
+    "bytes": 642,
+    "sha256": "fa6ee09468e847644c936f46748bca967bea1b88d824d64b4df1087f2ed6b4f4"
+  },
+  {
+    "path": "source/meta.json",
+    "bytes": 2145,
+    "sha256": "e353b86f74382d6df98d32ccfb4e53d4ebfd5f99850072f84ff49fb5f3393b20"
+  },
+  {
+    "path": "source/provenance.json",
+    "bytes": 16617,
+    "sha256": "1dd45b720c87bf9a097858989d1ae21c2578b2ec7e204aee3b2b17a0ffb664d4"
+  }
+]
