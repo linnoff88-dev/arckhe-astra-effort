@@ -1,26 +1,26 @@
-# Astra Effort — guide in Portuguese
+﻿# Astra Effort â€” guide in Portuguese
 
-**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+**ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
-[![Astra Effort: levels of effort in practice](capa/capa.png)](https://inematds.github.io/astra-effort/guia/en/)
+[![Astra Effort: levels of effort in practice](capa/capa.png)](https://linnoff88-dev.github.io/
 
-**[Open the user guide](https://inematds.github.io/astra-effort/guia/en/)** · **[Read the full guide](https://inematds.github.io/astra-effort/guia/en/leitura.html)** · **[Download the PDF in Portuguese](Astra-Effort-Guia-pt-BR.pdf)**
+**[Open the user guide](https://linnoff88-dev.github.io/ Â· **[Read the full guide](https://linnoff88-dev.github.io/ Â· **[Download the PDF in Portuguese](Astra-Effort-Guia-pt-BR.pdf)**
 
 Portuguese edition of the **GPT-6 Astra Effort Super Guide**, by Mark Kashef / Early AI Dopters: seven documented first attempts, ten reusable prompts, editable canvases, and a method for comparing effort levels in your work.
 
-The project brings together the kit’s translation and supplementary materials provided by the user. The results are from the original experiment of September 7, 2026, with research concluded on September 8. The translation does not rerun the tests or revalidate prices or features.
+The project brings together the kitâ€™s translation and supplementary materials provided by the user. The results are from the original experiment of September 7, 2026, with research concluded on September 8. The translation does not rerun the tests or revalidate prices or features.
 
 ## Start here
 
 1. Read [START-HERE.md](START-HERE.md) and the [full guide in Portuguese](SUPER-GUIDE.md).
 2. Choose one of the [ten prompts](PROMPTS.md) and adapt the fields to your task.
-3. Compare the [results in Portuguese — CSV](evidence/results.pt-BR.csv) or [JSON](evidence/results.pt-BR.json).
+3. Compare the [results in Portuguese â€” CSV](evidence/results.pt-BR.csv) or [JSON](evidence/results.pt-BR.json).
 4. Consult the [producer's checks](evidence/PRODUCER-CHECKS.md) before drawing conclusions.
 5. Record your own test using [experiment/YOUR-RUN-LOG.csv](experiment/YOUR-RUN-LOG.csv).
 
 Medium was the author's initial preference **for this research and build task**. Times are individual observations; processed tokens include cached input and **do not represent financial cost**. Ultra was the condition with delegation enabled.
 
-**See also:** [Effort in practice](https://inematds.github.io/modelos/guia/esforco/), in the `modelos` repository. The page cross-references these data with a Claude Opus 5.5 test at each effort level. It is an external reference and does not change this translation.
+**See also:** [Effort in practice](https://linnoff88-dev.github.io/ in the `modelos` repository. The page cross-references these data with a Claude Opus 5.5 test at each effort level. It is an external reference and does not change this translation.
 
 ## Library
 
@@ -50,7 +50,7 @@ The [translation glossary](docs/TRADUCAO.md) explains the translation choices an
 There are no dependencies for reading the material or serving the generated files:
 
 ```bash
-git clone https://github.com/inematds/astra-effort.git
+git clone https://github.com/linnoff88-dev/astra-effort.git
 cd astra-effort
 python3 -m http.server 8000
 ```

@@ -1,6 +1,6 @@
 ---
 name: Astra Effort
-description: Guia INEMA em português com referência visual de robô preto e dourado.
+description: Guia ARCKHÉ em portuguÃªs com referÃªncia visual de robÃ´ preto e dourado.
 colors:
   primary: "#E2A23B"
   primary-light-theme: "#85520d"
@@ -10,7 +10,7 @@ colors:
   line: "#272730"
   text: "#e9e9ee"
   muted: "#9a9aa6"
-  inema: "#38bdf8"
+  ARCKHÉ: "#38bdf8"
   pro: "#cbd5e1"
   background-light: "#f6f7f9"
   text-light: "#1a1a22"
@@ -59,47 +59,47 @@ components:
 
 ## Overview
 
-O projeto usa o template estabelecido da skill projetos-landing-guia, com a imagem de robô preto e dourado escolhida pelo usuário. O conteúdo de estudo orienta a navegação: comparação, instruções e biblioteca, com páginas de leitura dedicadas.
+O projeto usa o template estabelecido da skill projetos-landing-guia, com a imagem de robÃ´ preto e dourado escolhida pelo usuÃ¡rio. O conteÃºdo de estudo orienta a navegaÃ§Ã£o: comparaÃ§Ã£o, instruÃ§Ãµes e biblioteca, com pÃ¡ginas de leitura dedicadas.
 
 ## Colors
 
-Âmbar destaca ações e links; sky identifica INEMA.CLUB e a cor PRO identifica o catálogo. O tema claro usa fundo #f6f7f9, texto #1a1a22, secundário #5b5b68, linhas #e1e3ea, INEMA #0369a1 e PRO #b45309. O âmbar claro efetivo é #85520d, após override de acessibilidade.
+Ã‚mbar destaca aÃ§Ãµes e links; sky identifica ARCKHÉ AI e a cor PRO identifica o catÃ¡logo. O tema claro usa fundo #f6f7f9, texto #1a1a22, secundÃ¡rio #5b5b68, linhas #e1e3ea, ARCKHÉ #0369a1 e PRO #b45309. O Ã¢mbar claro efetivo Ã© #85520d, apÃ³s override de acessibilidade.
 
-Botões sólidos e números de etapas no tema claro usam texto branco: contraste medido de 6,54:1. Links permanecem âmbar escuro. O foco usa #f0c070 no tema escuro e #775013 no claro.
+BotÃµes sÃ³lidos e nÃºmeros de etapas no tema claro usam texto branco: contraste medido de 6,54:1. Links permanecem Ã¢mbar escuro. O foco usa #f0c070 no tema escuro e #775013 no claro.
 
 ## Typography
 
-Sora define títulos e botões; Inter, corpo; JetBrains Mono, código. O hero limita o título a 22ch e a descrição a 65ch. O leitor usa contêiner de 78ch, corpo com altura de linha 1,85 e h2 de 1,7rem. A tabela usa .94rem; nos leitores, .88rem.
+Sora define tÃ­tulos e botÃµes; Inter, corpo; JetBrains Mono, cÃ³digo. O hero limita o tÃ­tulo a 22ch e a descriÃ§Ã£o a 65ch. O leitor usa contÃªiner de 78ch, corpo com altura de linha 1,85 e h2 de 1,7rem. A tabela usa .94rem; nos leitores, .88rem.
 
 ## Layout
 
-Contêiner máximo de 1160px, margens automáticas e 22px laterais. O hero final usa uma coluna, 48px de espaçamento vertical e capa panorâmica abaixo do texto. A imagem usa width:100%, height:auto e object-fit:contain; preserve a proporção.
+ContÃªiner mÃ¡ximo de 1160px, margens automÃ¡ticas e 22px laterais. O hero final usa uma coluna, 48px de espaÃ§amento vertical e capa panorÃ¢mica abaixo do texto. A imagem usa width:100%, height:auto e object-fit:contain; preserve a proporÃ§Ã£o.
 
-A navegação fica fixa no topo. Abaixo de 980px oculta links de seção; abaixo de 600px permite quebra de linha e reduz os controles. A biblioteca passa de duas colunas para uma. A tabela tem rolagem horizontal interna. As etapas passam de marcador de 46px para 34px.
+A navegaÃ§Ã£o fica fixa no topo. Abaixo de 980px oculta links de seÃ§Ã£o; abaixo de 600px permite quebra de linha e reduz os controles. A biblioteca passa de duas colunas para uma. A tabela tem rolagem horizontal interna. As etapas passam de marcador de 46px para 34px.
 
 ## Elevation & Depth
 
-A versão final usa superfícies e bordas finas. A sombra da figura do template é anulada por box-shadow:none. A navegação escura mantém transparência e backdrop-filter:blur(12px); a clara usa fundo sólido. Não adicionar halos à capa.
+A versÃ£o final usa superfÃ­cies e bordas finas. A sombra da figura do template Ã© anulada por box-shadow:none. A navegaÃ§Ã£o escura mantÃ©m transparÃªncia e backdrop-filter:blur(12px); a clara usa fundo sÃ³lido. NÃ£o adicionar halos Ã  capa.
 
 ## Shapes
 
-Botões com raio de 10px, cards com 14px, figura com 16px. Código e tabela têm 12px. Chips do fluxo são arredondados. A capa é uma imagem real adaptada da referência, sem reconstrução ilustrativa em CSS.
+BotÃµes com raio de 10px, cards com 14px, figura com 16px. CÃ³digo e tabela tÃªm 12px. Chips do fluxo sÃ£o arredondados. A capa Ã© uma imagem real adaptada da referÃªncia, sem reconstruÃ§Ã£o ilustrativa em CSS.
 
 ## Components
 
-Navegação: marca, INEMA.CLUB, PRO, seções, alternância de tema e GitHub. O tema persiste em localStorage quando disponível; a falha de armazenamento não impede o controle.
+NavegaÃ§Ã£o: marca, ARCKHÉ AI, PRO, seÃ§Ãµes, alternÃ¢ncia de tema e GitHub. O tema persiste em localStorage quando disponÃ­vel; a falha de armazenamento nÃ£o impede o controle.
 
-Prompt copiável: botão com feedback em região role=status. Se a área de transferência falhar, seleciona o texto e orienta a cópia manual.
+Prompt copiÃ¡vel: botÃ£o com feedback em regiÃ£o role=status. Se a Ã¡rea de transferÃªncia falhar, seleciona o texto e orienta a cÃ³pia manual.
 
-Tabela: cabeçalhos semânticos, caption, células com espaçamento e wrapper focalizável. O destaque de Medium indica a escolha histórica do autor para a tarefa, sem alegação de superioridade universal.
+Tabela: cabeÃ§alhos semÃ¢nticos, caption, cÃ©lulas com espaÃ§amento e wrapper focalizÃ¡vel. O destaque de Medium indica a escolha histÃ³rica do autor para a tarefa, sem alegaÃ§Ã£o de superioridade universal.
 
-Leitor: sumário recolhível, links de retorno, texto amplo e estilos de impressão em A4. A folha impressa remove navegação e adota texto escuro sobre branco.
+Leitor: sumÃ¡rio recolhÃ­vel, links de retorno, texto amplo e estilos de impressÃ£o em A4. A folha impressa remove navegaÃ§Ã£o e adota texto escuro sobre branco.
 
 ## Do's and Don'ts
 
-- Preserve os links INEMA.CLUB e PRO e a terminologia técnica dos arquivos.
-- Preserve a proporção da capa em todos os tamanhos de tela.
-- Use foco visível de 3px e respeite prefers-reduced-motion na rolagem.
-- Identifique dados históricos, hipóteses e arquivos originais em inglês.
-- Não apresente tokens processados como custo nem execuções individuais como médias.
-- Não refaça a identidade do template para satisfazer alertas genéricos de estilo.
+- Preserve os links ARCKHÉ AI e PRO e a terminologia tÃ©cnica dos arquivos.
+- Preserve a proporÃ§Ã£o da capa em todos os tamanhos de tela.
+- Use foco visÃ­vel de 3px e respeite prefers-reduced-motion na rolagem.
+- Identifique dados histÃ³ricos, hipÃ³teses e arquivos originais em inglÃªs.
+- NÃ£o apresente tokens processados como custo nem execuÃ§Ãµes individuais como mÃ©dias.
+- NÃ£o refaÃ§a a identidade do template para satisfazer alertas genÃ©ricos de estilo.

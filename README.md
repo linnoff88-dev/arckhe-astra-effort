@@ -8,9 +8,9 @@
 
 **ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
-[![Astra Effort: nÃ­veis de esforÃ§o na prÃ¡tica](capa/capa.png)](https://inematds.github.io/astra-effort/guia/)
+[![Astra Effort: nÃ­veis de esforÃ§o na prÃ¡tica](capa/capa.png)](https://linnoff88-dev.github.io/
 
-**[Abrir o guia de uso](https://inematds.github.io/astra-effort/guia/)** Â· **[Ler o guia completo](https://inematds.github.io/astra-effort/guia/leitura.html)** Â· **[Baixar o PDF em portuguÃªs](Astra-Effort-Guia-pt-BR.pdf)**
+**[Abrir o guia de uso](https://linnoff88-dev.github.io/ Â· **[Ler o guia completo](https://linnoff88-dev.github.io/ Â· **[Baixar o PDF em portuguÃªs](Astra-Effort-Guia-pt-BR.pdf)**
 
 EdiÃ§Ã£o em portuguÃªs do **GPT-6 Astra Effort Super Guide**, de Mark Kashef / Early AI Dopters: sete primeiras tentativas documentadas, dez prompts reutilizÃ¡veis, quadros editÃ¡veis e um mÃ©todo para comparar nÃ­veis de esforÃ§o no seu trabalho.
 
@@ -26,7 +26,7 @@ O projeto reÃºne a traduÃ§Ã£o do kit e materiais complementares enviados p
 
 Medium foi a preferÃªncia inicial do autor **para esta tarefa de pesquisa e construÃ§Ã£o**. Tempos sÃ£o observaÃ§Ãµes individuais; tokens processados incluem entrada em cache e **nÃ£o representam custo financeiro**. Ultra foi a condiÃ§Ã£o com delegaÃ§Ã£o habilitada.
 
-**Ver tambÃ©m:** [EsforÃ§o na prÃ¡tica](https://inematds.github.io/modelos/guia/esforco/), no repositÃ³rio `modelos`. A pÃ¡gina cruza estes dados com um teste do Claude Opus 5.5 por nÃ­vel de esforÃ§o. Ã‰ uma referÃªncia externa e nÃ£o altera esta traduÃ§Ã£o.
+**Ver tambÃ©m:** [EsforÃ§o na prÃ¡tica](https://linnoff88-dev.github.io/ no repositÃ³rio `modelos`. A pÃ¡gina cruza estes dados com um teste do Claude Opus 5.5 por nÃ­vel de esforÃ§o. Ã‰ uma referÃªncia externa e nÃ£o altera esta traduÃ§Ã£o.
 
 ## Biblioteca
 
@@ -56,7 +56,7 @@ O [glossÃ¡rio da traduÃ§Ã£o](docs/TRADUCAO.md) explica as escolhas e os ca
 NÃ£o hÃ¡ dependÃªncias para ler o material nem para servir os arquivos jÃ¡ gerados:
 
 ```bash
-git clone https://github.com/inematds/astra-effort.git
+git clone https://github.com/linnoff88-dev/astra-effort.git
 cd astra-effort
 python3 -m http.server 8000
 ```

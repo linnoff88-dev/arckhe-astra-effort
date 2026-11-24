@@ -8,24 +8,24 @@ web
 
 ## Stack
 
-HTML estático em `guia/`, conforme a skill projetos-landing-guia do ecossistema INEMA. Python gera a leitura HTML dos documentos traduzidos. Publicação em GitHub Pages por Actions.
+HTML estÃ¡tico em `guia/`, conforme a skill projetos-landing-guia do ecossistema ARCKHÉ. Python gera a leitura HTML dos documentos traduzidos. PublicaÃ§Ã£o em GitHub Pages por Actions.
 
 ## Users
 
-Leitores de português que querem estudar e comparar níveis de esforço de agentes de IA. Público inferido do pedido de tradução e publicação no portal INEMA.
+Leitores de portuguÃªs que querem estudar e comparar nÃ­veis de esforÃ§o de agentes de IA. PÃºblico inferido do pedido de traduÃ§Ã£o e publicaÃ§Ã£o no portal ARCKHÉ.
 
 ## Product Purpose
 
-Reunir a tradução do kit de Mark Kashef, dados de sete primeiras tentativas, dez prompts e materiais enviados pelo usuário, com acesso aos originais.
+Reunir a traduÃ§Ã£o do kit de Mark Kashef, dados de sete primeiras tentativas, dez prompts e materiais enviados pelo usuÃ¡rio, com acesso aos originais.
 
 ## Capabilities and Constraints
 
-Conteúdo de referência, sem execução de modelos ou cobrança. Resultados históricos datados, sem ranking universal. Tokens processados não são custos. Comandos, nomes de configurações e dados brutos preservados.
+ConteÃºdo de referÃªncia, sem execuÃ§Ã£o de modelos ou cobranÃ§a. Resultados histÃ³ricos datados, sem ranking universal. Tokens processados nÃ£o sÃ£o custos. Comandos, nomes de configuraÃ§Ãµes e dados brutos preservados.
 
 ## Brand Commitments
 
-INEMA.CLUB e PRO na navegação. Padrão da skill projetos-landing-guia. Imagem preta e dourada de robô fornecida pelo usuário como referência; capa adaptada com imagegen.
+ARCKHÉ AI e PRO na navegaÃ§Ã£o. PadrÃ£o da skill projetos-landing-guia. Imagem preta e dourada de robÃ´ fornecida pelo usuÃ¡rio como referÃªncia; capa adaptada com imagegen.
 
 ## Evidence on Hand
 
-`evidence/results.json`, `evidence/PRODUCER-CHECKS.md`, `original-en/`, `docs/`, `canvases/`. Nenhuma nova execução de benchmark foi feita durante a tradução.
+`evidence/results.json`, `evidence/PRODUCER-CHECKS.md`, `original-en/`, `docs/`, `canvases/`. Nenhuma nova execuÃ§Ã£o de benchmark foi feita durante a traduÃ§Ã£o.
