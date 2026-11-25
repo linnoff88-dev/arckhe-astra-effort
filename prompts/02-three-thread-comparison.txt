@@ -1,8 +1,8 @@
-Crie três tarefas separadas para comparação: "LOW | Meu teste", "MED | Meu teste" e "HIGH | Meu teste". Use GPT-6 Astra com esforço de raciocínio low, medium e high, respectivamente, se houver suporte neste ambiente. Mantenha a mesma configuração de velocidade. Verifique e informe o modelo e o esforço efetivos; os rótulos, sozinhos, não bastam.
+Crie três tarefas separadas para comparaçêo: "LOW | Meu teste", "MED | Meu teste" e "HIGH | Meu teste". Use GPT-6 Astra com esforço de raciocínio low, medium e high, respectivamente, se houver suporte neste ambiente. Mantenha a mesma configuraçêo de velocidade. Verifique e informe o modelo e o esforço efetivos; os rótulos, sozinhos, nêo bastam.
 
-Dê às três a mesma tarefa abaixo, em pastas novas e isoladas. Não inclua outras execuções nem suas saídas. Mantenha desativada a delegação opcional. Dê a cada uma até [LIMITE DE TEMPO] para a primeira tentativa. Preserve a saída antes de qualquer acompanhamento. Registre trabalho concluído, requisitos faltantes, bloqueios, tempo decorrido e uso atribuível à tarefa, quando disponível.
+Dê às três a mesma tarefa abaixo, em pastas novas e isoladas. Nêo inclua outras execuções nem suas saídas. Mantenha desativada a delegaçêo opcional. Dê a cada uma até [LIMITE DE TEMPO] para a primeira tentativa. Preserve a saída antes de qualquer acompanhamento. Registre trabalho concluído, requisitos faltantes, bloqueios, tempo decorrido e uso atribuível à tarefa, quando disponível.
 
-Execute em paralelo somente se ferramentas e espaços de trabalho estiverem isolados; execute em sequência qualquer fluxo que compartilhe o controle do computador. Acompanhe o progresso sem orientar os participantes. Se este ambiente não puder criar tarefas ou configurar o esforço, diga exatamente qual etapa devo realizar manualmente. Nunca substitua configurações silenciosamente.
+Execute em paralelo somente se ferramentas e espaços de trabalho estiverem isolados; execute em sequência qualquer fluxo que compartilhe o controle do computador. Acompanhe o progresso sem orientar os participantes. Se este ambiente nêo puder criar tarefas ou configurar o esforço, diga exatamente qual etapa devo realizar manualmente. Nunca substitua configurações silenciosamente.
 
 TAREFA:
-[COLE UMA ÚNICA VERSÃO FIXA DA TAREFA]
+[COLE UMA ÚNICA VERSêO FIXA DA TAREFA]

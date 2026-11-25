@@ -1,6 +1,6 @@
 {
   "research_lock": "2026-09-08",
-  "scope": "Sete primeiras tentativas de 7 de setembro de 2026; máquina compartilhada; delegação habilitada em Ultra. Tokens processados incluem entrada em cache.",
+  "scope": "Sete primeiras tentativas de 7 de setembro de 2026; máquina compartilhada; delegaçêo habilitada em Ultra. Tokens processados incluem entrada em cache.",
   "runs": [
     {
       "key": "low",
@@ -16,12 +16,12 @@
       "reddit": 8,
       "x": 0,
       "canvas_elements": 161,
-      "what": "Acompanha tarefas de limpeza não realizadas até a correção e a nova verificação.",
+      "what": "Acompanha tarefas de limpeza nêo realizadas até a correçêo e a nova verificaçêo.",
       "avatar": "donos de empresas de limpeza comercial que atendem escritórios regularmente.",
       "moat": "padrões específicos de cada cliente e histórico das correções que funcionaram.",
-      "proved": "a correção precisava ser verificada novamente antes de encerrar o serviço. O estado encerrado permaneceu após recarregar.",
+      "proved": "a correçêo precisava ser verificada novamente antes de encerrar o serviço. O estado encerrado permaneceu após recarregar.",
       "gap": "nenhuma evidência do X. Mais tempo decorrido e tokens processados que Medium.",
-      "takeaway": "lembre-se de que Low também pode produzir um fluxo completo. Menor esforço não garante um trabalho total menor."
+      "takeaway": "lembre-se de que Low também pode produzir um fluxo completo. Menor esforço nêo garante um trabalho total menor."
     },
     {
       "key": "medium",
@@ -37,10 +37,10 @@
       "reddit": 6,
       "x": 0,
       "canvas_elements": 133,
-      "what": "Calcula preços de serviços extras de limpeza e registra a aceitação do cliente.",
-      "avatar": "donos de empresas de limpeza comercial com contratos de prestação de serviços por escrito.",
+      "what": "Calcula preços de serviços extras de limpeza e registra a aceitaçêo do cliente.",
+      "avatar": "donos de empresas de limpeza comercial com contratos de prestaçêo de serviços por escrito.",
       "moat": "registros precisos de escopo e estimativas aprimoradas por serviços reais.",
-      "proved": "alterar a mão de obra de 45 para 60 minutos mudou a proposta mensal de $164 para $212. Uma aceitação simulada e o novo valor permaneceram após recarregar.",
+      "proved": "alterar a mêo de obra de 45 para 60 minutos mudou a proposta mensal de $164 para $212. Uma aceitaçêo simulada e o novo valor permaneceram após recarregar.",
       "gap": "nenhuma evidência do X. O quadro com menos elementos.",
       "takeaway": "minha escolha inicial para esta tarefa. Entregou um fluxo verificado e um plano útil no menor tempo observado."
     },
@@ -58,12 +58,12 @@
       "reddit": 7,
       "x": 1,
       "canvas_elements": 186,
-      "what": "Redistribui visitas quando uma equipe de limpeza não pode trabalhar.",
+      "what": "Redistribui visitas quando uma equipe de limpeza nêo pode trabalhar.",
       "avatar": "donos de empresas de limpeza residencial que coordenam equipes e agendamentos.",
       "moat": "restrições e resultados específicos da empresa que melhoram o agendamento.",
-      "proved": "um serviço impossível de duas horas dentro de uma janela de uma hora foi rejeitado. A redistribuição válida foi salva corretamente e manteve outras quatro visitas intactas.",
-      "gap": "o deslocamento usou uma margem fixa, sem otimização de rotas em tempo real.",
-      "takeaway": "uma próxima configuração útil para testar quando há restrições que interagem. O valor veio dos comportamentos que o produto conseguiu tratar."
+      "proved": "um serviço impossível de duas horas dentro de uma janela de uma hora foi rejeitado. A redistribuiçêo válida foi salva corretamente e manteve outras quatro visitas intactas.",
+      "gap": "o deslocamento usou uma margem fixa, sem otimizaçêo de rotas em tempo real.",
+      "takeaway": "uma próxima configuraçêo útil para testar quando há restrições que interagem. O valor veio dos comportamentos que o produto conseguiu tratar."
     },
     {
       "key": "xhigh",
@@ -79,12 +79,12 @@
       "reddit": 6,
       "x": 1,
       "canvas_elements": 155,
-      "what": "Leva serviços extras de reforma da aprovação até o faturamento.",
+      "what": "Leva serviços extras de reforma da aprovaçêo até o faturamento.",
       "avatar": "donos de pequenas empresas de reforma que perdem o controle de adicionais cobráveis.",
       "moat": "verificações de escopo adaptadas ao histórico do que foi aprovado, faturado e pago.",
-      "proved": "uma nova tarifa de mão de obra foi propagada para um total de $530, para a aprovação e para uma linha pronta para faturar. A revisão 1 permaneceu após recarregar.",
-      "gap": "mais tempo que High. Seu contraexemplo do X foi lido pelo participante; o produtor não conseguiu reabri-lo de forma independente.",
-      "takeaway": "leia as evidências contrárias antes de comprar a ideia de negócio. Uma solução já existente com Grok e contabilidade de código aberto colocou o produto proposto em questão."
+      "proved": "uma nova tarifa de mêo de obra foi propagada para um total de $530, para a aprovaçêo e para uma linha pronta para faturar. A revisêo 1 permaneceu após recarregar.",
+      "gap": "mais tempo que High. Seu contraexemplo do X foi lido pelo participante; o produtor nêo conseguiu reabri-lo de forma independente.",
+      "takeaway": "leia as evidências contrárias antes de comprar a ideia de negócio. Uma soluçêo já existente com Grok e contabilidade de código aberto colocou o produto proposto em questêo."
     },
     {
       "key": "max",
@@ -100,12 +100,12 @@
       "reddit": 7,
       "x": 0,
       "canvas_elements": 155,
-      "what": "Mantém escopo, preço e aprovação de um serviço extra no mesmo registro.",
+      "what": "Mantém escopo, preço e aprovaçêo de um serviço extra no mesmo registro.",
       "avatar": "donos de empresas de reforma residencial com equipes de 2–10 pessoas.",
-      "moat": "uma rotina adotada no canteiro de obras, configuração assistida e indicações de profissionais de escrituração contábil.",
-      "proved": "mão de obra de $275,25 mais materiais de $84,75 resultaram exatamente em $360. A aprovação simulada persistiu.",
-      "gap": "a execução mais longa. O download de uma exportação nativa não foi verificado de forma independente.",
-      "takeaway": "a profundidade útil apareceu nos centavos exatos, no estado de aprovação e nas regras de revisão. São verificações melhores que contar detalhes de acabamento visual."
+      "moat": "uma rotina adotada no canteiro de obras, configuraçêo assistida e indicações de profissionais de escrituraçêo contábil.",
+      "proved": "mêo de obra de $275,25 mais materiais de $84,75 resultaram exatamente em $360. A aprovaçêo simulada persistiu.",
+      "gap": "a execuçêo mais longa. O download de uma exportaçêo nativa nêo foi verificado de forma independente.",
+      "takeaway": "a profundidade útil apareceu nos centavos exatos, no estado de aprovaçêo e nas regras de revisêo. Sêo verificações melhores que contar detalhes de acabamento visual."
     },
     {
       "key": "sol",
@@ -121,12 +121,12 @@
       "reddit": 6,
       "x": 2,
       "canvas_elements": 215,
-      "what": "Planeja a recuperação quando atrasos afetam uma rota de serviços.",
+      "what": "Planeja a recuperaçêo quando atrasos afetam uma rota de serviços.",
       "avatar": "donos que também coordenam operações de empresas de serviços recorrentes com 2–20 funcionários.",
-      "moat": "resultados de recuperação, regras mantidas e suporte responsável.",
-      "proved": "a progressão entre etapas e o estado resolvido persistiram.",
-      "gap": "selecionar “Split with Crew 1” não alterou o resumo seguinte: ele continuou mostrando outro plano e números de resultado fixos.",
-      "takeaway": "mantenha Sol na comparação e teste se as escolhas realmente mudam os resultados. Um consumo processado menor não compensa um caminho de decisão quebrado."
+      "moat": "resultados de recuperaçêo, regras mantidas e suporte responsável.",
+      "proved": "a progressêo entre etapas e o estado resolvido persistiram.",
+      "gap": "selecionar “Split with Crew 1” nêo alterou o resumo seguinte: ele continuou mostrando outro plano e números de resultado fixos.",
+      "takeaway": "mantenha Sol na comparaçêo e teste se as escolhas realmente mudam os resultados. Um consumo processado menor nêo compensa um caminho de decisêo quebrado."
     },
     {
       "key": "ultra",
@@ -144,10 +144,10 @@
       "canvas_elements": 240,
       "what": "Registra e combina adicionais de reforma antes do início do trabalho.",
       "avatar": "donos de pequenas empresas de reforma residencial que lidam com adicionais frequentes.",
-      "moat": "configuração específica por especialidade e uma rotina comprovada, melhoradas por resultados reais.",
-      "proved": "uma nova alteração personalizada de $200 exigiu uma nota de aprovação. Título, escopo, total e aprovação persistiram.",
-      "gap": "três agentes filhos acrescentaram 7,12 milhões de tokens processados. É uma condição separada, com delegação habilitada.",
-      "takeaway": "use delegação quando frentes independentes de pesquisa ou verificação tiverem valor real. Aqui ela produziu pesquisa mais profunda sobre os fluxos dos concorrentes, não um produto drasticamente diferente."
+      "moat": "configuraçêo específica por especialidade e uma rotina comprovada, melhoradas por resultados reais.",
+      "proved": "uma nova alteraçêo personalizada de $200 exigiu uma nota de aprovaçêo. Título, escopo, total e aprovaçêo persistiram.",
+      "gap": "três agentes filhos acrescentaram 7,12 milhões de tokens processados. É uma condiçêo separada, com delegaçêo habilitada.",
+      "takeaway": "use delegaçêo quando frentes independentes de pesquisa ou verificaçêo tiverem valor real. Aqui ela produziu pesquisa mais profunda sobre os fluxos dos concorrentes, nêo um produto drasticamente diferente."
     }
   ]
 }

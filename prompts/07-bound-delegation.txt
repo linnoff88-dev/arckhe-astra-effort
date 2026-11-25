@@ -1,5 +1,5 @@
-A entrega geral é [ENTREGA]. Identifique no máximo [NÚMERO] subtarefas independentes que se beneficiariam de pesquisa ou verificação em paralelo. Delegue somente quando isso puder ocorrer junto de trabalho útil do agente principal.
+A entrega geral é [ENTREGA]. Identifique no máximo [NÚMERO] subtarefas independentes que se beneficiariam de pesquisa ou verificaçêo em paralelo. Delegue somente quando isso puder ocorrer junto de trabalho útil do agente principal.
 
-Para cada agente delegado, defina uma pergunta delimitada, entradas, evidências exigidas, um formato conciso de saída e uma condição de parada. Registre o modelo e o esforço efetivos de cada um. Não faça todos os agentes redescobrirem o projeto inteiro. Reutilize descobertas relevantes, resolva conflitos e inclua o uso dos agentes filhos no total final, quando disponível.
+Para cada agente delegado, defina uma pergunta delimitada, entradas, evidências exigidas, um formato conciso de saída e uma condiçêo de parada. Registre o modelo e o esforço efetivos de cada um. Nêo faça todos os agentes redescobrirem o projeto inteiro. Reutilize descobertas relevantes, resolva conflitos e inclua o uso dos agentes filhos no total final, quando disponível.
 
-O agente principal é responsável pela integração e verifica o fluxo concluído. Ter mais agentes não é um critério de aceitação.
+O agente principal é responsável pela integraçêo e verifica o fluxo concluído. Ter mais agentes nêo é um critério de aceitaçêo.

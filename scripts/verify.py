@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Confere originais, tradução dos dados, links HTML e manifesto local."""
+"""Confere originais, traduçêo dos dados, links HTML e manifesto local."""
 import argparse
 import csv
 import hashlib
@@ -67,7 +67,7 @@ def verify():
     for block,path in zip(blocks,prompts): assert block.strip()==path.read_text().strip(),path
     original=(ROOT/'original-en/docs/transcricao-video.txt').read_text()
     translated_text=(ROOT/'docs/Texto colado(20260910-165842).txt').read_text()
-    assert re.findall(r'\(\d{2}:\d{2}\)',original)==re.findall(r'\(\d{2}:\d{2}\)',translated_text), 'Timestamps da transcrição'
+    assert re.findall(r'\(\d{2}:\d{2}\)',original)==re.findall(r'\(\d{2}:\d{2}\)',translated_text), 'Timestamps da transcriçêo'
     pages={}
     for page in (ROOT/'guia').glob('*.html'):
         parser=Links();parser.feed(page.read_text());pages[page]=parser
@@ -82,7 +82,7 @@ def verify():
             assert target.exists(), f'Link ausente em {page.name}: {link}'
             if parts.fragment and target in pages:
                 assert unquote(parts.fragment) in pages[target].ids, f'Âncora ausente: {link}'
-    print(f'OK: {len(provenance["files"])} originais, 7 resultados bilíngues, 10 prompts, transcrição, ZIP e links de {len(pages)} páginas.')
+    print(f'OK: {len(provenance["files"])} originais, 7 resultados bilíngues, 10 prompts, transcriçêo, ZIP e links de {len(pages)} páginas.')
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

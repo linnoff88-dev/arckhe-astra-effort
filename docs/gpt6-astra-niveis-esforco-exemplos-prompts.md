@@ -8,16 +8,16 @@ O objetivo era descobrir se:
 
 - mais esforço gera melhor resultado;
 - mais esforço gera mais autonomia;
-- mais esforço reduz a necessidade de intervenção humana;
+- mais esforço reduz a necessidade de intervençêo humana;
 - mais esforço compensa o aumento de tempo e consumo de tokens.
 
-A conclusão prática do teste é:
+A conclusêo prática do teste é:
 
 > **Astra Medium é o melhor equilíbrio para a maioria dos trabalhos.**
 
 High pode valer quando você realmente quer um pouco mais de profundidade, mas **Extra High, Max e Ultra raramente justificaram o aumento de tempo e tokens**.
 
-Mais esforço não significou necessariamente:
+Mais esforço nêo significou necessariamente:
 
 - mais eficiência;
 - mais pesquisa;
@@ -49,8 +49,8 @@ Mais esforço não significou necessariamente:
 - Aproximadamente 40 minutos
 - Cerca de 14 milhões de tokens
 - Resultado mais detalhado
-- Melhor organização das evidências
-- Pequeno ganho de qualidade em relação ao Medium
+- Melhor organizaçêo das evidências
+- Pequeno ganho de qualidade em relaçêo ao Medium
 
 ### Astra Extra High
 
@@ -64,18 +64,18 @@ Mais esforço não significou necessariamente:
 - Aproximadamente 46 minutos
 - Cerca de 10 milhões de tokens
 - Website mais polido
-- Não apresentou ganho proporcional ao tempo utilizado
+- Nêo apresentou ganho proporcional ao tempo utilizado
 
 ### Astra Ultra
 
 - Aproximadamente 42 minutos
 - Cerca de 22 milhões de tokens
 - Uso de subagentes
-- Resultado final não ficou radicalmente superior aos demais níveis
+- Resultado final nêo ficou radicalmente superior aos demais níveis
 
 ### GPT-6 Sol High
 
-Usado como grupo de comparação:
+Usado como grupo de comparaçêo:
 
 - Aproximadamente 32 minutos
 - Cerca de 6 milhões de tokens
@@ -105,7 +105,7 @@ Empresas de limpeza comercial.
 
 ### Problema
 
-Tarefas de limpeza que não foram executadas corretamente.
+Tarefas de limpeza que nêo foram executadas corretamente.
 
 ### Produto
 
@@ -143,7 +143,7 @@ Sistema para:
 - identificar trabalho adicional;
 - calcular preço;
 - gerar estimativa;
-- registrar aprovação do cliente;
+- registrar aprovaçêo do cliente;
 - armazenar o histórico.
 
 ### Possível moat
@@ -166,11 +166,11 @@ Empresas de limpeza residencial.
 
 ### Problema
 
-Uma equipe não consegue comparecer a um atendimento.
+Uma equipe nêo consegue comparecer a um atendimento.
 
 ### Exemplo
 
-**7h42 — a van da equipe não liga. Existem duas visitas programadas. Quem pode assumir?**
+**7h42 — a van da equipe nêo liga. Existem duas visitas programadas. Quem pode assumir?**
 
 ### Produto
 
@@ -201,17 +201,17 @@ Empresas de reformas.
 
 ### Problema
 
-Serviços extras solicitados pelo cliente durante uma reforma acabam não sendo cobrados.
+Serviços extras solicitados pelo cliente durante uma reforma acabam nêo sendo cobrados.
 
 ### Produto
 
 Sistema para acompanhar:
 
-**pedido extra → aprovação → execução → faturamento**
+**pedido extra → aprovaçêo → execuçêo → faturamento**
 
 ### Objetivo
 
-Evitar perda de receita causada por trabalhos adicionais não documentados ou esquecidos.
+Evitar perda de receita causada por trabalhos adicionais nêo documentados ou esquecidos.
 
 ---
 
@@ -227,8 +227,8 @@ Manter em um único registro:
 
 - escopo adicional;
 - preço;
-- aprovação;
-- execução;
+- aprovaçêo;
+- execuçêo;
 - cobrança.
 
 ### Possível moat
@@ -236,8 +236,8 @@ Manter em um único registro:
 O modelo sugeriu algo além do software:
 
 - processo adotado pela equipe;
-- configuração inicial;
-- integração com rotina financeira;
+- configuraçêo inicial;
+- integraçêo com rotina financeira;
 - indicações de contadores/bookkeepers.
 
 ---
@@ -256,9 +256,9 @@ O sistema registra e aprova alterações na obra antes de o trabalho começar.
 
 Fluxo:
 
-**cliente pede alteração → empresa calcula → cliente aprova → trabalho é executado → alteração é faturada**
+**cliente pede alteraçêo → empresa calcula → cliente aprova → trabalho é executado → alteraçêo é faturada**
 
-Apesar do alto consumo de tokens, o resultado não ficou radicalmente superior aos níveis Medium e High.
+Apesar do alto consumo de tokens, o resultado nêo ficou radicalmente superior aos níveis Medium e High.
 
 ---
 
@@ -268,7 +268,7 @@ Apesar do alto consumo de tokens, o resultado não ficou radicalmente superior a
 Encontre uma oportunidade relevante de SaaS para proprietários de pequenas
 empresas de serviços com equipes entre 2 e 20 funcionários.
 
-Eu ainda não escolhi:
+Eu ainda nêo escolhi:
 
 - o setor;
 - o problema;
@@ -283,7 +283,7 @@ Compare as três e escolha a melhor.
 
 ---
 
-# Prompt de pesquisa e validação
+# Prompt de pesquisa e validaçêo
 
 ```text
 Pesquise X e Reddit procurando discussões reais de clientes.
@@ -293,7 +293,7 @@ Identifique:
 - frustrações recorrentes;
 - problemas repetidos;
 - soluções improvisadas utilizadas atualmente;
-- sinais de disposição para pagar;
+- sinais de disposiçêo para pagar;
 - evidências contrárias à ideia.
 
 Analise também três alternativas ou concorrentes existentes.
@@ -309,14 +309,14 @@ Esta é uma das instruções mais importantes do experimento.
 Assuma que clientes e concorrentes também têm acesso ao GPT-6 Astra
 e conseguem reproduzir software competente rapidamente.
 
-Portanto, não escolha uma oportunidade que possa simplesmente ser
+Portanto, nêo escolha uma oportunidade que possa simplesmente ser
 "vibe coded" durante um fim de semana.
 
 Procure uma oportunidade que tenha alguma forma real de vantagem
 competitiva ou moat.
 ```
 
-Essa instrução muda a pergunta de:
+Essa instruçêo muda a pergunta de:
 
 > **Que software posso criar?**
 
@@ -351,7 +351,7 @@ Depois da pesquisa:
 
 ---
 
-# Prompt de autoverificação
+# Prompt de autoverificaçêo
 
 ```text
 Consigo rastrear as evidências que justificam essa ideia?
@@ -395,7 +395,7 @@ Execute exatamente o mesmo prompt nas três threads simultaneamente.
 
 Monitore o progresso das três execuções.
 
-Não altere o contexto, ferramentas ou condições entre os testes.
+Nêo altere o contexto, ferramentas ou condições entre os testes.
 ```
 
 Isso permite fazer testes A/B entre níveis de esforço sem precisar executar tudo manualmente.
@@ -404,13 +404,13 @@ Isso permite fazer testes A/B entre níveis de esforço sem precisar executar tu
 
 # Estratégia prática recomendada
 
-A principal conclusão é:
+A principal conclusêo é:
 
-> **Não aumente o nível de esforço automaticamente. Melhore primeiro o contexto, os critérios e o prompt.**
+> **Nêo aumente o nível de esforço automaticamente. Melhore primeiro o contexto, os critérios e o prompt.**
 
 Em muitos casos:
 
-**Medium + bom contexto + uma segunda instrução de melhoria**
+**Medium + bom contexto + uma segunda instruçêo de melhoria**
 
 pode ser melhor e muito mais econômico que:
 
@@ -425,7 +425,7 @@ pode ser melhor e muito mais econômico que:
 Bom para:
 
 - tarefas rápidas;
-- transformação simples;
+- transformaçêo simples;
 - pequenas alterações;
 - respostas diretas.
 
@@ -433,12 +433,12 @@ Bom para:
 
 Bom para:
 
-- programação;
-- criação de projetos;
+- programaçêo;
+- criaçêo de projetos;
 - análise;
 - pesquisa;
 - planejamento;
-- criação de sites;
+- criaçêo de sites;
 - agentes;
 - automações.
 
@@ -451,7 +451,7 @@ Use quando:
 - a tarefa é complexa;
 - existem várias restrições;
 - a qualidade é mais importante que velocidade;
-- você quer mais análise e verificação.
+- você quer mais análise e verificaçêo.
 
 ## Extra High / Max / Ultra
 
@@ -463,7 +463,7 @@ Reserve para situações onde exista uma justificativa clara, como:
 - pesquisa muito profunda;
 - tarefas com muitas dependências.
 
-Não use automaticamente apenas porque está disponível.
+Nêo use automaticamente apenas porque está disponível.
 
 ---
 
@@ -488,21 +488,21 @@ Isso envolve definir:
 5. fontes;
 6. critérios de sucesso;
 7. entregáveis;
-8. critérios de validação;
+8. critérios de validaçêo;
 9. nível de esforço;
 10. momento de revisar ou interromper.
 
 ---
 
-# Gestão da superinteligência
+# Gestêo da superinteligência
 
-A lição pode ser resumida assim:
+A liçêo pode ser resumida assim:
 
-> **Não precisamos necessariamente mandar a IA pensar mais. Precisamos aprender a definir objetivo, evidências, restrições, entregáveis e critérios de validação.**
+> **Nêo precisamos necessariamente mandar a IA pensar mais. Precisamos aprender a definir objetivo, evidências, restrições, entregáveis e critérios de validaçêo.**
 
-Isso aproxima o uso de IA da gestão de uma equipe altamente especializada.
+Isso aproxima o uso de IA da gestêo de uma equipe altamente especializada.
 
-Você não precisa ser mais inteligente que o agente.
+Você nêo precisa ser mais inteligente que o agente.
 
 Você precisa saber:
 
@@ -511,7 +511,7 @@ Você precisa saber:
 - quais recursos ele pode usar;
 - quais limites existem;
 - como avaliar o trabalho;
-- quando pedir uma segunda versão;
+- quando pedir uma segunda versêo;
 - quando interromper;
 - quando aceitar o resultado.
 
@@ -523,6 +523,6 @@ Você precisa saber:
 
 **Critérios > quantidade de tokens.**
 
-**Validação > confiança cega.**
+**Validaçêo > confiança cega.**
 
-**Gestão da IA > simplesmente escrever prompts.**
+**Gestêo da IA > simplesmente escrever prompts.**

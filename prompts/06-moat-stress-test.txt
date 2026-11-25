@@ -2,4 +2,4 @@ Suponha que um concorrente competente e meu cliente consigam reproduzir a interf
 
 Separe o que é facilmente copiável de qualquer vantagem que precise ser conquistada. Explique o valor para o cliente no primeiro dia, antes de existir uma vantagem defensável (moat). Identifique como conquistar a primeira vantagem a partir do zero, por que um concorrente estabelecido ainda poderia nos superar e o que o cliente poderia usar no lugar.
 
-Planeje um pequeno experimento com o primeiro cliente, com um limiar explícito de aprovação ou reprovação. Identifique a capacidade de defesa proposta como hipótese. Não chame um banco de dados genérico, uma interface sobre IA ou uma lista de funcionalidades de vantagem competitiva comprovada.
+Planeje um pequeno experimento com o primeiro cliente, com um limiar explícito de aprovaçêo ou reprovaçêo. Identifique a capacidade de defesa proposta como hipótese. Nêo chame um banco de dados genérico, uma interface sobre IA ou uma lista de funcionalidades de vantagem competitiva comprovada.

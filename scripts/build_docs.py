@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera as pÃ¡ginas de leitura a partir das traduÃ§Ãµes; requer Python-Markdown."""
+"""Gera as pêÂ¡ginas de leitura a partir das traduêÂ§êÂµes; requer Python-Markdown."""
 from pathlib import Path
 from html import escape
 from html.parser import HTMLParser
@@ -12,8 +12,8 @@ PAGES = {
     'SUPER-GUIDE.md': ('leitura.html', 'Guia completo'),
     'PROMPTS.md': ('prompts.html', 'Dez prompts para usar'),
     'SOURCE-NOTES.md': ('fontes.html', 'Notas e fontes'),
-    'evidence/PRODUCER-CHECKS.md': ('revisao.html', 'VerificaÃ§Ãµes do produtor'),
-    'docs/Texto colado(20260910-165842).txt': ('transcricao.html', 'TranscriÃ§Ã£o do vÃ­deo'),
+    'evidence/PRODUCER-CHECKS.md': ('revisao.html', 'VerificaêÂ§êÂµes do produtor'),
+    'docs/Texto colado(20260910-165842).txt': ('transcricao.html', 'TranscriêÂ§êÂ£o do vêÂ­deo'),
 }
 landing = (ROOT / 'guia/index.html').read_text()
 style = re.search(r'<style>(.*?)</style>', landing, re.S).group(1)
@@ -48,7 +48,7 @@ for source,(filename,title) in PAGES.items():
         text='# '+lines[0]+'\n\n'+'\n\n'.join(lines[1:])
     parser=markdown.Markdown(extensions=['tables','fenced_code','toc'])
     content=fix_links(parser.convert(text),source)
-    toc='<details><summary>Nesta pÃ¡gina</summary>'+parser.toc+'</details>'
-    doc=f'''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(title)} â€” Astra Effort</title><meta name="description" content="{escape(title)} do kit Astra Effort em portuguÃªs."><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><style>{style}{reader_style}</style></head><body>{nav}<main id="conteudo" class="reader"><a class="back" href="./">â† Biblioteca Astra Effort</a>{toc}{content}</main><footer><a href="./">Voltar Ã  biblioteca</a> Â· <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></footer><script>{script}</script></body></html>'''
+    toc='<details><summary>Nesta pêÂ¡gina</summary>'+parser.toc+'</details>'
+    doc=f'''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(title)} ê¢â¬â Astra Effort</title><meta name="description" content="{escape(title)} do kit Astra Effort em portuguêÂªs."><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><style>{style}{reader_style}</style></head><body>{nav}<main id="conteudo" class="reader"><a class="back" href="./">ê¢â Â Biblioteca Astra Effort</a>{toc}{content}</main><footer><a href="./">Voltar êÂ  biblioteca</a> êÂ· <a href="https://ARCKHê AI">ARCKHê AI</a></footer><script>{script}</script></body></html>'''
     (ROOT/'guia'/filename).write_text(doc)
     print(filename)

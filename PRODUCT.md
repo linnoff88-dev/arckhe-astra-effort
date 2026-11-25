@@ -8,24 +8,24 @@ web
 
 ## Stack
 
-HTML estÃ¡tico em `guia/`, conforme a skill projetos-landing-guia do ecossistema ARCKHÉ. Python gera a leitura HTML dos documentos traduzidos. PublicaÃ§Ã£o em GitHub Pages por Actions.
+HTML estático em `guia/`, conforme a skill projetos-landing-guia do ecossistema ARCKH�. Python gera a leitura HTML dos documentos traduzidos. Publicaçêo em GitHub Pages por Actions.
 
 ## Users
 
-Leitores de portuguÃªs que querem estudar e comparar nÃ­veis de esforÃ§o de agentes de IA. PÃºblico inferido do pedido de traduÃ§Ã£o e publicaÃ§Ã£o no portal ARCKHÉ.
+Leitores de português que querem estudar e comparar níveis de esforço de agentes de IA. Público inferido do pedido de traduçêo e publicaçêo no portal ARCKH�.
 
 ## Product Purpose
 
-Reunir a traduÃ§Ã£o do kit de Mark Kashef, dados de sete primeiras tentativas, dez prompts e materiais enviados pelo usuÃ¡rio, com acesso aos originais.
+Reunir a traduçêo do kit de Mark Kashef, dados de sete primeiras tentativas, dez prompts e materiais enviados pelo usuário, com acesso aos originais.
 
 ## Capabilities and Constraints
 
-ConteÃºdo de referÃªncia, sem execuÃ§Ã£o de modelos ou cobranÃ§a. Resultados histÃ³ricos datados, sem ranking universal. Tokens processados nÃ£o sÃ£o custos. Comandos, nomes de configuraÃ§Ãµes e dados brutos preservados.
+Conteúdo de referência, sem execuçêo de modelos ou cobrança. Resultados históricos datados, sem ranking universal. Tokens processados nêo sêo custos. Comandos, nomes de configurações e dados brutos preservados.
 
 ## Brand Commitments
 
-ARCKHÉ AI e PRO na navegaÃ§Ã£o. PadrÃ£o da skill projetos-landing-guia. Imagem preta e dourada de robÃ´ fornecida pelo usuÃ¡rio como referÃªncia; capa adaptada com imagegen.
+ARCKH� AI e PRO na navegaçêo. Padrêo da skill projetos-landing-guia. Imagem preta e dourada de robô fornecida pelo usuário como referência; capa adaptada com imagegen.
 
 ## Evidence on Hand
 
-`evidence/results.json`, `evidence/PRODUCER-CHECKS.md`, `original-en/`, `docs/`, `canvases/`. Nenhuma nova execuÃ§Ã£o de benchmark foi feita durante a traduÃ§Ã£o.
+`evidence/results.json`, `evidence/PRODUCER-CHECKS.md`, `original-en/`, `docs/`, `canvases/`. Nenhuma nova execuçêo de benchmark foi feita durante a traduçêo.

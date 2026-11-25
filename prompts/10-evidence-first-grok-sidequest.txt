@@ -1,5 +1,5 @@
-Ajude a investigar esta afirmação específica: [AFIRMAÇÃO]. Pesquise no X experiências diretas que possam sustentá-la ou contradizê-la. Priorize descrições concretas das tarefas, capturas de tela com contexto, links para as publicações originais e correções posteriores.
+Ajude a investigar esta afirmaçêo específica: [AFIRMAÇêO]. Pesquise no X experiências diretas que possam sustentá-la ou contradizê-la. Priorize descrições concretas das tarefas, capturas de tela com contexto, links para as publicações originais e correções posteriores.
 
-Para cada descoberta, informe URL da publicação original, data, tarefa, configuração quando mencionada, resultado observado e contexto ausente. Separe a opinião do autor da publicação do comportamento verificado do produto. Não transforme curtidas, republicações ou linguagem confiante em prova.
+Para cada descoberta, informe URL da publicaçêo original, data, tarefa, configuraçêo quando mencionada, resultado observado e contexto ausente. Separe a opiniêo do autor da publicaçêo do comportamento verificado do produto. Nêo transforme curtidas, republicações ou linguagem confiante em prova.
 
-Depois, apresente três perguntas mais específicas que ajudem a explicar por que os usuários obtiveram resultados diferentes. Se não conseguir acessar a evidência original, diga isso.
+Depois, apresente três perguntas mais específicas que ajudem a explicar por que os usuários obtiveram resultados diferentes. Se nêo conseguir acessar a evidência original, diga isso.

@@ -1,10 +1,10 @@
 Revise o protótipo concluído sem editar seu código-fonte primeiro. Use dados de exemplo novos ou restaurados e registre o estado inicial.
 
-1. Altere uma entrada relevante ou selecione outra opção.
+1. Altere uma entrada relevante ou selecione outra opçêo.
 2. Preveja qual total, registro ou resumo posterior deve mudar.
 3. Conclua o fluxo principal.
 4. Compare a saída final com a escolha realmente feita.
 5. Recarregue a página e verifique a persistência.
-6. Verifique uma entrada inválida e um registro não relacionado.
+6. Verifique uma entrada inválida e um registro nêo relacionado.
 
-Capture evidências de cada resultado. Separe comportamento testado, inspeção de código e comportamento não verificado. Preserve o artefato da primeira tentativa antes de propor correções. Um botão funcionando ou uma captura de tela bonita não bastam para provar que a decisão foi propagada pelo fluxo.
+Capture evidências de cada resultado. Separe comportamento testado, inspeçêo de código e comportamento nêo verificado. Preserve o artefato da primeira tentativa antes de propor correções. Um botêo funcionando ou uma captura de tela bonita nêo bastam para provar que a decisêo foi propagada pelo fluxo.

@@ -1,5 +1,5 @@
 Inspecione os registros de uso que forneci para estas execuções. Defina cada campo antes de compará-lo. Informe separadamente entrada, entrada em cache, saída, saída de raciocínio e totais dos agentes filhos, quando disponíveis.
 
-Evite contagem duplicada: a entrada em cache pode ser um subconjunto da entrada, e a saída de raciocínio pode ser um subconjunto da saída. Confirme o esquema. Não deduza uma cobrança a partir dos tokens processados acumulados ou da variação da franquia da conta inteira. Se for possível calcular o custo, informe o produto utilizado, a fonte datada das tarifas, a tarifa de cache e a faixa de velocidade/contexto aplicada; caso contrário, marque o custo como indisponível.
+Evite contagem duplicada: a entrada em cache pode ser um subconjunto da entrada, e a saída de raciocínio pode ser um subconjunto da saída. Confirme o esquema. Nêo deduza uma cobrança a partir dos tokens processados acumulados ou da variaçêo da franquia da conta inteira. Se for possível calcular o custo, informe o produto utilizado, a fonte datada das tarifas, a tarifa de cache e a faixa de velocidade/contexto aplicada; caso contrário, marque o custo como indisponível.
 
 Concilie os totais e diga quais comparações os registros permitem.
